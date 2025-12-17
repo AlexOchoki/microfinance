@@ -9,7 +9,7 @@ Microfinance teams need fast answers to questions like:
 - Are collections improving, or are we just reshuffling risk?
 - What’s the impact of restructures, write-offs, and recoveries on the portfolio?
 
-## 📊 Key report
+## Key report
 1. **Executive Overview**  
    Portfolio KPIs, PAR trends, NPL movement, top risk hotspots.
 2. **Portfolio Quality & Risk**  

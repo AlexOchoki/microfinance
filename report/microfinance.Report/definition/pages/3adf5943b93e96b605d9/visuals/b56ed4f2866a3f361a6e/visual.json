@@ -1,0 +1,141 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "b56ed4f2866a3f361a6e",
+  "position": {
+    "x": 42.985074626865668,
+    "y": 22.835820895522389,
+    "z": 0,
+    "height": 126.26865671641791,
+    "width": 1778.5074626865671,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "Exposure (Month-End)"
+                }
+              },
+              "queryRef": "Base Measures.Exposure (Month-End)",
+              "nativeQueryRef": "Exposure (Month-End)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "NPL Ratio %"
+                }
+              },
+              "queryRef": "Base Measures.NPL Ratio %",
+              "nativeQueryRef": "NPL Ratio %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "PAR 30 %"
+                }
+              },
+              "queryRef": "Base Measures.PAR 30 %",
+              "nativeQueryRef": "PAR 30 %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "PAR 90 %"
+                }
+              },
+              "queryRef": "Base Measures.PAR 90 %",
+              "nativeQueryRef": "PAR 90 %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "NPL Exposure (Month-End)"
+                }
+              },
+              "queryRef": "Base Measures.NPL Exposure (Month-End)",
+              "nativeQueryRef": "NPL Exposure (Month-End)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "Provision Coverage %"
+                }
+              },
+              "queryRef": "Base Measures.Provision Coverage %",
+              "nativeQueryRef": "Provision Coverage %"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Base Measures"
+                  }
+                },
+                "Property": "Exposure (Month-End)"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "layout": [
+        {
+          "properties": {
+            "columnCount": {
+              "expr": {
+                "Literal": {
+                  "Value": "8L"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

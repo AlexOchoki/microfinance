@@ -1,0 +1,2501 @@
+customer_id,customer_segment,gender,age_band,tenure_months,risk_band_at_onboarding,income_band
+1,Salaried,M,25-34,66,Medium,<30k
+2,Salaried,M,35-44,74,Medium,30k-60k
+3,Farmer,M,18-24,68,Low,<30k
+4,Farmer,M,18-24,37,Medium,<30k
+5,Chama/Group,M,45-54,86,Low,30k-60k
+6,SME,M,18-24,17,High,30k-60k
+7,SME,F,35-44,67,Low,<30k
+8,Micro Trader,M,35-44,11,Medium,60k-120k
+9,Salaried,M,25-34,73,Low,<30k
+10,Salaried,M,45-54,9,Medium,>120k
+11,Micro Trader,F,25-34,21,Medium,60k-120k
+12,SME,F,45-54,38,Low,30k-60k
+13,Farmer,M,45-54,66,Medium,<30k
+14,Micro Trader,M,25-34,5,Medium,60k-120k
+15,Boda Boda,F,25-34,25,Medium,30k-60k
+16,Farmer,F,25-34,32,Low,<30k
+17,SME,F,25-34,70,Medium,30k-60k
+18,Boda Boda,M,25-34,92,Medium,30k-60k
+19,Boda Boda,F,55+,59,Medium,60k-120k
+20,SME,M,25-34,49,Low,30k-60k
+21,SME,F,45-54,32,Medium,60k-120k
+22,Farmer,F,25-34,79,Low,30k-60k
+23,Salaried,F,55+,11,Low,30k-60k
+24,Salaried,M,25-34,13,Low,30k-60k
+25,Salaried,M,25-34,20,Low,>120k
+26,Boda Boda,M,35-44,26,Low,>120k
+27,Farmer,M,25-34,44,Low,60k-120k
+28,Farmer,F,45-54,90,Medium,60k-120k
+29,Boda Boda,M,25-34,62,Low,30k-60k
+30,Micro Trader,F,35-44,37,Low,<30k
+31,Micro Trader,F,35-44,21,Medium,60k-120k
+32,Salaried,F,35-44,62,High,<30k
+33,Salaried,F,18-24,25,Medium,<30k
+34,Farmer,M,25-34,93,Medium,30k-60k
+35,Micro Trader,M,25-34,46,High,30k-60k
+36,Micro Trader,M,25-34,53,Medium,30k-60k
+37,Farmer,M,25-34,86,High,<30k
+38,Farmer,M,55+,30,High,<30k
+39,Micro Trader,F,35-44,45,Low,<30k
+40,Micro Trader,F,35-44,51,Medium,<30k
+41,SME,F,25-34,26,Medium,<30k
+42,Salaried,M,25-34,6,Medium,30k-60k
+43,Micro Trader,M,35-44,27,Medium,<30k
+44,Salaried,F,25-34,11,Low,30k-60k
+45,Micro Trader,M,25-34,65,Low,<30k
+46,Boda Boda,M,35-44,1,Medium,30k-60k
+47,SME,M,35-44,31,Medium,60k-120k
+48,Salaried,M,55+,84,Medium,<30k
+49,SME,M,25-34,55,Medium,<30k
+50,SME,M,35-44,64,Medium,30k-60k
+51,Farmer,M,25-34,64,High,<30k
+52,Micro Trader,F,25-34,29,Low,60k-120k
+53,Boda Boda,M,35-44,61,High,>120k
+54,Farmer,F,25-34,22,Low,30k-60k
+55,Micro Trader,M,35-44,61,Medium,>120k
+56,Boda Boda,F,25-34,65,Low,30k-60k
+57,Salaried,F,18-24,84,Medium,30k-60k
+58,Salaried,F,55+,88,Low,<30k
+59,Salaried,F,25-34,3,Low,<30k
+60,Farmer,F,45-54,29,Medium,<30k
+61,Micro Trader,F,25-34,52,Medium,30k-60k
+62,Salaried,F,55+,31,Low,30k-60k
+63,Micro Trader,F,25-34,59,Medium,<30k
+64,Salaried,M,25-34,82,Low,30k-60k
+65,Farmer,M,45-54,25,Low,<30k
+66,Micro Trader,M,25-34,85,Low,<30k
+67,SME,F,25-34,84,Medium,<30k
+68,SME,F,55+,87,Medium,30k-60k
+69,Farmer,M,35-44,7,Medium,30k-60k
+70,SME,F,35-44,28,Medium,30k-60k
+71,Salaried,F,35-44,12,Medium,<30k
+72,Salaried,M,45-54,12,Medium,30k-60k
+73,Chama/Group,M,45-54,6,High,>120k
+74,Chama/Group,F,35-44,42,Low,<30k
+75,Farmer,M,25-34,9,Low,30k-60k
+76,SME,F,18-24,29,Low,<30k
+77,Chama/Group,M,35-44,94,Medium,<30k
+78,Farmer,F,45-54,84,Low,30k-60k
+79,Farmer,F,35-44,90,Low,<30k
+80,Micro Trader,M,25-34,4,Medium,30k-60k
+81,SME,F,25-34,63,High,60k-120k
+82,Salaried,M,35-44,61,Low,<30k
+83,Chama/Group,F,45-54,13,Low,<30k
+84,Micro Trader,M,25-34,87,Low,60k-120k
+85,Salaried,M,35-44,39,Low,30k-60k
+86,SME,M,45-54,93,Medium,60k-120k
+87,Micro Trader,M,55+,11,Medium,<30k
+88,Salaried,F,25-34,62,Low,30k-60k
+89,Boda Boda,M,55+,13,Low,60k-120k
+90,Farmer,F,35-44,91,Low,<30k
+91,Farmer,M,45-54,58,Low,60k-120k
+92,Micro Trader,M,18-24,8,Low,30k-60k
+93,Farmer,M,35-44,21,Medium,60k-120k
+94,Micro Trader,M,35-44,35,Low,<30k
+95,Farmer,M,25-34,2,Medium,30k-60k
+96,Salaried,F,25-34,1,Low,<30k
+97,Micro Trader,M,35-44,88,Medium,>120k
+98,Salaried,M,35-44,94,Low,<30k
+99,Micro Trader,F,18-24,51,Low,<30k
+100,SME,M,25-34,86,Medium,60k-120k
+101,Salaried,F,25-34,63,Medium,<30k
+102,Salaried,F,55+,3,Low,30k-60k
+103,Micro Trader,F,55+,68,Low,<30k
+104,Salaried,F,25-34,2,Medium,30k-60k
+105,Chama/Group,M,25-34,78,High,<30k
+106,Micro Trader,M,25-34,35,Medium,30k-60k
+107,SME,M,35-44,14,Low,30k-60k
+108,Micro Trader,M,45-54,25,Low,<30k
+109,Salaried,F,35-44,65,Low,<30k
+110,Chama/Group,F,18-24,81,Low,<30k
+111,Micro Trader,F,18-24,55,Medium,30k-60k
+112,Boda Boda,M,25-34,16,Medium,<30k
+113,Salaried,F,45-54,86,Low,<30k
+114,Micro Trader,M,35-44,76,Medium,<30k
+115,Micro Trader,M,35-44,39,Medium,30k-60k
+116,Chama/Group,M,25-34,53,Medium,30k-60k
+117,Micro Trader,M,55+,92,Low,30k-60k
+118,Micro Trader,F,25-34,36,Low,60k-120k
+119,SME,M,45-54,3,Low,30k-60k
+120,SME,M,45-54,14,Low,60k-120k
+121,Micro Trader,M,35-44,58,Low,30k-60k
+122,Micro Trader,M,45-54,95,Low,<30k
+123,Salaried,M,25-34,71,Low,>120k
+124,Boda Boda,M,35-44,59,Low,60k-120k
+125,Boda Boda,F,18-24,31,High,30k-60k
+126,Salaried,M,35-44,42,Medium,<30k
+127,Micro Trader,M,25-34,4,Low,<30k
+128,Salaried,F,18-24,36,High,30k-60k
+129,Farmer,M,18-24,60,Low,30k-60k
+130,SME,F,25-34,87,Low,30k-60k
+131,Farmer,M,35-44,88,Medium,30k-60k
+132,Farmer,F,35-44,79,Low,30k-60k
+133,Farmer,F,25-34,3,Low,<30k
+134,Salaried,M,55+,78,Low,<30k
+135,Chama/Group,F,55+,21,Low,<30k
+136,SME,F,25-34,59,Medium,60k-120k
+137,Salaried,F,25-34,90,Low,30k-60k
+138,Micro Trader,M,35-44,85,Low,60k-120k
+139,SME,M,45-54,64,Low,30k-60k
+140,Boda Boda,M,25-34,29,Low,60k-120k
+141,Boda Boda,F,45-54,50,Low,30k-60k
+142,SME,M,25-34,67,Medium,60k-120k
+143,Chama/Group,F,25-34,49,Medium,60k-120k
+144,SME,M,35-44,39,Low,30k-60k
+145,Micro Trader,F,35-44,39,Medium,<30k
+146,SME,F,45-54,57,Low,30k-60k
+147,Chama/Group,F,18-24,4,Low,<30k
+148,Salaried,M,25-34,95,Low,<30k
+149,Salaried,M,18-24,10,Low,30k-60k
+150,Micro Trader,F,25-34,94,Medium,60k-120k
+151,Chama/Group,M,18-24,4,High,<30k
+152,Boda Boda,M,35-44,49,Low,<30k
+153,Farmer,F,35-44,40,Low,60k-120k
+154,Boda Boda,M,35-44,55,Medium,<30k
+155,Boda Boda,M,25-34,42,Low,<30k
+156,Micro Trader,F,18-24,86,Low,30k-60k
+157,SME,M,35-44,2,High,60k-120k
+158,Farmer,F,18-24,94,Medium,30k-60k
+159,Farmer,M,45-54,66,High,30k-60k
+160,SME,F,18-24,74,Low,<30k
+161,Salaried,M,35-44,14,Low,<30k
+162,Farmer,F,45-54,7,Low,60k-120k
+163,SME,M,35-44,38,High,60k-120k
+164,Chama/Group,M,35-44,31,Low,<30k
+165,SME,F,35-44,75,Low,<30k
+166,Salaried,M,25-34,86,Low,<30k
+167,Boda Boda,M,35-44,41,Medium,<30k
+168,Salaried,M,45-54,73,Medium,<30k
+169,Salaried,F,55+,6,Medium,<30k
+170,Micro Trader,M,35-44,71,Low,60k-120k
+171,Boda Boda,F,25-34,10,Medium,<30k
+172,Salaried,F,45-54,64,Low,30k-60k
+173,SME,M,35-44,37,Low,30k-60k
+174,Farmer,M,25-34,40,Low,60k-120k
+175,Chama/Group,M,25-34,27,Low,>120k
+176,Micro Trader,F,25-34,39,Low,30k-60k
+177,Salaried,M,35-44,84,High,<30k
+178,Salaried,M,25-34,77,Low,30k-60k
+179,SME,F,18-24,33,Low,<30k
+180,Salaried,M,18-24,28,Medium,<30k
+181,Farmer,F,55+,49,Medium,<30k
+182,Salaried,F,18-24,66,Low,60k-120k
+183,Micro Trader,M,18-24,18,Medium,<30k
+184,Farmer,M,35-44,69,Low,30k-60k
+185,Micro Trader,F,25-34,91,Low,30k-60k
+186,Salaried,F,55+,81,Medium,30k-60k
+187,Boda Boda,F,55+,53,Medium,<30k
+188,Farmer,M,25-34,31,Low,60k-120k
+189,Farmer,F,35-44,31,Low,30k-60k
+190,Salaried,M,25-34,71,Low,30k-60k
+191,Salaried,M,18-24,44,Low,30k-60k
+192,Chama/Group,F,25-34,11,High,60k-120k
+193,SME,M,25-34,65,Low,60k-120k
+194,SME,M,25-34,14,Medium,30k-60k
+195,Micro Trader,M,35-44,94,Low,<30k
+196,Farmer,F,18-24,40,Medium,<30k
+197,Chama/Group,F,25-34,33,Low,<30k
+198,SME,F,35-44,6,Low,<30k
+199,Chama/Group,M,35-44,16,Low,<30k
+200,Salaried,M,25-34,91,Low,<30k
+201,Micro Trader,F,18-24,52,High,60k-120k
+202,Farmer,F,25-34,86,Medium,60k-120k
+203,Salaried,M,25-34,91,Medium,60k-120k
+204,Salaried,F,45-54,5,Low,30k-60k
+205,Micro Trader,F,55+,37,Medium,30k-60k
+206,Chama/Group,M,25-34,80,Medium,<30k
+207,Micro Trader,F,25-34,48,Medium,30k-60k
+208,Chama/Group,F,35-44,49,Medium,<30k
+209,Boda Boda,F,35-44,55,Medium,30k-60k
+210,Micro Trader,F,25-34,67,Low,>120k
+211,Boda Boda,M,25-34,90,High,60k-120k
+212,Salaried,M,25-34,85,Low,<30k
+213,Salaried,M,35-44,60,Low,30k-60k
+214,Boda Boda,F,25-34,55,Medium,<30k
+215,Boda Boda,M,25-34,35,Low,<30k
+216,SME,F,25-34,12,Low,<30k
+217,Micro Trader,M,25-34,68,Low,<30k
+218,Micro Trader,F,35-44,1,Low,30k-60k
+219,Boda Boda,M,35-44,67,High,30k-60k
+220,Micro Trader,F,35-44,48,Medium,<30k
+221,Micro Trader,F,25-34,75,Low,>120k
+222,SME,M,25-34,91,High,30k-60k
+223,Micro Trader,F,45-54,53,Medium,30k-60k
+224,Farmer,F,35-44,55,Medium,30k-60k
+225,Boda Boda,M,18-24,47,Low,30k-60k
+226,Micro Trader,M,25-34,36,Low,30k-60k
+227,SME,F,45-54,9,Low,30k-60k
+228,SME,M,45-54,3,Low,60k-120k
+229,Farmer,M,45-54,69,Medium,<30k
+230,Boda Boda,M,35-44,87,Low,30k-60k
+231,Salaried,M,25-34,6,Low,<30k
+232,Salaried,M,25-34,32,Medium,60k-120k
+233,Micro Trader,M,25-34,58,Low,<30k
+234,Salaried,M,35-44,67,Low,<30k
+235,Boda Boda,M,35-44,70,Medium,>120k
+236,SME,F,25-34,66,Medium,30k-60k
+237,Salaried,F,45-54,8,Low,<30k
+238,Chama/Group,F,25-34,25,High,<30k
+239,Salaried,M,18-24,45,Medium,30k-60k
+240,SME,F,25-34,7,Medium,>120k
+241,Salaried,M,45-54,33,Low,30k-60k
+242,Salaried,M,55+,37,Medium,<30k
+243,Salaried,M,35-44,93,Medium,30k-60k
+244,Salaried,F,55+,31,Low,30k-60k
+245,Salaried,M,45-54,93,High,<30k
+246,Salaried,M,45-54,67,High,60k-120k
+247,Micro Trader,F,45-54,66,Low,<30k
+248,Farmer,M,25-34,78,Medium,60k-120k
+249,SME,F,45-54,81,Low,60k-120k
+250,SME,M,35-44,22,Medium,<30k
+251,Micro Trader,M,35-44,40,Medium,30k-60k
+252,Boda Boda,F,25-34,51,Low,60k-120k
+253,Boda Boda,F,45-54,93,Low,30k-60k
+254,Salaried,F,55+,4,Low,30k-60k
+255,Salaried,F,25-34,46,High,<30k
+256,SME,M,55+,21,Low,<30k
+257,SME,F,25-34,20,Medium,30k-60k
+258,Micro Trader,F,25-34,73,Low,<30k
+259,Micro Trader,M,25-34,20,Low,<30k
+260,Salaried,M,45-54,76,High,30k-60k
+261,SME,M,35-44,95,Medium,<30k
+262,Micro Trader,M,25-34,74,Low,60k-120k
+263,Salaried,F,35-44,17,Low,60k-120k
+264,Boda Boda,M,25-34,14,Low,60k-120k
+265,Salaried,F,35-44,42,Low,<30k
+266,Chama/Group,M,45-54,53,Low,30k-60k
+267,Salaried,M,35-44,74,Medium,60k-120k
+268,Boda Boda,M,45-54,41,Low,30k-60k
+269,Chama/Group,M,35-44,16,Low,30k-60k
+270,Chama/Group,M,55+,95,Low,30k-60k
+271,Boda Boda,F,25-34,86,Low,<30k
+272,Farmer,M,25-34,63,High,<30k
+273,Farmer,M,18-24,67,Low,30k-60k
+274,Farmer,M,35-44,89,Low,<30k
+275,Salaried,M,35-44,46,Medium,60k-120k
+276,Micro Trader,F,45-54,14,High,30k-60k
+277,Micro Trader,M,25-34,58,Medium,<30k
+278,Boda Boda,F,18-24,43,Medium,30k-60k
+279,Micro Trader,F,35-44,76,High,30k-60k
+280,SME,F,55+,74,Medium,<30k
+281,Farmer,M,25-34,45,High,>120k
+282,SME,F,25-34,35,Low,30k-60k
+283,Salaried,F,25-34,41,Medium,30k-60k
+284,Micro Trader,F,25-34,61,Medium,60k-120k
+285,Micro Trader,M,25-34,61,High,30k-60k
+286,SME,M,25-34,49,Low,30k-60k
+287,SME,F,35-44,51,Medium,<30k
+288,SME,F,25-34,95,Low,<30k
+289,SME,M,25-34,25,Medium,30k-60k
+290,SME,F,18-24,17,Low,30k-60k
+291,Farmer,M,55+,76,Medium,30k-60k
+292,SME,F,25-34,89,Medium,30k-60k
+293,Chama/Group,M,25-34,58,Low,30k-60k
+294,Chama/Group,F,18-24,39,Low,60k-120k
+295,Micro Trader,M,35-44,34,Low,>120k
+296,SME,F,45-54,45,Medium,<30k
+297,Micro Trader,M,18-24,5,Medium,60k-120k
+298,Boda Boda,M,25-34,51,Medium,60k-120k
+299,Farmer,M,25-34,26,Low,<30k
+300,Boda Boda,F,35-44,26,Medium,<30k
+301,Micro Trader,F,55+,54,Medium,<30k
+302,Farmer,M,25-34,92,Low,30k-60k
+303,SME,M,25-34,20,Low,30k-60k
+304,Farmer,F,45-54,87,Low,30k-60k
+305,Salaried,F,45-54,50,Low,60k-120k
+306,Farmer,F,25-34,93,Low,<30k
+307,Boda Boda,M,25-34,37,Low,30k-60k
+308,Salaried,M,25-34,95,Low,60k-120k
+309,Micro Trader,M,45-54,63,Low,>120k
+310,Salaried,M,35-44,64,Low,60k-120k
+311,Farmer,F,35-44,54,Medium,<30k
+312,Salaried,F,45-54,43,Low,<30k
+313,Chama/Group,F,25-34,50,Low,<30k
+314,Salaried,M,25-34,81,Medium,30k-60k
+315,Chama/Group,F,18-24,76,Low,<30k
+316,Boda Boda,F,45-54,3,Low,60k-120k
+317,Micro Trader,F,35-44,66,Low,30k-60k
+318,Boda Boda,F,25-34,80,Low,30k-60k
+319,Boda Boda,M,18-24,71,Medium,<30k
+320,Chama/Group,F,45-54,48,Low,30k-60k
+321,SME,F,45-54,32,Low,30k-60k
+322,Micro Trader,M,35-44,64,Medium,30k-60k
+323,Salaried,F,25-34,64,High,<30k
+324,Micro Trader,F,55+,36,Low,60k-120k
+325,Salaried,F,45-54,39,Low,<30k
+326,Micro Trader,M,35-44,36,Low,<30k
+327,Micro Trader,F,35-44,5,Medium,>120k
+328,Micro Trader,M,55+,4,Medium,<30k
+329,Micro Trader,M,55+,8,Medium,<30k
+330,Farmer,M,35-44,41,Low,30k-60k
+331,Boda Boda,F,25-34,49,Low,30k-60k
+332,Micro Trader,M,25-34,39,Medium,<30k
+333,Micro Trader,F,45-54,91,Low,<30k
+334,Chama/Group,F,35-44,22,High,<30k
+335,Salaried,M,18-24,38,Low,30k-60k
+336,Salaried,F,25-34,24,Low,<30k
+337,Salaried,F,55+,29,Low,60k-120k
+338,Farmer,F,45-54,56,Low,60k-120k
+339,Micro Trader,F,55+,30,Medium,<30k
+340,Farmer,F,25-34,31,Low,<30k
+341,Farmer,M,45-54,64,Medium,<30k
+342,SME,M,45-54,79,Medium,<30k
+343,Boda Boda,F,25-34,21,Medium,<30k
+344,Farmer,M,25-34,11,Medium,60k-120k
+345,SME,F,55+,23,High,<30k
+346,SME,F,18-24,55,Medium,30k-60k
+347,SME,F,35-44,92,Low,30k-60k
+348,Salaried,F,35-44,16,Medium,60k-120k
+349,Salaried,F,35-44,5,High,<30k
+350,Chama/Group,F,25-34,51,Low,<30k
+351,Micro Trader,F,45-54,95,Medium,>120k
+352,SME,M,25-34,53,Low,<30k
+353,Farmer,F,45-54,88,Medium,30k-60k
+354,Micro Trader,F,25-34,62,Low,30k-60k
+355,Chama/Group,F,35-44,4,Medium,30k-60k
+356,Boda Boda,M,45-54,41,Low,<30k
+357,Micro Trader,F,25-34,74,Medium,<30k
+358,SME,M,25-34,49,Low,30k-60k
+359,Chama/Group,F,45-54,19,Medium,30k-60k
+360,Farmer,F,18-24,18,Low,60k-120k
+361,Chama/Group,M,25-34,64,Medium,30k-60k
+362,Salaried,F,35-44,44,Low,60k-120k
+363,Boda Boda,F,55+,55,Low,>120k
+364,Farmer,F,35-44,36,Low,30k-60k
+365,Salaried,M,25-34,33,High,<30k
+366,Micro Trader,M,55+,64,Low,30k-60k
+367,Farmer,M,35-44,1,Medium,30k-60k
+368,Salaried,M,25-34,42,Low,30k-60k
+369,Micro Trader,F,25-34,36,Medium,<30k
+370,Boda Boda,M,25-34,75,Low,30k-60k
+371,SME,F,25-34,70,Low,<30k
+372,Micro Trader,M,35-44,41,Low,<30k
+373,Micro Trader,F,18-24,25,Low,60k-120k
+374,SME,F,35-44,23,Low,30k-60k
+375,Chama/Group,M,25-34,21,Low,30k-60k
+376,Boda Boda,F,25-34,27,Low,30k-60k
+377,Salaried,M,25-34,73,High,30k-60k
+378,Chama/Group,F,35-44,5,Low,<30k
+379,Boda Boda,M,45-54,3,High,30k-60k
+380,SME,M,25-34,52,Low,<30k
+381,Boda Boda,F,25-34,22,Low,30k-60k
+382,Salaried,M,25-34,79,Low,<30k
+383,Chama/Group,M,45-54,72,Low,>120k
+384,Farmer,M,25-34,74,Low,60k-120k
+385,Farmer,F,45-54,44,Medium,30k-60k
+386,Salaried,M,25-34,42,Medium,<30k
+387,Boda Boda,M,25-34,41,Medium,30k-60k
+388,Salaried,F,45-54,19,Low,30k-60k
+389,SME,F,35-44,54,Low,30k-60k
+390,Salaried,F,18-24,83,Medium,30k-60k
+391,Farmer,M,55+,25,Low,60k-120k
+392,Salaried,F,25-34,6,Low,30k-60k
+393,Chama/Group,M,25-34,54,Low,30k-60k
+394,Farmer,M,25-34,38,Low,30k-60k
+395,Salaried,F,35-44,76,Medium,30k-60k
+396,Salaried,F,45-54,82,Low,30k-60k
+397,Salaried,M,18-24,91,Low,60k-120k
+398,Micro Trader,F,55+,38,High,<30k
+399,Boda Boda,M,35-44,86,High,<30k
+400,SME,M,55+,12,Low,<30k
+401,Boda Boda,M,45-54,36,Low,60k-120k
+402,Salaried,F,55+,26,Medium,30k-60k
+403,Boda Boda,M,35-44,88,Low,30k-60k
+404,Chama/Group,M,25-34,58,Low,30k-60k
+405,Farmer,F,35-44,35,Low,30k-60k
+406,Farmer,M,35-44,15,Low,60k-120k
+407,Boda Boda,M,25-34,75,High,>120k
+408,Salaried,M,45-54,63,Medium,60k-120k
+409,Salaried,F,18-24,82,High,60k-120k
+410,Salaried,F,45-54,42,Medium,<30k
+411,Micro Trader,F,25-34,15,Medium,<30k
+412,Farmer,F,55+,32,Medium,30k-60k
+413,Farmer,F,25-34,59,Medium,30k-60k
+414,Boda Boda,M,25-34,23,Low,<30k
+415,Salaried,F,45-54,7,Low,30k-60k
+416,Farmer,M,45-54,79,Low,<30k
+417,Salaried,F,45-54,51,Low,<30k
+418,SME,F,55+,38,Low,<30k
+419,Farmer,F,25-34,53,Low,60k-120k
+420,Chama/Group,F,45-54,71,Medium,30k-60k
+421,Micro Trader,M,25-34,1,Low,30k-60k
+422,Salaried,M,35-44,42,Low,60k-120k
+423,Micro Trader,M,35-44,25,Low,60k-120k
+424,Salaried,F,18-24,9,Low,30k-60k
+425,Boda Boda,M,35-44,4,High,60k-120k
+426,Farmer,F,45-54,42,Low,<30k
+427,Salaried,M,25-34,52,Low,30k-60k
+428,Salaried,M,55+,49,Low,<30k
+429,Salaried,F,35-44,75,Medium,30k-60k
+430,Chama/Group,F,25-34,44,Medium,30k-60k
+431,Micro Trader,F,35-44,57,Low,<30k
+432,Boda Boda,F,25-34,78,Low,30k-60k
+433,Farmer,M,18-24,63,Medium,30k-60k
+434,Micro Trader,M,35-44,87,High,30k-60k
+435,Salaried,M,25-34,22,Low,<30k
+436,Chama/Group,F,25-34,75,Low,<30k
+437,SME,M,45-54,67,Low,30k-60k
+438,Micro Trader,F,18-24,56,Low,60k-120k
+439,Farmer,M,45-54,1,Medium,60k-120k
+440,Farmer,F,45-54,52,High,<30k
+441,Chama/Group,F,25-34,82,High,30k-60k
+442,Salaried,M,35-44,62,Medium,30k-60k
+443,Micro Trader,F,18-24,1,Low,>120k
+444,Micro Trader,F,35-44,28,High,<30k
+445,Micro Trader,M,18-24,55,Low,30k-60k
+446,Salaried,F,55+,78,Low,30k-60k
+447,Salaried,M,25-34,43,Medium,<30k
+448,SME,M,35-44,82,Low,<30k
+449,SME,M,25-34,76,Medium,<30k
+450,Micro Trader,M,25-34,26,High,30k-60k
+451,Micro Trader,M,35-44,19,Medium,30k-60k
+452,Farmer,M,35-44,86,Medium,30k-60k
+453,Micro Trader,M,55+,56,Low,<30k
+454,Micro Trader,M,18-24,81,Low,60k-120k
+455,Salaried,F,18-24,88,Medium,30k-60k
+456,Micro Trader,F,25-34,41,Medium,>120k
+457,SME,M,25-34,5,High,<30k
+458,Salaried,F,45-54,87,Low,60k-120k
+459,Micro Trader,F,55+,56,Low,60k-120k
+460,Micro Trader,F,45-54,12,Low,60k-120k
+461,SME,M,25-34,51,Medium,60k-120k
+462,Micro Trader,F,25-34,3,Medium,30k-60k
+463,Micro Trader,M,45-54,28,High,30k-60k
+464,Farmer,M,25-34,34,Low,30k-60k
+465,Farmer,M,35-44,44,Low,30k-60k
+466,Farmer,F,25-34,54,Low,>120k
+467,SME,M,25-34,80,Low,<30k
+468,Boda Boda,M,45-54,34,Low,30k-60k
+469,Micro Trader,F,25-34,70,Medium,60k-120k
+470,Micro Trader,M,55+,90,Low,<30k
+471,Farmer,F,25-34,72,Low,<30k
+472,SME,M,18-24,25,Medium,<30k
+473,Micro Trader,F,25-34,65,Medium,60k-120k
+474,Farmer,M,25-34,27,Low,60k-120k
+475,Boda Boda,M,35-44,46,Low,<30k
+476,Chama/Group,F,25-34,61,Medium,30k-60k
+477,Micro Trader,M,35-44,28,Medium,30k-60k
+478,Micro Trader,F,45-54,1,Medium,30k-60k
+479,Boda Boda,M,25-34,80,Low,30k-60k
+480,SME,M,25-34,70,Low,>120k
+481,Boda Boda,F,25-34,12,High,<30k
+482,Micro Trader,F,45-54,36,Low,<30k
+483,Salaried,M,35-44,25,Low,30k-60k
+484,Salaried,F,25-34,93,High,30k-60k
+485,Boda Boda,M,35-44,90,Low,30k-60k
+486,Salaried,M,35-44,66,Medium,<30k
+487,SME,M,25-34,42,Medium,<30k
+488,SME,F,25-34,5,Low,60k-120k
+489,Salaried,M,55+,24,Medium,<30k
+490,SME,M,25-34,9,Low,30k-60k
+491,Farmer,F,25-34,76,Medium,60k-120k
+492,Salaried,F,25-34,9,High,<30k
+493,Boda Boda,F,35-44,65,Medium,<30k
+494,Boda Boda,F,35-44,91,Low,30k-60k
+495,SME,M,25-34,30,Medium,30k-60k
+496,Salaried,F,25-34,65,High,<30k
+497,Micro Trader,M,35-44,84,Medium,30k-60k
+498,Salaried,F,25-34,41,Medium,<30k
+499,SME,F,55+,43,Low,<30k
+500,Chama/Group,F,25-34,20,Medium,<30k
+501,Chama/Group,M,25-34,41,Low,<30k
+502,Farmer,M,55+,83,Low,30k-60k
+503,SME,F,45-54,64,High,60k-120k
+504,Farmer,M,25-34,20,High,<30k
+505,Farmer,F,45-54,51,High,30k-60k
+506,SME,F,35-44,68,Low,30k-60k
+507,Farmer,F,25-34,8,Low,30k-60k
+508,Salaried,M,45-54,73,Low,30k-60k
+509,Salaried,M,45-54,20,Low,<30k
+510,Micro Trader,M,25-34,28,Medium,30k-60k
+511,Salaried,F,35-44,40,Medium,<30k
+512,Salaried,F,25-34,48,Low,60k-120k
+513,Boda Boda,M,18-24,88,Low,<30k
+514,Chama/Group,F,55+,22,Low,30k-60k
+515,Micro Trader,M,35-44,25,Medium,30k-60k
+516,Boda Boda,M,35-44,36,Medium,30k-60k
+517,Chama/Group,F,35-44,82,Low,<30k
+518,Salaried,M,35-44,92,Low,30k-60k
+519,Micro Trader,M,25-34,44,Low,30k-60k
+520,SME,F,55+,66,Low,30k-60k
+521,Salaried,M,35-44,88,High,<30k
+522,Farmer,M,35-44,81,Medium,<30k
+523,Micro Trader,F,35-44,65,Low,<30k
+524,Micro Trader,M,25-34,52,Medium,60k-120k
+525,Salaried,F,18-24,94,Low,30k-60k
+526,Salaried,M,25-34,23,Low,30k-60k
+527,Chama/Group,M,25-34,35,Medium,30k-60k
+528,Salaried,M,35-44,68,Low,30k-60k
+529,SME,M,45-54,2,Low,30k-60k
+530,SME,M,25-34,48,Medium,30k-60k
+531,Micro Trader,F,25-34,82,High,30k-60k
+532,Micro Trader,F,35-44,17,Low,<30k
+533,Micro Trader,F,25-34,77,Medium,60k-120k
+534,Salaried,M,55+,40,Low,>120k
+535,SME,F,25-34,82,Medium,30k-60k
+536,Boda Boda,F,25-34,61,Low,60k-120k
+537,Farmer,M,25-34,15,Medium,>120k
+538,Farmer,F,55+,70,Low,30k-60k
+539,Farmer,F,25-34,6,High,30k-60k
+540,Farmer,F,35-44,24,Medium,30k-60k
+541,Salaried,F,25-34,85,Low,<30k
+542,SME,M,25-34,84,Medium,<30k
+543,Micro Trader,F,45-54,5,Low,30k-60k
+544,SME,F,25-34,37,Medium,60k-120k
+545,Boda Boda,M,18-24,9,Low,<30k
+546,Micro Trader,M,35-44,26,Low,60k-120k
+547,Farmer,M,45-54,92,Medium,30k-60k
+548,Boda Boda,M,25-34,19,Low,30k-60k
+549,Micro Trader,M,25-34,61,Low,<30k
+550,Chama/Group,F,55+,77,Low,30k-60k
+551,Micro Trader,M,35-44,84,Low,<30k
+552,Boda Boda,M,45-54,34,Low,<30k
+553,SME,F,45-54,67,Medium,<30k
+554,Micro Trader,F,35-44,46,Medium,<30k
+555,Micro Trader,F,25-34,11,Low,<30k
+556,Salaried,M,25-34,22,Low,30k-60k
+557,SME,M,35-44,72,Medium,30k-60k
+558,Chama/Group,M,35-44,66,Medium,<30k
+559,Farmer,F,55+,50,Medium,60k-120k
+560,Salaried,F,35-44,75,Low,30k-60k
+561,SME,F,25-34,66,Low,60k-120k
+562,Salaried,M,35-44,33,Medium,30k-60k
+563,Salaried,M,35-44,28,Low,<30k
+564,Chama/Group,M,25-34,90,Low,60k-120k
+565,Micro Trader,M,45-54,93,Low,60k-120k
+566,SME,M,35-44,3,Medium,30k-60k
+567,Micro Trader,M,18-24,76,Low,30k-60k
+568,Salaried,F,35-44,13,Medium,30k-60k
+569,SME,F,35-44,82,Medium,30k-60k
+570,Farmer,F,55+,56,Low,60k-120k
+571,Farmer,F,25-34,66,Medium,30k-60k
+572,Chama/Group,F,35-44,67,Medium,<30k
+573,Farmer,F,35-44,58,Low,<30k
+574,Micro Trader,M,35-44,24,Medium,<30k
+575,Farmer,F,18-24,77,Low,<30k
+576,Chama/Group,M,45-54,53,Low,30k-60k
+577,Farmer,M,55+,52,Medium,60k-120k
+578,Chama/Group,M,35-44,31,Medium,<30k
+579,Boda Boda,M,35-44,1,Low,<30k
+580,Boda Boda,F,18-24,53,High,<30k
+581,Salaried,M,35-44,33,Medium,30k-60k
+582,Farmer,F,25-34,63,Medium,30k-60k
+583,Micro Trader,M,35-44,35,Low,30k-60k
+584,Micro Trader,F,18-24,93,Low,>120k
+585,Farmer,F,35-44,65,Low,>120k
+586,Chama/Group,M,25-34,44,Medium,60k-120k
+587,Chama/Group,M,35-44,68,Low,60k-120k
+588,SME,F,35-44,62,Medium,30k-60k
+589,Farmer,M,25-34,59,Low,30k-60k
+590,Farmer,F,35-44,55,Medium,30k-60k
+591,SME,M,45-54,89,Medium,60k-120k
+592,Salaried,F,35-44,31,Medium,<30k
+593,Salaried,F,18-24,42,Medium,<30k
+594,Farmer,F,35-44,25,Medium,<30k
+595,Micro Trader,F,25-34,55,Low,30k-60k
+596,Chama/Group,F,35-44,94,Medium,30k-60k
+597,Micro Trader,F,35-44,58,High,<30k
+598,Chama/Group,F,18-24,20,Medium,30k-60k
+599,Micro Trader,F,35-44,88,Low,30k-60k
+600,Boda Boda,M,45-54,76,High,60k-120k
+601,Salaried,F,45-54,42,Low,<30k
+602,Micro Trader,M,18-24,14,Low,<30k
+603,Boda Boda,M,25-34,39,Low,30k-60k
+604,Chama/Group,F,25-34,77,Low,30k-60k
+605,Boda Boda,M,25-34,55,Low,60k-120k
+606,Salaried,F,25-34,18,Low,30k-60k
+607,SME,F,18-24,16,High,60k-120k
+608,Salaried,M,25-34,92,Low,<30k
+609,Salaried,M,35-44,43,Low,30k-60k
+610,Farmer,M,25-34,66,Medium,>120k
+611,Farmer,F,35-44,35,Medium,<30k
+612,Farmer,M,18-24,9,Low,60k-120k
+613,Boda Boda,F,35-44,40,Low,<30k
+614,Farmer,F,25-34,66,Medium,30k-60k
+615,Boda Boda,F,45-54,32,Medium,<30k
+616,Salaried,M,45-54,58,Medium,30k-60k
+617,SME,F,25-34,42,Low,60k-120k
+618,Farmer,M,35-44,33,Medium,<30k
+619,Boda Boda,M,25-34,25,Medium,<30k
+620,Salaried,M,35-44,25,Medium,<30k
+621,Micro Trader,M,18-24,25,Medium,<30k
+622,Farmer,M,25-34,69,Medium,30k-60k
+623,Salaried,F,25-34,33,Medium,>120k
+624,Micro Trader,F,45-54,71,Medium,<30k
+625,Boda Boda,M,35-44,30,Medium,30k-60k
+626,Farmer,F,35-44,32,Low,30k-60k
+627,SME,F,25-34,88,Low,<30k
+628,Boda Boda,F,25-34,84,Medium,<30k
+629,SME,F,25-34,39,Medium,30k-60k
+630,Boda Boda,F,55+,26,Low,30k-60k
+631,SME,F,45-54,68,Low,60k-120k
+632,Micro Trader,M,25-34,7,Medium,30k-60k
+633,SME,F,45-54,44,Medium,30k-60k
+634,SME,M,25-34,57,Low,60k-120k
+635,Boda Boda,M,18-24,65,Low,60k-120k
+636,Salaried,F,35-44,11,Low,60k-120k
+637,Salaried,M,25-34,1,High,<30k
+638,SME,M,25-34,27,Medium,>120k
+639,Farmer,M,35-44,12,Medium,60k-120k
+640,Boda Boda,F,25-34,49,Low,60k-120k
+641,Chama/Group,F,45-54,88,Medium,30k-60k
+642,SME,F,35-44,28,Low,>120k
+643,Micro Trader,M,45-54,44,High,30k-60k
+644,Salaried,M,35-44,21,Low,30k-60k
+645,Micro Trader,M,45-54,5,Low,30k-60k
+646,Chama/Group,M,25-34,67,Medium,30k-60k
+647,Farmer,M,35-44,25,Low,60k-120k
+648,Micro Trader,M,35-44,52,Medium,<30k
+649,SME,F,55+,65,Medium,<30k
+650,Chama/Group,M,25-34,80,Low,30k-60k
+651,Micro Trader,F,35-44,18,Low,30k-60k
+652,Salaried,F,45-54,56,Medium,30k-60k
+653,SME,M,25-34,87,Medium,60k-120k
+654,Salaried,M,45-54,46,Low,60k-120k
+655,Salaried,F,25-34,4,Low,30k-60k
+656,Salaried,M,25-34,25,Medium,<30k
+657,Micro Trader,F,35-44,76,Low,30k-60k
+658,Farmer,F,25-34,76,Medium,60k-120k
+659,SME,F,18-24,30,Medium,30k-60k
+660,Micro Trader,M,18-24,19,Low,60k-120k
+661,Chama/Group,M,25-34,28,Medium,>120k
+662,Farmer,F,45-54,24,Low,30k-60k
+663,Micro Trader,F,45-54,71,Low,30k-60k
+664,SME,F,35-44,80,Medium,30k-60k
+665,Boda Boda,F,25-34,5,High,30k-60k
+666,SME,M,35-44,71,Medium,<30k
+667,SME,M,45-54,72,Low,<30k
+668,Chama/Group,M,45-54,59,Medium,<30k
+669,Micro Trader,F,25-34,83,Low,30k-60k
+670,Farmer,M,25-34,4,Low,<30k
+671,Micro Trader,F,55+,67,Low,30k-60k
+672,Farmer,F,45-54,13,Low,30k-60k
+673,SME,M,18-24,86,Low,30k-60k
+674,SME,M,45-54,48,High,60k-120k
+675,SME,M,18-24,9,Low,30k-60k
+676,Salaried,M,18-24,71,Medium,<30k
+677,Boda Boda,M,45-54,72,Medium,>120k
+678,SME,M,35-44,45,Low,60k-120k
+679,Micro Trader,F,25-34,30,Low,30k-60k
+680,Boda Boda,F,55+,2,Low,60k-120k
+681,Boda Boda,F,45-54,87,Low,<30k
+682,Micro Trader,F,18-24,18,Medium,60k-120k
+683,Micro Trader,F,35-44,81,High,<30k
+684,Chama/Group,F,45-54,56,Medium,30k-60k
+685,Farmer,M,35-44,66,Low,<30k
+686,Boda Boda,M,55+,66,Low,60k-120k
+687,Chama/Group,M,35-44,82,Low,<30k
+688,Boda Boda,F,25-34,4,High,<30k
+689,Salaried,M,25-34,95,Low,<30k
+690,Micro Trader,F,45-54,5,Low,30k-60k
+691,Salaried,F,55+,95,Medium,<30k
+692,Farmer,F,18-24,25,Medium,30k-60k
+693,Chama/Group,F,25-34,81,Low,<30k
+694,Micro Trader,F,45-54,8,Medium,60k-120k
+695,Micro Trader,M,18-24,44,Low,<30k
+696,Salaried,M,18-24,52,Low,60k-120k
+697,Chama/Group,M,45-54,91,Low,<30k
+698,Salaried,F,45-54,12,Low,<30k
+699,Salaried,M,45-54,4,High,<30k
+700,SME,M,35-44,62,Low,<30k
+701,Salaried,F,25-34,5,Medium,30k-60k
+702,Micro Trader,M,55+,74,Low,<30k
+703,Micro Trader,M,25-34,4,Medium,60k-120k
+704,SME,F,25-34,93,High,30k-60k
+705,Salaried,F,45-54,51,Low,<30k
+706,Salaried,M,35-44,91,High,30k-60k
+707,SME,F,45-54,13,Medium,<30k
+708,Salaried,F,25-34,26,Medium,<30k
+709,Farmer,F,55+,44,Low,<30k
+710,Salaried,M,35-44,3,Medium,<30k
+711,SME,F,35-44,10,Low,<30k
+712,SME,F,55+,32,High,60k-120k
+713,Micro Trader,F,25-34,71,High,30k-60k
+714,Salaried,M,35-44,68,Low,60k-120k
+715,Salaried,M,35-44,9,High,<30k
+716,Boda Boda,M,45-54,6,Medium,60k-120k
+717,Salaried,F,45-54,63,Medium,30k-60k
+718,Micro Trader,F,35-44,35,Low,<30k
+719,Micro Trader,M,18-24,76,Low,60k-120k
+720,SME,F,25-34,29,Low,<30k
+721,Micro Trader,M,55+,35,Low,30k-60k
+722,Boda Boda,M,55+,21,High,60k-120k
+723,Boda Boda,F,55+,26,Low,30k-60k
+724,SME,M,18-24,68,Medium,30k-60k
+725,SME,M,25-34,45,Medium,30k-60k
+726,SME,F,45-54,63,Medium,<30k
+727,Micro Trader,M,45-54,8,Low,>120k
+728,Farmer,F,18-24,51,Medium,<30k
+729,SME,M,35-44,44,Medium,<30k
+730,SME,F,25-34,87,Medium,<30k
+731,Chama/Group,F,35-44,41,Low,60k-120k
+732,Salaried,M,25-34,10,Medium,60k-120k
+733,Micro Trader,F,18-24,67,Low,30k-60k
+734,Farmer,F,18-24,15,Medium,>120k
+735,Salaried,M,55+,87,Low,<30k
+736,Salaried,F,45-54,37,Low,60k-120k
+737,Salaried,F,55+,75,Medium,<30k
+738,Chama/Group,F,35-44,63,Low,30k-60k
+739,Salaried,F,25-34,45,High,<30k
+740,Salaried,F,25-34,56,Medium,>120k
+741,Salaried,M,35-44,18,Low,60k-120k
+742,Salaried,M,25-34,8,Low,30k-60k
+743,Farmer,F,45-54,73,Low,<30k
+744,SME,M,45-54,92,High,<30k
+745,Micro Trader,M,45-54,82,Medium,30k-60k
+746,Micro Trader,M,25-34,29,Low,<30k
+747,Boda Boda,M,35-44,35,Low,<30k
+748,Salaried,M,25-34,35,Low,30k-60k
+749,Boda Boda,M,18-24,67,Medium,30k-60k
+750,Micro Trader,M,35-44,60,Low,60k-120k
+751,Salaried,M,35-44,76,Low,30k-60k
+752,Farmer,F,45-54,90,Medium,<30k
+753,Boda Boda,F,18-24,38,Low,30k-60k
+754,SME,M,55+,63,Low,<30k
+755,Chama/Group,F,55+,48,Medium,30k-60k
+756,Micro Trader,F,35-44,91,High,60k-120k
+757,Micro Trader,F,45-54,34,Low,<30k
+758,Chama/Group,F,25-34,18,High,<30k
+759,SME,M,45-54,36,Low,60k-120k
+760,Boda Boda,M,45-54,59,Medium,30k-60k
+761,SME,F,45-54,91,Low,30k-60k
+762,Boda Boda,F,45-54,79,Medium,30k-60k
+763,Micro Trader,F,35-44,2,Low,30k-60k
+764,Salaried,F,45-54,49,High,<30k
+765,Micro Trader,M,35-44,16,High,60k-120k
+766,SME,M,25-34,35,Low,60k-120k
+767,Salaried,M,25-34,90,Low,<30k
+768,Salaried,M,45-54,94,Medium,<30k
+769,SME,M,35-44,15,Low,30k-60k
+770,Salaried,M,35-44,14,Medium,30k-60k
+771,Salaried,M,55+,67,Medium,30k-60k
+772,Farmer,F,35-44,40,Low,30k-60k
+773,Farmer,F,25-34,42,Low,30k-60k
+774,Farmer,M,25-34,83,High,30k-60k
+775,SME,F,35-44,88,Low,<30k
+776,Boda Boda,F,45-54,86,Medium,<30k
+777,Micro Trader,M,35-44,75,Low,30k-60k
+778,Salaried,M,35-44,94,Low,60k-120k
+779,Salaried,F,45-54,69,Low,30k-60k
+780,Farmer,F,35-44,85,Low,30k-60k
+781,Salaried,F,45-54,52,Medium,60k-120k
+782,Micro Trader,M,18-24,5,Low,30k-60k
+783,Chama/Group,F,45-54,78,Medium,30k-60k
+784,Salaried,M,35-44,89,Medium,<30k
+785,Salaried,M,18-24,30,Low,30k-60k
+786,Chama/Group,M,35-44,41,Low,30k-60k
+787,Micro Trader,M,35-44,55,Medium,60k-120k
+788,Salaried,F,35-44,62,Medium,<30k
+789,Boda Boda,F,45-54,65,Medium,30k-60k
+790,Boda Boda,M,25-34,38,Low,<30k
+791,Micro Trader,F,25-34,82,Medium,>120k
+792,Farmer,F,25-34,78,Low,<30k
+793,SME,F,25-34,90,Medium,30k-60k
+794,Salaried,F,35-44,55,Low,30k-60k
+795,Micro Trader,F,45-54,8,Medium,<30k
+796,SME,M,45-54,81,Low,30k-60k
+797,Farmer,M,25-34,8,Medium,<30k
+798,Boda Boda,M,25-34,19,Low,30k-60k
+799,Salaried,M,25-34,28,Medium,>120k
+800,Micro Trader,F,35-44,18,Low,30k-60k
+801,SME,M,25-34,69,Medium,>120k
+802,Boda Boda,M,35-44,42,Low,<30k
+803,SME,F,45-54,21,Low,30k-60k
+804,Micro Trader,M,35-44,1,Medium,60k-120k
+805,Micro Trader,F,25-34,21,Low,60k-120k
+806,SME,F,25-34,66,Low,<30k
+807,Farmer,F,35-44,76,Medium,30k-60k
+808,Farmer,F,35-44,29,Medium,60k-120k
+809,Micro Trader,F,18-24,7,Medium,60k-120k
+810,Farmer,M,45-54,53,Low,30k-60k
+811,Chama/Group,M,35-44,75,Low,<30k
+812,Micro Trader,F,35-44,7,Medium,<30k
+813,Micro Trader,M,25-34,76,Low,30k-60k
+814,Salaried,F,25-34,17,Medium,30k-60k
+815,Boda Boda,M,25-34,25,Low,<30k
+816,Micro Trader,F,25-34,60,High,<30k
+817,Micro Trader,F,35-44,5,Medium,30k-60k
+818,Salaried,M,35-44,30,Low,30k-60k
+819,Boda Boda,M,45-54,14,Low,30k-60k
+820,SME,M,55+,21,Low,30k-60k
+821,Farmer,M,25-34,74,Low,<30k
+822,Salaried,M,25-34,22,Medium,60k-120k
+823,Chama/Group,F,45-54,5,Low,30k-60k
+824,Salaried,F,55+,21,Low,<30k
+825,Salaried,F,45-54,9,Low,30k-60k
+826,Boda Boda,F,18-24,60,Medium,30k-60k
+827,Chama/Group,F,25-34,93,Low,30k-60k
+828,Salaried,M,18-24,16,Low,30k-60k
+829,Micro Trader,F,45-54,70,High,30k-60k
+830,Farmer,M,35-44,35,Low,30k-60k
+831,Boda Boda,M,35-44,7,Low,<30k
+832,SME,M,35-44,66,High,<30k
+833,Micro Trader,M,25-34,20,Low,<30k
+834,Farmer,F,35-44,49,High,30k-60k
+835,Farmer,F,18-24,49,Medium,30k-60k
+836,Boda Boda,M,35-44,57,Medium,30k-60k
+837,Micro Trader,M,45-54,13,Low,<30k
+838,Salaried,F,35-44,24,Low,30k-60k
+839,Chama/Group,F,25-34,71,Low,<30k
+840,Boda Boda,M,45-54,89,Low,30k-60k
+841,Boda Boda,M,35-44,2,Low,30k-60k
+842,Salaried,F,25-34,40,Medium,<30k
+843,Salaried,F,25-34,84,Medium,<30k
+844,Farmer,M,35-44,28,Low,30k-60k
+845,Salaried,F,25-34,43,Medium,30k-60k
+846,Chama/Group,M,25-34,86,High,<30k
+847,SME,F,25-34,93,Medium,60k-120k
+848,Farmer,M,25-34,63,Medium,>120k
+849,Boda Boda,F,35-44,66,Medium,60k-120k
+850,SME,F,35-44,59,Low,<30k
+851,SME,M,25-34,27,Low,30k-60k
+852,Micro Trader,F,35-44,85,High,<30k
+853,Micro Trader,M,25-34,4,Medium,60k-120k
+854,Micro Trader,F,25-34,6,Medium,30k-60k
+855,Micro Trader,M,25-34,58,High,<30k
+856,Chama/Group,M,45-54,80,Low,<30k
+857,Micro Trader,M,55+,78,Low,60k-120k
+858,Salaried,F,35-44,65,Medium,60k-120k
+859,SME,M,18-24,36,Low,30k-60k
+860,SME,M,25-34,35,Medium,30k-60k
+861,Salaried,M,25-34,41,Medium,60k-120k
+862,Salaried,F,45-54,25,Medium,60k-120k
+863,Farmer,F,18-24,40,Low,60k-120k
+864,SME,F,55+,10,Medium,30k-60k
+865,Chama/Group,M,35-44,31,Low,30k-60k
+866,SME,M,35-44,90,Medium,60k-120k
+867,Salaried,F,45-54,68,Low,<30k
+868,Farmer,M,18-24,14,Medium,30k-60k
+869,Boda Boda,M,45-54,28,Low,<30k
+870,SME,F,25-34,25,Low,30k-60k
+871,Salaried,F,45-54,27,Low,60k-120k
+872,Salaried,M,35-44,66,Low,<30k
+873,Micro Trader,M,18-24,86,Low,30k-60k
+874,Micro Trader,F,45-54,68,Medium,<30k
+875,SME,M,18-24,47,Medium,60k-120k
+876,Salaried,M,25-34,16,Low,60k-120k
+877,Micro Trader,M,45-54,14,Medium,30k-60k
+878,Chama/Group,M,35-44,78,Medium,30k-60k
+879,Farmer,M,45-54,65,Medium,<30k
+880,Micro Trader,M,35-44,49,Low,60k-120k
+881,Salaried,F,35-44,55,Low,30k-60k
+882,SME,M,25-34,81,High,<30k
+883,SME,F,25-34,78,Low,>120k
+884,Farmer,M,55+,9,Low,<30k
+885,Boda Boda,F,25-34,38,Medium,30k-60k
+886,Chama/Group,M,35-44,5,Low,<30k
+887,Chama/Group,F,25-34,37,Medium,30k-60k
+888,Chama/Group,F,25-34,61,Low,<30k
+889,Chama/Group,F,35-44,20,Medium,<30k
+890,Salaried,M,45-54,15,High,30k-60k
+891,Salaried,M,45-54,47,High,>120k
+892,SME,F,45-54,50,High,<30k
+893,Micro Trader,M,25-34,68,Medium,30k-60k
+894,Salaried,M,35-44,2,Low,30k-60k
+895,Boda Boda,F,18-24,24,High,60k-120k
+896,Micro Trader,M,45-54,75,High,<30k
+897,Micro Trader,F,25-34,65,Low,30k-60k
+898,Salaried,F,35-44,86,Low,>120k
+899,SME,M,25-34,78,Low,<30k
+900,Salaried,F,45-54,80,Medium,30k-60k
+901,Boda Boda,M,45-54,49,Medium,60k-120k
+902,Micro Trader,M,45-54,92,Low,<30k
+903,Farmer,M,18-24,40,Low,30k-60k
+904,SME,M,55+,86,Medium,<30k
+905,SME,M,25-34,38,Low,60k-120k
+906,Micro Trader,M,25-34,43,High,60k-120k
+907,Farmer,F,25-34,66,Low,30k-60k
+908,Farmer,F,25-34,38,Low,30k-60k
+909,Salaried,M,35-44,14,Low,30k-60k
+910,Chama/Group,F,25-34,86,Medium,<30k
+911,Salaried,F,25-34,44,Medium,<30k
+912,Boda Boda,F,35-44,89,Low,<30k
+913,Salaried,M,45-54,38,Low,<30k
+914,SME,F,35-44,93,Low,30k-60k
+915,Boda Boda,F,35-44,58,Low,<30k
+916,Salaried,F,25-34,73,Medium,<30k
+917,Micro Trader,F,45-54,72,Low,30k-60k
+918,Micro Trader,M,18-24,20,Low,<30k
+919,SME,F,25-34,78,Low,<30k
+920,Farmer,M,18-24,90,Low,<30k
+921,Boda Boda,M,35-44,63,Low,<30k
+922,Boda Boda,F,25-34,90,Low,30k-60k
+923,SME,M,35-44,81,Low,60k-120k
+924,Micro Trader,M,25-34,64,Low,60k-120k
+925,SME,M,35-44,46,Low,60k-120k
+926,SME,F,35-44,82,High,30k-60k
+927,Salaried,F,18-24,18,Low,60k-120k
+928,Chama/Group,M,25-34,54,Low,30k-60k
+929,Boda Boda,M,35-44,78,Low,30k-60k
+930,Farmer,M,35-44,90,Medium,30k-60k
+931,Micro Trader,M,18-24,26,High,<30k
+932,Micro Trader,F,35-44,9,Medium,<30k
+933,Micro Trader,M,25-34,32,Medium,<30k
+934,Micro Trader,F,18-24,83,Medium,60k-120k
+935,Micro Trader,M,25-34,50,Low,<30k
+936,Salaried,F,35-44,6,Medium,30k-60k
+937,Salaried,F,25-34,12,Medium,60k-120k
+938,Chama/Group,M,35-44,33,Low,30k-60k
+939,Micro Trader,M,25-34,33,Low,<30k
+940,Chama/Group,M,45-54,13,Low,30k-60k
+941,Salaried,F,25-34,47,Low,<30k
+942,Micro Trader,F,35-44,46,Medium,>120k
+943,Salaried,M,45-54,19,Low,30k-60k
+944,SME,F,25-34,23,Medium,30k-60k
+945,Salaried,F,18-24,64,High,30k-60k
+946,Salaried,M,35-44,91,Low,30k-60k
+947,Chama/Group,F,55+,95,Low,30k-60k
+948,SME,M,55+,54,Medium,<30k
+949,Micro Trader,F,25-34,4,Medium,<30k
+950,Micro Trader,M,45-54,86,Low,<30k
+951,Micro Trader,M,25-34,91,Low,30k-60k
+952,Micro Trader,M,25-34,27,Medium,60k-120k
+953,Salaried,M,35-44,39,High,30k-60k
+954,Chama/Group,F,35-44,3,Low,30k-60k
+955,Boda Boda,M,35-44,77,Low,60k-120k
+956,Farmer,M,45-54,74,High,<30k
+957,Micro Trader,M,25-34,2,Low,<30k
+958,Salaried,M,35-44,67,Low,60k-120k
+959,Chama/Group,M,25-34,40,Medium,60k-120k
+960,SME,M,18-24,52,Low,30k-60k
+961,Salaried,M,25-34,21,Low,<30k
+962,SME,F,55+,78,Medium,>120k
+963,Boda Boda,M,35-44,39,Medium,60k-120k
+964,Farmer,M,25-34,80,Low,30k-60k
+965,Farmer,F,35-44,15,Low,<30k
+966,Boda Boda,M,55+,56,Medium,30k-60k
+967,Salaried,M,55+,30,Medium,60k-120k
+968,Chama/Group,F,35-44,92,Medium,60k-120k
+969,Micro Trader,M,25-34,53,Medium,30k-60k
+970,Farmer,M,35-44,69,Medium,30k-60k
+971,Salaried,M,45-54,9,Medium,30k-60k
+972,Chama/Group,F,45-54,65,Medium,30k-60k
+973,SME,M,45-54,10,Low,30k-60k
+974,Salaried,F,35-44,35,High,<30k
+975,Micro Trader,M,25-34,22,Medium,<30k
+976,Salaried,F,35-44,1,Low,60k-120k
+977,Salaried,M,25-34,56,Low,<30k
+978,Farmer,M,18-24,23,Medium,<30k
+979,SME,M,35-44,49,Low,60k-120k
+980,Chama/Group,M,35-44,73,Medium,30k-60k
+981,SME,M,45-54,17,Low,<30k
+982,Farmer,M,45-54,68,Low,<30k
+983,Micro Trader,F,45-54,29,Low,60k-120k
+984,Farmer,M,45-54,32,Medium,30k-60k
+985,Micro Trader,M,35-44,55,Low,30k-60k
+986,Micro Trader,M,18-24,60,Medium,30k-60k
+987,Chama/Group,M,35-44,63,Low,<30k
+988,SME,M,25-34,19,Low,30k-60k
+989,Salaried,M,18-24,56,Low,<30k
+990,Farmer,M,25-34,26,Low,30k-60k
+991,Boda Boda,F,45-54,27,Medium,<30k
+992,Salaried,M,45-54,91,Medium,<30k
+993,Micro Trader,M,55+,10,Low,<30k
+994,Boda Boda,M,55+,40,Low,60k-120k
+995,Farmer,M,45-54,42,Medium,<30k
+996,Chama/Group,F,25-34,24,Medium,<30k
+997,Micro Trader,F,45-54,75,Low,<30k
+998,Farmer,M,45-54,47,Medium,30k-60k
+999,SME,F,45-54,69,Low,30k-60k
+1000,Chama/Group,F,25-34,37,Low,60k-120k
+1001,SME,F,25-34,86,Medium,30k-60k
+1002,Farmer,M,55+,70,Medium,30k-60k
+1003,Micro Trader,M,25-34,32,Medium,30k-60k
+1004,Micro Trader,F,25-34,92,Low,<30k
+1005,Farmer,F,35-44,83,Low,>120k
+1006,Micro Trader,F,25-34,57,Medium,>120k
+1007,Chama/Group,F,18-24,2,Low,<30k
+1008,Micro Trader,M,55+,57,Low,30k-60k
+1009,Farmer,M,45-54,66,Medium,<30k
+1010,SME,F,55+,35,Low,30k-60k
+1011,Micro Trader,M,25-34,14,Low,60k-120k
+1012,Micro Trader,F,25-34,54,Low,60k-120k
+1013,Salaried,F,25-34,77,High,<30k
+1014,Salaried,M,35-44,31,Low,30k-60k
+1015,Farmer,M,18-24,44,Low,30k-60k
+1016,Farmer,M,45-54,1,Low,<30k
+1017,Farmer,F,55+,67,Low,30k-60k
+1018,Salaried,F,35-44,83,Low,30k-60k
+1019,SME,F,25-34,74,Medium,60k-120k
+1020,Salaried,M,25-34,41,Low,>120k
+1021,Farmer,M,18-24,5,Low,<30k
+1022,Boda Boda,F,25-34,47,Low,<30k
+1023,SME,M,35-44,90,Low,<30k
+1024,Farmer,M,25-34,8,Low,<30k
+1025,Salaried,M,35-44,21,Medium,30k-60k
+1026,SME,F,45-54,80,Medium,60k-120k
+1027,Salaried,M,25-34,54,Medium,30k-60k
+1028,SME,F,18-24,17,Low,30k-60k
+1029,Farmer,M,18-24,3,Medium,30k-60k
+1030,Chama/Group,M,25-34,40,Medium,<30k
+1031,Salaried,M,35-44,57,Low,60k-120k
+1032,Micro Trader,M,45-54,80,Low,30k-60k
+1033,Farmer,M,45-54,84,Medium,30k-60k
+1034,Chama/Group,M,35-44,44,Low,60k-120k
+1035,Micro Trader,M,25-34,41,Low,30k-60k
+1036,SME,M,25-34,89,Medium,<30k
+1037,Farmer,F,25-34,74,Low,30k-60k
+1038,SME,M,25-34,20,High,30k-60k
+1039,Chama/Group,M,45-54,65,Low,30k-60k
+1040,SME,M,35-44,68,Low,60k-120k
+1041,Farmer,M,25-34,23,Low,30k-60k
+1042,Salaried,M,25-34,93,Low,30k-60k
+1043,Micro Trader,F,25-34,29,Medium,60k-120k
+1044,Boda Boda,M,55+,53,Medium,30k-60k
+1045,Micro Trader,F,18-24,47,High,30k-60k
+1046,Micro Trader,F,18-24,66,Low,<30k
+1047,Chama/Group,F,25-34,86,Low,30k-60k
+1048,Boda Boda,F,45-54,38,Low,30k-60k
+1049,SME,F,35-44,37,Low,<30k
+1050,Micro Trader,M,35-44,72,High,30k-60k
+1051,Micro Trader,F,25-34,91,Low,<30k
+1052,Farmer,M,18-24,87,Low,<30k
+1053,SME,F,45-54,72,Low,30k-60k
+1054,SME,M,25-34,67,Medium,<30k
+1055,Chama/Group,M,18-24,74,Low,30k-60k
+1056,Chama/Group,F,35-44,89,Medium,30k-60k
+1057,Boda Boda,M,18-24,2,Medium,<30k
+1058,Chama/Group,M,18-24,56,Medium,<30k
+1059,Farmer,M,45-54,4,Low,30k-60k
+1060,Farmer,F,35-44,55,Low,<30k
+1061,Farmer,M,25-34,38,Low,30k-60k
+1062,Micro Trader,M,25-34,29,Medium,30k-60k
+1063,Micro Trader,F,45-54,85,High,30k-60k
+1064,SME,M,18-24,68,Medium,30k-60k
+1065,Farmer,F,25-34,54,Low,60k-120k
+1066,SME,M,35-44,84,Low,<30k
+1067,SME,F,35-44,10,Medium,60k-120k
+1068,Micro Trader,F,55+,62,Low,60k-120k
+1069,Micro Trader,M,25-34,15,Medium,30k-60k
+1070,Salaried,M,18-24,23,Medium,<30k
+1071,Boda Boda,M,35-44,18,Low,<30k
+1072,Boda Boda,M,35-44,52,Low,60k-120k
+1073,Salaried,F,25-34,60,Low,<30k
+1074,Salaried,F,35-44,72,Low,60k-120k
+1075,SME,F,25-34,42,Medium,30k-60k
+1076,Boda Boda,M,45-54,90,Low,30k-60k
+1077,Boda Boda,F,45-54,36,Low,30k-60k
+1078,Salaried,M,25-34,15,Low,<30k
+1079,Farmer,F,55+,4,Low,30k-60k
+1080,Salaried,F,55+,13,Medium,60k-120k
+1081,SME,F,25-34,43,Medium,<30k
+1082,Chama/Group,F,25-34,40,Low,60k-120k
+1083,Salaried,F,35-44,82,Low,>120k
+1084,Salaried,M,18-24,12,Low,<30k
+1085,Micro Trader,F,25-34,25,Low,30k-60k
+1086,Micro Trader,M,25-34,94,Low,<30k
+1087,Chama/Group,M,55+,3,High,30k-60k
+1088,Chama/Group,M,25-34,41,Low,>120k
+1089,Salaried,M,45-54,19,Low,60k-120k
+1090,Salaried,F,25-34,51,Low,60k-120k
+1091,Boda Boda,F,25-34,93,Medium,<30k
+1092,SME,F,45-54,22,Low,30k-60k
+1093,Boda Boda,M,18-24,36,High,<30k
+1094,Farmer,M,18-24,43,Low,60k-120k
+1095,Salaried,F,25-34,76,Medium,<30k
+1096,Boda Boda,F,35-44,94,Medium,<30k
+1097,Salaried,M,25-34,10,Low,<30k
+1098,Micro Trader,M,18-24,47,Low,<30k
+1099,Micro Trader,M,25-34,72,Low,<30k
+1100,Micro Trader,M,25-34,1,Medium,<30k
+1101,Farmer,M,18-24,77,Medium,60k-120k
+1102,Farmer,M,35-44,24,Low,60k-120k
+1103,Chama/Group,F,25-34,50,Low,<30k
+1104,Chama/Group,F,25-34,93,Low,60k-120k
+1105,Micro Trader,M,35-44,61,Low,30k-60k
+1106,Salaried,M,45-54,94,Medium,60k-120k
+1107,Farmer,F,25-34,58,Low,<30k
+1108,Chama/Group,M,25-34,20,Low,30k-60k
+1109,SME,F,25-34,66,Medium,30k-60k
+1110,Micro Trader,M,55+,59,Medium,<30k
+1111,Micro Trader,F,25-34,30,Medium,30k-60k
+1112,Salaried,M,25-34,8,Low,60k-120k
+1113,Farmer,M,35-44,62,High,60k-120k
+1114,SME,F,25-34,55,Medium,30k-60k
+1115,Boda Boda,F,25-34,74,Low,30k-60k
+1116,Boda Boda,M,18-24,12,Low,60k-120k
+1117,Boda Boda,F,35-44,52,Medium,<30k
+1118,Micro Trader,F,35-44,78,Low,<30k
+1119,SME,M,35-44,85,Medium,30k-60k
+1120,Farmer,F,45-54,90,Medium,<30k
+1121,Boda Boda,F,25-34,21,Medium,30k-60k
+1122,Micro Trader,F,55+,17,Medium,<30k
+1123,Boda Boda,M,45-54,55,High,30k-60k
+1124,Salaried,F,45-54,44,Low,30k-60k
+1125,Boda Boda,F,45-54,23,Low,60k-120k
+1126,Salaried,F,25-34,10,Medium,30k-60k
+1127,Salaried,F,25-34,14,Low,30k-60k
+1128,Micro Trader,F,25-34,33,Medium,60k-120k
+1129,Salaried,F,18-24,71,Medium,30k-60k
+1130,Salaried,F,35-44,7,Low,30k-60k
+1131,Salaried,F,18-24,10,Medium,<30k
+1132,Micro Trader,M,18-24,26,Low,30k-60k
+1133,Farmer,F,55+,84,Medium,30k-60k
+1134,Salaried,F,35-44,95,Low,30k-60k
+1135,Farmer,M,35-44,42,Medium,60k-120k
+1136,Boda Boda,M,25-34,5,Medium,60k-120k
+1137,Salaried,M,35-44,2,Low,60k-120k
+1138,Salaried,F,45-54,82,Low,30k-60k
+1139,Boda Boda,F,35-44,43,Low,>120k
+1140,Boda Boda,F,35-44,8,Medium,60k-120k
+1141,Micro Trader,F,35-44,80,Low,<30k
+1142,Boda Boda,F,25-34,51,Low,30k-60k
+1143,Salaried,M,35-44,34,Medium,<30k
+1144,SME,F,55+,43,Low,<30k
+1145,Farmer,M,25-34,22,Low,<30k
+1146,SME,F,25-34,89,Medium,30k-60k
+1147,Farmer,F,25-34,75,Low,<30k
+1148,Micro Trader,M,25-34,19,Low,<30k
+1149,Farmer,M,55+,70,High,<30k
+1150,Micro Trader,F,35-44,18,Medium,30k-60k
+1151,SME,M,25-34,44,Low,60k-120k
+1152,Salaried,F,25-34,72,Medium,>120k
+1153,Salaried,F,25-34,4,Low,30k-60k
+1154,Farmer,M,18-24,69,Low,<30k
+1155,Salaried,F,35-44,22,Medium,60k-120k
+1156,Salaried,F,45-54,67,Low,<30k
+1157,Salaried,M,35-44,48,Low,>120k
+1158,Salaried,F,25-34,3,Medium,30k-60k
+1159,Boda Boda,F,45-54,73,Low,30k-60k
+1160,SME,F,35-44,25,Low,<30k
+1161,Chama/Group,M,25-34,91,Low,<30k
+1162,Salaried,M,35-44,80,Medium,30k-60k
+1163,Farmer,F,35-44,19,Medium,30k-60k
+1164,Micro Trader,F,45-54,58,High,60k-120k
+1165,SME,M,25-34,35,Low,30k-60k
+1166,Boda Boda,F,25-34,58,Medium,30k-60k
+1167,Chama/Group,M,35-44,53,Medium,<30k
+1168,Boda Boda,M,18-24,29,Low,30k-60k
+1169,Salaried,F,25-34,62,Low,<30k
+1170,SME,F,45-54,25,Medium,30k-60k
+1171,Farmer,F,25-34,87,Low,30k-60k
+1172,SME,F,35-44,90,Medium,60k-120k
+1173,Farmer,F,55+,16,Low,30k-60k
+1174,Micro Trader,M,35-44,70,Low,<30k
+1175,Micro Trader,F,35-44,89,High,60k-120k
+1176,Boda Boda,M,35-44,13,Medium,30k-60k
+1177,Farmer,M,25-34,71,Low,30k-60k
+1178,Salaried,F,25-34,90,Medium,30k-60k
+1179,Salaried,F,35-44,22,Low,60k-120k
+1180,Micro Trader,F,25-34,56,Medium,<30k
+1181,Micro Trader,M,25-34,76,Low,30k-60k
+1182,SME,F,18-24,32,Low,60k-120k
+1183,Micro Trader,M,45-54,23,Low,<30k
+1184,Farmer,M,18-24,38,Low,60k-120k
+1185,Boda Boda,M,45-54,32,Low,30k-60k
+1186,Micro Trader,M,25-34,69,Low,<30k
+1187,SME,M,35-44,36,High,<30k
+1188,SME,M,25-34,36,Low,60k-120k
+1189,Micro Trader,M,25-34,90,Low,60k-120k
+1190,SME,M,35-44,55,Low,<30k
+1191,Micro Trader,M,35-44,89,Medium,<30k
+1192,Farmer,M,25-34,68,Low,<30k
+1193,Salaried,F,25-34,85,Low,<30k
+1194,Salaried,M,35-44,19,Medium,30k-60k
+1195,Salaried,M,25-34,90,Low,<30k
+1196,Boda Boda,M,35-44,90,High,<30k
+1197,Farmer,F,25-34,4,Low,<30k
+1198,Salaried,M,35-44,34,Medium,30k-60k
+1199,Boda Boda,M,25-34,40,Low,30k-60k
+1200,Micro Trader,M,35-44,40,Medium,30k-60k
+1201,Micro Trader,F,25-34,74,Medium,30k-60k
+1202,Chama/Group,M,35-44,67,Low,>120k
+1203,Salaried,M,25-34,21,Low,30k-60k
+1204,Salaried,M,55+,58,Low,60k-120k
+1205,Micro Trader,M,35-44,93,Low,30k-60k
+1206,Salaried,M,45-54,42,High,<30k
+1207,Farmer,M,25-34,89,Medium,60k-120k
+1208,Salaried,F,25-34,62,Medium,30k-60k
+1209,Salaried,M,18-24,88,High,30k-60k
+1210,Salaried,F,25-34,86,Medium,<30k
+1211,Micro Trader,M,35-44,2,Medium,30k-60k
+1212,Salaried,M,45-54,77,Low,60k-120k
+1213,Salaried,F,35-44,18,Low,<30k
+1214,Boda Boda,F,35-44,79,Low,<30k
+1215,SME,F,25-34,77,Low,<30k
+1216,SME,M,18-24,25,Low,30k-60k
+1217,Salaried,M,45-54,7,Low,60k-120k
+1218,SME,F,25-34,40,Low,30k-60k
+1219,SME,M,18-24,29,Low,60k-120k
+1220,Micro Trader,F,55+,53,Low,30k-60k
+1221,Salaried,M,55+,8,Low,30k-60k
+1222,Boda Boda,F,35-44,5,Low,<30k
+1223,Chama/Group,F,25-34,42,Low,<30k
+1224,Salaried,F,45-54,74,Medium,30k-60k
+1225,Salaried,M,25-34,30,Medium,<30k
+1226,Salaried,F,25-34,31,Low,<30k
+1227,Micro Trader,M,25-34,16,Low,60k-120k
+1228,Salaried,F,55+,27,Low,30k-60k
+1229,Boda Boda,F,55+,29,Low,<30k
+1230,Farmer,F,35-44,25,Low,30k-60k
+1231,Boda Boda,F,25-34,33,High,30k-60k
+1232,Micro Trader,M,35-44,27,Low,60k-120k
+1233,Chama/Group,F,25-34,65,Low,30k-60k
+1234,Salaried,M,45-54,33,Medium,<30k
+1235,Micro Trader,F,25-34,72,Low,<30k
+1236,SME,F,18-24,58,Low,<30k
+1237,Chama/Group,F,35-44,61,Low,30k-60k
+1238,Micro Trader,F,35-44,56,High,30k-60k
+1239,Boda Boda,M,45-54,88,Low,30k-60k
+1240,Salaried,M,18-24,25,Medium,30k-60k
+1241,Chama/Group,F,45-54,94,Medium,<30k
+1242,Micro Trader,M,18-24,20,Low,<30k
+1243,Micro Trader,M,18-24,14,Medium,<30k
+1244,Chama/Group,M,35-44,79,Low,30k-60k
+1245,SME,M,25-34,86,Low,30k-60k
+1246,SME,M,35-44,9,Low,60k-120k
+1247,Micro Trader,M,18-24,57,High,<30k
+1248,Salaried,M,18-24,49,Low,30k-60k
+1249,SME,M,45-54,21,Low,<30k
+1250,Salaried,M,25-34,50,High,30k-60k
+1251,Salaried,F,35-44,66,Low,<30k
+1252,Boda Boda,M,45-54,55,Medium,30k-60k
+1253,Micro Trader,M,18-24,50,Medium,<30k
+1254,SME,F,45-54,85,Medium,<30k
+1255,Micro Trader,M,25-34,22,Medium,30k-60k
+1256,Micro Trader,M,25-34,60,Medium,30k-60k
+1257,Farmer,F,18-24,31,Low,30k-60k
+1258,Chama/Group,M,45-54,93,High,<30k
+1259,Chama/Group,M,35-44,24,High,>120k
+1260,SME,M,35-44,83,Medium,<30k
+1261,SME,F,55+,61,Medium,30k-60k
+1262,Micro Trader,F,25-34,21,Low,60k-120k
+1263,Micro Trader,M,45-54,73,Low,30k-60k
+1264,Micro Trader,F,35-44,23,Low,<30k
+1265,Farmer,F,55+,25,Low,30k-60k
+1266,Micro Trader,F,55+,33,Medium,<30k
+1267,SME,F,55+,65,Medium,30k-60k
+1268,SME,M,25-34,38,Low,30k-60k
+1269,SME,M,45-54,55,Low,60k-120k
+1270,Salaried,M,45-54,53,Medium,60k-120k
+1271,Salaried,M,35-44,19,Low,<30k
+1272,Farmer,F,25-34,23,High,<30k
+1273,SME,F,55+,30,Medium,30k-60k
+1274,Salaried,F,25-34,22,Low,30k-60k
+1275,Micro Trader,F,35-44,88,Low,30k-60k
+1276,Farmer,F,35-44,37,Medium,30k-60k
+1277,SME,F,25-34,39,Low,30k-60k
+1278,Boda Boda,F,45-54,64,Medium,60k-120k
+1279,Chama/Group,F,18-24,75,Low,30k-60k
+1280,Micro Trader,M,35-44,66,Low,<30k
+1281,Farmer,M,45-54,53,Low,<30k
+1282,Salaried,M,25-34,93,Medium,30k-60k
+1283,Chama/Group,M,35-44,86,High,<30k
+1284,SME,M,25-34,20,Medium,<30k
+1285,Chama/Group,F,45-54,16,Low,<30k
+1286,Micro Trader,M,55+,38,Medium,30k-60k
+1287,Salaried,F,25-34,80,Low,60k-120k
+1288,Salaried,F,35-44,92,Medium,30k-60k
+1289,Farmer,F,35-44,67,High,<30k
+1290,Micro Trader,F,35-44,66,Low,30k-60k
+1291,Salaried,F,35-44,23,High,30k-60k
+1292,Farmer,M,35-44,57,Low,>120k
+1293,Boda Boda,M,35-44,18,Low,30k-60k
+1294,Micro Trader,M,25-34,52,Low,30k-60k
+1295,Micro Trader,M,25-34,19,High,60k-120k
+1296,Salaried,M,45-54,8,Low,30k-60k
+1297,Boda Boda,F,25-34,92,Medium,<30k
+1298,SME,M,35-44,85,Low,30k-60k
+1299,Boda Boda,M,25-34,66,Medium,30k-60k
+1300,SME,F,45-54,60,Medium,30k-60k
+1301,Micro Trader,F,35-44,23,Low,>120k
+1302,SME,M,25-34,55,Medium,<30k
+1303,Salaried,M,25-34,72,Medium,30k-60k
+1304,Farmer,F,25-34,52,Low,<30k
+1305,Micro Trader,M,55+,27,Low,<30k
+1306,Micro Trader,F,35-44,38,Low,30k-60k
+1307,Chama/Group,F,35-44,80,High,60k-120k
+1308,Chama/Group,F,45-54,25,Medium,30k-60k
+1309,Boda Boda,F,25-34,92,Medium,<30k
+1310,Salaried,M,25-34,72,Medium,<30k
+1311,Micro Trader,F,25-34,85,Medium,30k-60k
+1312,Boda Boda,M,25-34,49,Low,30k-60k
+1313,SME,F,35-44,22,Low,60k-120k
+1314,Salaried,M,45-54,4,Medium,30k-60k
+1315,Boda Boda,M,55+,51,Low,60k-120k
+1316,Micro Trader,M,45-54,38,Low,60k-120k
+1317,Micro Trader,M,35-44,11,Medium,30k-60k
+1318,Chama/Group,M,25-34,89,Medium,30k-60k
+1319,Micro Trader,M,35-44,93,Medium,30k-60k
+1320,Micro Trader,M,55+,36,Low,>120k
+1321,SME,M,45-54,64,High,30k-60k
+1322,Micro Trader,F,35-44,40,Low,30k-60k
+1323,Salaried,F,35-44,48,Low,30k-60k
+1324,Boda Boda,F,45-54,60,High,30k-60k
+1325,Boda Boda,F,55+,40,Medium,60k-120k
+1326,SME,F,45-54,77,High,60k-120k
+1327,SME,F,25-34,18,Medium,<30k
+1328,Boda Boda,M,25-34,64,Medium,<30k
+1329,Salaried,F,35-44,94,Low,60k-120k
+1330,Micro Trader,M,25-34,81,Low,30k-60k
+1331,Micro Trader,F,55+,5,High,60k-120k
+1332,Farmer,M,35-44,11,Medium,<30k
+1333,Salaried,F,35-44,60,Low,60k-120k
+1334,Farmer,F,25-34,88,Low,30k-60k
+1335,SME,F,35-44,81,Low,<30k
+1336,Micro Trader,M,35-44,86,Low,<30k
+1337,Salaried,F,25-34,15,Medium,30k-60k
+1338,Micro Trader,M,45-54,50,Low,<30k
+1339,Micro Trader,F,25-34,69,Low,60k-120k
+1340,Salaried,M,25-34,60,High,30k-60k
+1341,Salaried,F,25-34,74,Low,30k-60k
+1342,Salaried,M,35-44,21,Low,<30k
+1343,SME,F,35-44,44,Low,>120k
+1344,Salaried,F,45-54,43,Low,30k-60k
+1345,Chama/Group,F,18-24,90,Low,60k-120k
+1346,Micro Trader,F,55+,20,Low,60k-120k
+1347,Boda Boda,F,35-44,32,Low,30k-60k
+1348,Chama/Group,M,25-34,3,Low,60k-120k
+1349,Salaried,F,25-34,15,Low,30k-60k
+1350,Farmer,F,25-34,94,Low,30k-60k
+1351,Boda Boda,M,45-54,81,High,<30k
+1352,Farmer,F,25-34,25,Low,<30k
+1353,Micro Trader,F,35-44,67,Low,30k-60k
+1354,Micro Trader,M,35-44,57,Medium,<30k
+1355,Salaried,M,45-54,87,Low,30k-60k
+1356,Micro Trader,M,35-44,29,Low,>120k
+1357,Chama/Group,F,45-54,95,Medium,30k-60k
+1358,Chama/Group,M,25-34,36,Medium,<30k
+1359,Salaried,F,45-54,69,Low,30k-60k
+1360,Farmer,M,25-34,38,Medium,<30k
+1361,SME,M,25-34,64,Medium,60k-120k
+1362,Chama/Group,M,55+,32,Low,30k-60k
+1363,Salaried,F,25-34,81,Low,30k-60k
+1364,Chama/Group,F,25-34,61,Low,30k-60k
+1365,Boda Boda,M,35-44,28,Medium,30k-60k
+1366,Salaried,M,25-34,92,Low,<30k
+1367,Salaried,M,25-34,68,Low,<30k
+1368,Boda Boda,M,35-44,41,Low,30k-60k
+1369,Salaried,M,45-54,13,High,60k-120k
+1370,Micro Trader,F,45-54,93,Low,<30k
+1371,Chama/Group,F,25-34,72,Low,<30k
+1372,Micro Trader,F,35-44,64,Low,<30k
+1373,SME,F,45-54,80,Medium,30k-60k
+1374,Micro Trader,F,25-34,58,Low,<30k
+1375,Salaried,M,25-34,23,Medium,60k-120k
+1376,Chama/Group,M,18-24,23,Low,<30k
+1377,SME,M,35-44,8,Low,30k-60k
+1378,Salaried,F,25-34,6,Low,<30k
+1379,SME,M,45-54,70,Low,30k-60k
+1380,Chama/Group,M,55+,81,Low,<30k
+1381,Salaried,M,25-34,16,Medium,30k-60k
+1382,Boda Boda,M,35-44,55,Low,60k-120k
+1383,Farmer,M,25-34,12,Medium,<30k
+1384,Boda Boda,M,18-24,40,Low,>120k
+1385,Chama/Group,F,45-54,76,Medium,<30k
+1386,Boda Boda,M,25-34,78,Low,30k-60k
+1387,Chama/Group,F,55+,91,Low,30k-60k
+1388,Salaried,F,35-44,30,Low,<30k
+1389,Boda Boda,F,25-34,91,High,30k-60k
+1390,Micro Trader,M,35-44,75,High,<30k
+1391,Micro Trader,M,25-34,33,Medium,30k-60k
+1392,Boda Boda,M,45-54,32,Medium,30k-60k
+1393,Chama/Group,F,35-44,11,Low,60k-120k
+1394,Farmer,F,25-34,88,Low,<30k
+1395,Micro Trader,M,35-44,20,Low,60k-120k
+1396,Micro Trader,F,35-44,26,Medium,<30k
+1397,SME,M,45-54,40,Low,30k-60k
+1398,SME,F,18-24,14,Low,<30k
+1399,SME,M,18-24,77,Medium,<30k
+1400,Salaried,M,25-34,67,Low,<30k
+1401,Salaried,M,25-34,15,Medium,30k-60k
+1402,Farmer,F,35-44,16,Low,<30k
+1403,Micro Trader,M,25-34,3,Medium,30k-60k
+1404,Chama/Group,M,25-34,91,Medium,>120k
+1405,Micro Trader,M,35-44,42,Medium,<30k
+1406,Salaried,M,25-34,63,Low,<30k
+1407,Salaried,F,55+,15,Low,<30k
+1408,Salaried,M,35-44,22,Low,<30k
+1409,Chama/Group,F,25-34,52,Low,30k-60k
+1410,Salaried,F,35-44,20,Medium,30k-60k
+1411,Micro Trader,M,25-34,59,Low,<30k
+1412,Chama/Group,M,45-54,88,Low,<30k
+1413,Chama/Group,F,35-44,29,Low,30k-60k
+1414,SME,F,35-44,58,High,<30k
+1415,Salaried,F,55+,87,Low,30k-60k
+1416,Salaried,F,45-54,85,Low,60k-120k
+1417,Salaried,M,45-54,1,Low,<30k
+1418,Salaried,F,25-34,11,Low,30k-60k
+1419,Micro Trader,M,25-34,94,High,60k-120k
+1420,Chama/Group,F,35-44,88,Low,30k-60k
+1421,Micro Trader,F,35-44,31,Medium,60k-120k
+1422,Farmer,M,35-44,50,Medium,60k-120k
+1423,Salaried,F,45-54,55,Medium,30k-60k
+1424,Boda Boda,F,25-34,64,Medium,30k-60k
+1425,Micro Trader,M,25-34,72,Medium,30k-60k
+1426,Boda Boda,M,35-44,36,Low,30k-60k
+1427,Chama/Group,M,25-34,85,Low,30k-60k
+1428,SME,F,35-44,6,Medium,30k-60k
+1429,Salaried,M,45-54,4,Medium,60k-120k
+1430,SME,M,35-44,92,Low,<30k
+1431,Micro Trader,M,45-54,17,Low,<30k
+1432,Chama/Group,F,35-44,95,Low,<30k
+1433,SME,F,35-44,28,Low,<30k
+1434,Farmer,F,25-34,35,Low,30k-60k
+1435,Micro Trader,F,45-54,3,Low,<30k
+1436,Salaried,M,35-44,90,Low,30k-60k
+1437,SME,F,25-34,35,Medium,30k-60k
+1438,Farmer,F,35-44,16,Medium,<30k
+1439,Farmer,F,45-54,46,Medium,<30k
+1440,Micro Trader,M,25-34,15,Medium,30k-60k
+1441,SME,F,45-54,76,Low,30k-60k
+1442,Farmer,F,55+,7,Low,30k-60k
+1443,Salaried,F,45-54,48,Medium,<30k
+1444,Chama/Group,M,25-34,38,Medium,<30k
+1445,Salaried,F,35-44,4,Medium,<30k
+1446,Salaried,M,55+,5,Medium,<30k
+1447,Micro Trader,F,35-44,50,Medium,>120k
+1448,Micro Trader,F,25-34,38,Medium,<30k
+1449,Micro Trader,F,18-24,13,Medium,<30k
+1450,Micro Trader,F,45-54,14,Medium,60k-120k
+1451,Chama/Group,F,25-34,77,Low,30k-60k
+1452,Micro Trader,M,25-34,70,Low,30k-60k
+1453,Micro Trader,M,25-34,58,Low,30k-60k
+1454,Micro Trader,F,45-54,80,Low,60k-120k
+1455,Salaried,F,35-44,7,Medium,<30k
+1456,Micro Trader,M,45-54,66,Low,<30k
+1457,SME,F,45-54,72,Low,60k-120k
+1458,Farmer,F,55+,20,Medium,60k-120k
+1459,Salaried,F,45-54,51,Low,>120k
+1460,Chama/Group,F,25-34,73,Medium,<30k
+1461,Micro Trader,F,35-44,58,Low,60k-120k
+1462,Boda Boda,M,18-24,24,Low,<30k
+1463,Micro Trader,M,55+,64,Low,30k-60k
+1464,Salaried,M,25-34,73,Low,60k-120k
+1465,Boda Boda,F,35-44,1,Low,<30k
+1466,Farmer,F,45-54,54,Low,<30k
+1467,Boda Boda,F,25-34,48,Low,30k-60k
+1468,Micro Trader,F,45-54,35,Low,60k-120k
+1469,Farmer,F,18-24,5,Medium,<30k
+1470,Boda Boda,F,35-44,8,Low,60k-120k
+1471,Farmer,F,35-44,72,Low,<30k
+1472,SME,F,25-34,79,Low,30k-60k
+1473,Farmer,F,35-44,40,High,<30k
+1474,Farmer,M,55+,90,Medium,60k-120k
+1475,Chama/Group,F,25-34,89,High,<30k
+1476,SME,M,35-44,64,High,30k-60k
+1477,Micro Trader,F,45-54,56,Low,<30k
+1478,Boda Boda,M,45-54,92,Medium,60k-120k
+1479,Micro Trader,F,18-24,58,Low,60k-120k
+1480,Farmer,M,55+,89,Medium,<30k
+1481,Micro Trader,F,18-24,94,Low,<30k
+1482,Salaried,F,35-44,19,Low,30k-60k
+1483,Farmer,M,35-44,63,High,30k-60k
+1484,Salaried,F,45-54,70,Medium,60k-120k
+1485,Salaried,F,25-34,78,High,30k-60k
+1486,Farmer,M,25-34,34,Low,30k-60k
+1487,Farmer,F,45-54,82,Low,30k-60k
+1488,Boda Boda,M,25-34,47,Low,30k-60k
+1489,SME,M,35-44,37,Low,<30k
+1490,Salaried,F,45-54,15,Low,<30k
+1491,Chama/Group,F,35-44,31,Low,<30k
+1492,Salaried,F,25-34,93,Medium,30k-60k
+1493,Salaried,M,25-34,69,Low,<30k
+1494,SME,F,55+,69,Medium,30k-60k
+1495,Micro Trader,F,35-44,86,Medium,<30k
+1496,Boda Boda,F,18-24,26,Medium,30k-60k
+1497,Farmer,M,25-34,63,Low,<30k
+1498,Farmer,M,25-34,36,Low,30k-60k
+1499,Salaried,M,55+,81,Low,<30k
+1500,SME,M,25-34,41,Medium,<30k
+1501,Micro Trader,M,18-24,82,Low,<30k
+1502,Salaried,M,35-44,72,Low,30k-60k
+1503,SME,M,18-24,74,High,60k-120k
+1504,SME,M,25-34,88,Medium,<30k
+1505,Salaried,F,55+,76,Medium,30k-60k
+1506,Micro Trader,M,35-44,31,Low,30k-60k
+1507,Farmer,M,18-24,50,High,30k-60k
+1508,Salaried,F,35-44,45,Low,30k-60k
+1509,Micro Trader,F,25-34,7,Low,<30k
+1510,Boda Boda,F,25-34,57,Medium,30k-60k
+1511,Farmer,M,35-44,42,Medium,60k-120k
+1512,Boda Boda,F,35-44,38,Low,60k-120k
+1513,Micro Trader,M,45-54,11,Low,<30k
+1514,Boda Boda,F,45-54,48,Low,30k-60k
+1515,SME,M,25-34,56,Medium,<30k
+1516,SME,F,55+,11,Medium,30k-60k
+1517,Salaried,M,35-44,61,Low,<30k
+1518,Micro Trader,M,25-34,16,Low,<30k
+1519,SME,F,45-54,14,Medium,30k-60k
+1520,SME,F,18-24,39,Medium,60k-120k
+1521,Farmer,F,35-44,37,Low,<30k
+1522,SME,F,45-54,87,Medium,30k-60k
+1523,SME,M,25-34,7,High,30k-60k
+1524,Salaried,M,45-54,34,Low,60k-120k
+1525,Micro Trader,M,25-34,70,Medium,30k-60k
+1526,SME,M,45-54,24,Medium,<30k
+1527,SME,F,18-24,94,Low,<30k
+1528,SME,M,25-34,71,Medium,30k-60k
+1529,Farmer,M,25-34,90,Medium,<30k
+1530,Chama/Group,F,45-54,91,Low,60k-120k
+1531,Micro Trader,M,25-34,11,Low,60k-120k
+1532,Farmer,F,45-54,44,Medium,60k-120k
+1533,Boda Boda,M,25-34,71,Low,<30k
+1534,Chama/Group,M,35-44,1,Low,30k-60k
+1535,Micro Trader,M,25-34,43,Low,30k-60k
+1536,Boda Boda,F,25-34,66,Medium,<30k
+1537,Chama/Group,M,55+,76,High,<30k
+1538,Boda Boda,F,25-34,40,Medium,<30k
+1539,Micro Trader,M,35-44,82,Medium,30k-60k
+1540,Salaried,F,35-44,64,Low,>120k
+1541,Salaried,M,35-44,5,Low,60k-120k
+1542,Micro Trader,M,35-44,27,High,<30k
+1543,Micro Trader,F,45-54,90,Low,30k-60k
+1544,Micro Trader,F,35-44,1,Medium,<30k
+1545,Micro Trader,M,35-44,11,Low,<30k
+1546,Micro Trader,F,35-44,33,Low,<30k
+1547,Boda Boda,F,35-44,95,Medium,30k-60k
+1548,Salaried,F,25-34,67,Low,30k-60k
+1549,SME,F,35-44,15,Low,60k-120k
+1550,Boda Boda,M,35-44,38,Low,60k-120k
+1551,Boda Boda,M,45-54,90,Low,<30k
+1552,Chama/Group,F,55+,21,Low,30k-60k
+1553,Boda Boda,F,55+,55,Medium,<30k
+1554,Boda Boda,F,45-54,45,Low,30k-60k
+1555,SME,F,35-44,73,Medium,30k-60k
+1556,Micro Trader,M,45-54,72,Medium,<30k
+1557,SME,F,25-34,80,Low,<30k
+1558,Micro Trader,M,35-44,12,Low,<30k
+1559,Chama/Group,M,25-34,44,High,<30k
+1560,SME,M,18-24,66,Medium,60k-120k
+1561,Micro Trader,M,55+,40,High,<30k
+1562,SME,F,45-54,64,Low,30k-60k
+1563,Salaried,F,35-44,61,Medium,>120k
+1564,Salaried,F,25-34,36,Medium,30k-60k
+1565,Salaried,M,35-44,10,High,30k-60k
+1566,Chama/Group,M,25-34,93,Low,60k-120k
+1567,Micro Trader,F,45-54,79,High,<30k
+1568,Boda Boda,F,55+,85,Low,<30k
+1569,Farmer,F,25-34,29,Medium,30k-60k
+1570,Salaried,M,25-34,31,Low,30k-60k
+1571,Salaried,M,25-34,31,Medium,60k-120k
+1572,Boda Boda,M,18-24,3,Low,<30k
+1573,SME,M,25-34,17,Medium,30k-60k
+1574,Chama/Group,F,18-24,30,Low,30k-60k
+1575,Salaried,M,25-34,94,Low,>120k
+1576,Farmer,M,25-34,20,Medium,<30k
+1577,Boda Boda,F,25-34,49,Medium,<30k
+1578,SME,M,45-54,52,Low,60k-120k
+1579,SME,F,25-34,35,Medium,30k-60k
+1580,Chama/Group,M,45-54,88,Low,<30k
+1581,SME,M,25-34,9,Medium,<30k
+1582,Micro Trader,M,25-34,83,Medium,60k-120k
+1583,Micro Trader,M,18-24,71,Medium,30k-60k
+1584,SME,F,35-44,30,Medium,30k-60k
+1585,Farmer,M,25-34,73,Low,60k-120k
+1586,Farmer,M,35-44,41,Low,<30k
+1587,SME,M,25-34,93,Medium,<30k
+1588,Boda Boda,M,55+,4,Low,30k-60k
+1589,Salaried,F,25-34,3,Low,60k-120k
+1590,Salaried,M,25-34,52,Medium,<30k
+1591,Micro Trader,M,45-54,89,Low,30k-60k
+1592,Chama/Group,F,25-34,7,Low,<30k
+1593,Salaried,M,25-34,74,High,<30k
+1594,Salaried,M,45-54,90,Low,60k-120k
+1595,Micro Trader,M,25-34,47,Low,<30k
+1596,Boda Boda,M,18-24,83,Low,<30k
+1597,Salaried,F,25-34,72,Low,60k-120k
+1598,SME,M,18-24,21,Medium,30k-60k
+1599,Farmer,F,55+,82,Medium,30k-60k
+1600,SME,M,35-44,67,Medium,60k-120k
+1601,Salaried,F,35-44,2,Low,<30k
+1602,Salaried,M,25-34,54,Low,30k-60k
+1603,Micro Trader,M,35-44,63,Low,<30k
+1604,Micro Trader,M,35-44,77,Medium,<30k
+1605,Boda Boda,M,18-24,74,Medium,30k-60k
+1606,Farmer,F,45-54,46,Low,<30k
+1607,Farmer,M,35-44,29,Medium,60k-120k
+1608,Chama/Group,M,45-54,19,Medium,60k-120k
+1609,Micro Trader,F,25-34,9,Low,60k-120k
+1610,Micro Trader,M,25-34,61,Medium,<30k
+1611,Chama/Group,M,35-44,92,Medium,<30k
+1612,SME,M,45-54,8,Low,60k-120k
+1613,Farmer,M,25-34,67,Low,30k-60k
+1614,Farmer,F,18-24,56,Medium,30k-60k
+1615,Salaried,M,45-54,17,High,60k-120k
+1616,Micro Trader,F,25-34,21,Medium,<30k
+1617,Salaried,F,25-34,28,Medium,<30k
+1618,Salaried,F,35-44,66,Medium,30k-60k
+1619,Micro Trader,F,18-24,29,Low,30k-60k
+1620,SME,F,18-24,79,Low,<30k
+1621,Boda Boda,M,18-24,36,Low,30k-60k
+1622,Chama/Group,F,55+,11,High,60k-120k
+1623,Boda Boda,F,25-34,10,Medium,30k-60k
+1624,SME,F,35-44,39,High,<30k
+1625,SME,M,55+,39,Low,30k-60k
+1626,SME,F,35-44,70,Low,60k-120k
+1627,Salaried,F,35-44,46,Medium,>120k
+1628,Chama/Group,M,35-44,16,Low,<30k
+1629,Micro Trader,F,25-34,21,Low,60k-120k
+1630,SME,M,35-44,54,Medium,60k-120k
+1631,Boda Boda,F,55+,32,Medium,30k-60k
+1632,SME,F,45-54,64,Medium,<30k
+1633,Salaried,F,25-34,88,Low,<30k
+1634,Salaried,M,25-34,34,Low,30k-60k
+1635,Farmer,F,45-54,53,Low,<30k
+1636,Boda Boda,M,25-34,80,Low,<30k
+1637,Salaried,F,45-54,20,Low,60k-120k
+1638,Chama/Group,M,25-34,49,Low,<30k
+1639,Boda Boda,F,35-44,29,High,60k-120k
+1640,Boda Boda,F,45-54,60,Low,30k-60k
+1641,SME,F,35-44,71,Low,60k-120k
+1642,Salaried,M,25-34,14,Low,<30k
+1643,Boda Boda,F,45-54,18,Medium,30k-60k
+1644,SME,M,25-34,3,Low,30k-60k
+1645,Micro Trader,M,25-34,2,Low,60k-120k
+1646,Farmer,M,35-44,5,Low,<30k
+1647,Salaried,F,25-34,68,Low,<30k
+1648,Boda Boda,M,35-44,86,Medium,60k-120k
+1649,Chama/Group,M,25-34,39,Low,<30k
+1650,Farmer,M,25-34,84,Low,30k-60k
+1651,Micro Trader,M,45-54,70,Medium,<30k
+1652,Boda Boda,M,18-24,77,Low,<30k
+1653,Micro Trader,M,35-44,71,Medium,30k-60k
+1654,Farmer,M,35-44,19,Low,30k-60k
+1655,Boda Boda,F,45-54,50,Medium,30k-60k
+1656,Farmer,M,35-44,50,Low,30k-60k
+1657,SME,M,45-54,61,Low,30k-60k
+1658,Salaried,M,25-34,76,Low,>120k
+1659,SME,M,25-34,11,High,<30k
+1660,Micro Trader,F,55+,65,Low,<30k
+1661,Micro Trader,F,45-54,80,High,<30k
+1662,Micro Trader,F,35-44,11,High,60k-120k
+1663,SME,M,35-44,40,Low,<30k
+1664,Boda Boda,F,35-44,86,Low,30k-60k
+1665,Chama/Group,M,18-24,3,Low,30k-60k
+1666,SME,M,45-54,16,High,30k-60k
+1667,Farmer,M,45-54,77,Medium,60k-120k
+1668,Farmer,F,35-44,17,Low,30k-60k
+1669,Micro Trader,M,25-34,67,Low,30k-60k
+1670,Salaried,F,25-34,86,Medium,<30k
+1671,Boda Boda,M,25-34,48,Low,30k-60k
+1672,Chama/Group,F,45-54,47,Low,<30k
+1673,Farmer,F,35-44,41,Low,60k-120k
+1674,Chama/Group,F,25-34,36,Low,30k-60k
+1675,Chama/Group,M,35-44,37,Medium,<30k
+1676,SME,F,55+,53,Medium,<30k
+1677,Farmer,M,25-34,86,Low,30k-60k
+1678,Micro Trader,M,35-44,94,Low,60k-120k
+1679,Chama/Group,M,35-44,83,Medium,<30k
+1680,Salaried,F,25-34,12,Low,<30k
+1681,Micro Trader,F,35-44,30,Low,30k-60k
+1682,Boda Boda,F,35-44,72,Low,>120k
+1683,SME,F,25-34,52,Medium,60k-120k
+1684,Boda Boda,M,25-34,32,High,<30k
+1685,SME,F,45-54,30,Medium,30k-60k
+1686,Chama/Group,F,25-34,12,Low,60k-120k
+1687,Boda Boda,F,35-44,32,Medium,60k-120k
+1688,SME,M,35-44,41,Low,30k-60k
+1689,Farmer,F,45-54,40,Medium,30k-60k
+1690,SME,M,45-54,53,Low,30k-60k
+1691,Micro Trader,F,45-54,26,Low,<30k
+1692,Farmer,M,35-44,20,Low,<30k
+1693,Boda Boda,M,35-44,85,Low,30k-60k
+1694,Salaried,F,25-34,39,Low,<30k
+1695,SME,F,25-34,25,Medium,30k-60k
+1696,Farmer,F,25-34,61,Medium,60k-120k
+1697,Micro Trader,F,25-34,52,Medium,60k-120k
+1698,Micro Trader,F,25-34,55,Low,<30k
+1699,Salaried,M,25-34,22,Low,<30k
+1700,SME,M,18-24,69,Low,30k-60k
+1701,Boda Boda,F,25-34,19,Low,30k-60k
+1702,Salaried,M,45-54,80,Low,<30k
+1703,SME,F,35-44,41,Medium,60k-120k
+1704,Chama/Group,M,45-54,39,High,<30k
+1705,Salaried,F,35-44,37,Low,<30k
+1706,Farmer,M,45-54,41,Medium,30k-60k
+1707,SME,M,45-54,64,Medium,30k-60k
+1708,Boda Boda,F,18-24,48,Low,30k-60k
+1709,Farmer,F,55+,13,Medium,30k-60k
+1710,Boda Boda,F,18-24,54,Low,60k-120k
+1711,Salaried,M,35-44,26,Low,<30k
+1712,Micro Trader,M,45-54,11,High,30k-60k
+1713,Farmer,M,25-34,80,Medium,<30k
+1714,SME,M,35-44,30,Low,30k-60k
+1715,SME,M,25-34,57,Low,30k-60k
+1716,Salaried,F,18-24,17,High,30k-60k
+1717,Chama/Group,M,18-24,33,Low,<30k
+1718,Farmer,M,18-24,37,High,60k-120k
+1719,Farmer,F,18-24,13,Medium,30k-60k
+1720,Farmer,M,35-44,93,Low,60k-120k
+1721,Micro Trader,F,35-44,30,Medium,30k-60k
+1722,Micro Trader,F,35-44,56,Medium,60k-120k
+1723,Micro Trader,M,35-44,54,Medium,30k-60k
+1724,Farmer,F,18-24,41,Low,30k-60k
+1725,Salaried,F,25-34,56,Low,30k-60k
+1726,Boda Boda,F,45-54,54,Low,60k-120k
+1727,Boda Boda,M,55+,8,Medium,30k-60k
+1728,SME,M,25-34,64,Medium,30k-60k
+1729,Micro Trader,F,18-24,11,Medium,30k-60k
+1730,Salaried,F,45-54,42,Medium,30k-60k
+1731,Chama/Group,F,45-54,35,Low,30k-60k
+1732,Chama/Group,M,25-34,43,Low,60k-120k
+1733,Chama/Group,F,25-34,7,Medium,30k-60k
+1734,SME,M,18-24,67,Low,30k-60k
+1735,Salaried,M,35-44,40,Medium,30k-60k
+1736,Salaried,F,55+,6,Low,>120k
+1737,Salaried,M,35-44,1,Low,<30k
+1738,Salaried,M,25-34,52,High,<30k
+1739,Salaried,M,35-44,64,Low,<30k
+1740,Chama/Group,F,45-54,52,Low,30k-60k
+1741,Salaried,M,35-44,69,Medium,30k-60k
+1742,Salaried,M,45-54,72,Medium,30k-60k
+1743,Boda Boda,M,25-34,83,High,<30k
+1744,Micro Trader,M,25-34,94,High,60k-120k
+1745,Farmer,F,35-44,85,Medium,30k-60k
+1746,Farmer,M,35-44,76,Low,30k-60k
+1747,Boda Boda,M,55+,41,Low,<30k
+1748,Farmer,F,35-44,48,Medium,<30k
+1749,Micro Trader,F,25-34,59,Low,<30k
+1750,Farmer,F,25-34,17,High,30k-60k
+1751,Micro Trader,M,35-44,65,Medium,30k-60k
+1752,SME,F,25-34,56,Low,<30k
+1753,Micro Trader,M,45-54,50,Low,<30k
+1754,Salaried,F,25-34,80,Medium,<30k
+1755,Boda Boda,F,25-34,66,Low,30k-60k
+1756,SME,M,35-44,89,Low,<30k
+1757,Salaried,F,18-24,93,Medium,<30k
+1758,SME,M,35-44,79,Low,<30k
+1759,Boda Boda,F,35-44,29,Low,30k-60k
+1760,SME,M,35-44,18,Medium,60k-120k
+1761,Farmer,F,35-44,29,Medium,30k-60k
+1762,Boda Boda,M,45-54,68,Low,<30k
+1763,Salaried,M,45-54,83,High,>120k
+1764,Farmer,F,25-34,84,High,>120k
+1765,SME,F,25-34,65,Low,30k-60k
+1766,Salaried,F,35-44,65,Low,<30k
+1767,Farmer,M,35-44,91,Medium,30k-60k
+1768,Chama/Group,M,35-44,66,Low,>120k
+1769,SME,F,35-44,14,Medium,60k-120k
+1770,Micro Trader,F,45-54,48,Medium,30k-60k
+1771,SME,M,25-34,35,Low,30k-60k
+1772,Micro Trader,M,35-44,61,Medium,>120k
+1773,Farmer,M,25-34,61,Low,<30k
+1774,Micro Trader,F,25-34,28,High,<30k
+1775,Farmer,M,35-44,29,Low,60k-120k
+1776,Salaried,M,35-44,9,High,<30k
+1777,Farmer,F,25-34,28,Low,30k-60k
+1778,Farmer,F,45-54,79,Medium,<30k
+1779,Farmer,F,45-54,63,High,<30k
+1780,Salaried,M,35-44,90,Low,<30k
+1781,Micro Trader,F,55+,89,Low,30k-60k
+1782,Micro Trader,M,25-34,82,Medium,30k-60k
+1783,Salaried,M,45-54,18,Medium,30k-60k
+1784,SME,M,25-34,32,Low,<30k
+1785,Micro Trader,M,25-34,6,Low,60k-120k
+1786,Farmer,F,25-34,9,Medium,30k-60k
+1787,SME,M,25-34,22,Low,>120k
+1788,Boda Boda,F,35-44,27,Medium,30k-60k
+1789,Micro Trader,M,25-34,2,Low,<30k
+1790,Farmer,M,35-44,81,Low,60k-120k
+1791,Micro Trader,M,25-34,51,Medium,60k-120k
+1792,Micro Trader,M,25-34,63,Low,<30k
+1793,Micro Trader,F,55+,63,High,30k-60k
+1794,Chama/Group,M,35-44,92,Medium,30k-60k
+1795,Micro Trader,M,55+,14,Low,<30k
+1796,Micro Trader,M,35-44,33,Low,30k-60k
+1797,Micro Trader,F,18-24,30,Low,<30k
+1798,Farmer,F,35-44,53,Medium,<30k
+1799,Salaried,M,35-44,50,Medium,60k-120k
+1800,Micro Trader,F,18-24,76,Medium,30k-60k
+1801,Micro Trader,M,45-54,54,Low,60k-120k
+1802,Chama/Group,M,35-44,23,Low,30k-60k
+1803,Micro Trader,M,45-54,54,Low,>120k
+1804,Micro Trader,F,35-44,92,Medium,30k-60k
+1805,Chama/Group,M,35-44,55,Low,30k-60k
+1806,Micro Trader,F,25-34,57,Low,<30k
+1807,Salaried,F,55+,17,Low,30k-60k
+1808,Salaried,M,25-34,1,Low,30k-60k
+1809,Salaried,F,25-34,20,Medium,30k-60k
+1810,Salaried,F,18-24,3,Medium,30k-60k
+1811,Micro Trader,F,35-44,43,High,<30k
+1812,Farmer,M,55+,84,Low,60k-120k
+1813,Farmer,M,45-54,43,Medium,60k-120k
+1814,Salaried,F,35-44,62,Low,30k-60k
+1815,Micro Trader,F,55+,82,Medium,30k-60k
+1816,Salaried,M,45-54,73,Medium,30k-60k
+1817,Chama/Group,F,25-34,62,Low,60k-120k
+1818,Salaried,M,35-44,75,Medium,30k-60k
+1819,Farmer,M,18-24,27,Low,30k-60k
+1820,SME,M,25-34,40,Low,<30k
+1821,Farmer,M,25-34,38,Low,<30k
+1822,Micro Trader,M,25-34,76,Low,60k-120k
+1823,Farmer,M,55+,39,Medium,30k-60k
+1824,SME,F,55+,90,Medium,<30k
+1825,Chama/Group,F,25-34,18,Medium,<30k
+1826,Micro Trader,M,35-44,17,Medium,30k-60k
+1827,Farmer,F,25-34,69,Medium,30k-60k
+1828,Boda Boda,M,25-34,73,Low,30k-60k
+1829,Chama/Group,M,25-34,65,Low,30k-60k
+1830,SME,M,25-34,30,Low,60k-120k
+1831,SME,F,25-34,1,High,<30k
+1832,SME,M,25-34,31,High,60k-120k
+1833,SME,M,25-34,45,Medium,<30k
+1834,Micro Trader,F,25-34,40,Low,30k-60k
+1835,Chama/Group,M,55+,88,Low,<30k
+1836,Chama/Group,M,18-24,83,Medium,<30k
+1837,Micro Trader,M,25-34,74,Low,<30k
+1838,Farmer,M,35-44,3,Medium,<30k
+1839,Boda Boda,F,25-34,13,Low,60k-120k
+1840,Chama/Group,F,35-44,42,Low,30k-60k
+1841,Salaried,M,18-24,60,Medium,60k-120k
+1842,Micro Trader,F,35-44,65,High,30k-60k
+1843,Boda Boda,F,35-44,29,Medium,30k-60k
+1844,SME,F,35-44,11,Low,<30k
+1845,Micro Trader,F,35-44,32,Low,30k-60k
+1846,Chama/Group,M,25-34,76,High,30k-60k
+1847,Chama/Group,F,25-34,94,Medium,60k-120k
+1848,Chama/Group,M,25-34,90,Low,60k-120k
+1849,Boda Boda,F,35-44,57,Medium,<30k
+1850,SME,M,18-24,9,Low,30k-60k
+1851,SME,F,25-34,92,Low,30k-60k
+1852,Micro Trader,M,35-44,15,Medium,30k-60k
+1853,Micro Trader,F,25-34,26,Medium,<30k
+1854,Micro Trader,M,18-24,93,Low,30k-60k
+1855,Farmer,F,35-44,48,Low,60k-120k
+1856,Micro Trader,F,25-34,19,High,<30k
+1857,Farmer,F,45-54,48,Medium,30k-60k
+1858,SME,M,55+,8,Medium,<30k
+1859,SME,M,55+,30,Low,60k-120k
+1860,Salaried,F,25-34,91,High,<30k
+1861,Salaried,F,25-34,29,Medium,<30k
+1862,Boda Boda,M,35-44,85,Low,<30k
+1863,Micro Trader,M,35-44,52,Low,60k-120k
+1864,SME,F,35-44,63,Medium,30k-60k
+1865,Farmer,M,25-34,67,Medium,<30k
+1866,Micro Trader,M,18-24,53,Medium,<30k
+1867,Salaried,M,25-34,4,High,60k-120k
+1868,SME,F,25-34,88,Medium,30k-60k
+1869,Salaried,F,25-34,46,Low,<30k
+1870,Farmer,F,55+,63,Low,>120k
+1871,SME,M,18-24,53,Medium,<30k
+1872,Salaried,F,35-44,63,Low,30k-60k
+1873,Salaried,M,55+,34,Low,<30k
+1874,Micro Trader,M,25-34,81,Medium,30k-60k
+1875,Salaried,M,35-44,22,Low,60k-120k
+1876,Boda Boda,F,35-44,63,Medium,30k-60k
+1877,Salaried,F,25-34,55,Low,30k-60k
+1878,Micro Trader,F,35-44,48,Low,60k-120k
+1879,Micro Trader,M,45-54,3,Low,60k-120k
+1880,Micro Trader,M,45-54,38,Medium,30k-60k
+1881,Salaried,F,45-54,5,Medium,30k-60k
+1882,Boda Boda,M,55+,48,Low,60k-120k
+1883,Boda Boda,F,25-34,66,Low,<30k
+1884,Salaried,F,45-54,50,Low,<30k
+1885,Salaried,F,35-44,72,Medium,<30k
+1886,Chama/Group,M,35-44,35,High,60k-120k
+1887,Micro Trader,F,45-54,30,Medium,<30k
+1888,Salaried,F,45-54,43,Low,<30k
+1889,Salaried,M,45-54,22,Medium,30k-60k
+1890,Farmer,M,25-34,77,Low,<30k
+1891,Farmer,F,35-44,77,Low,<30k
+1892,Micro Trader,F,25-34,40,Low,30k-60k
+1893,Chama/Group,M,35-44,76,Low,<30k
+1894,Micro Trader,F,45-54,3,Low,>120k
+1895,SME,F,45-54,15,Medium,<30k
+1896,Micro Trader,M,25-34,27,Low,60k-120k
+1897,SME,F,35-44,37,Medium,30k-60k
+1898,SME,M,25-34,23,High,<30k
+1899,Salaried,F,25-34,49,Medium,<30k
+1900,SME,F,25-34,76,Low,30k-60k
+1901,Farmer,F,55+,44,Medium,30k-60k
+1902,Salaried,F,25-34,43,Low,<30k
+1903,Micro Trader,F,55+,6,Low,>120k
+1904,Farmer,F,25-34,27,Low,30k-60k
+1905,Micro Trader,M,45-54,77,Medium,60k-120k
+1906,Farmer,M,35-44,78,Medium,<30k
+1907,Boda Boda,F,35-44,10,Medium,<30k
+1908,Farmer,M,35-44,2,Medium,30k-60k
+1909,Salaried,M,35-44,79,Low,<30k
+1910,Micro Trader,M,55+,17,Medium,<30k
+1911,Micro Trader,F,35-44,55,Medium,<30k
+1912,SME,F,18-24,79,Low,<30k
+1913,Salaried,F,25-34,75,High,60k-120k
+1914,SME,F,35-44,53,Medium,<30k
+1915,Micro Trader,F,35-44,36,Low,>120k
+1916,Micro Trader,M,35-44,74,Low,<30k
+1917,Salaried,M,35-44,66,Low,30k-60k
+1918,Boda Boda,F,25-34,80,Medium,30k-60k
+1919,Chama/Group,F,45-54,49,Low,30k-60k
+1920,Salaried,F,45-54,90,Low,60k-120k
+1921,Chama/Group,M,35-44,74,Medium,60k-120k
+1922,Salaried,M,35-44,7,Medium,<30k
+1923,Chama/Group,F,45-54,28,Medium,30k-60k
+1924,Chama/Group,M,35-44,76,Medium,60k-120k
+1925,Salaried,M,55+,12,Low,<30k
+1926,Farmer,M,25-34,68,Low,30k-60k
+1927,Chama/Group,M,35-44,33,Medium,<30k
+1928,Chama/Group,M,35-44,20,Low,30k-60k
+1929,Chama/Group,F,35-44,52,Medium,30k-60k
+1930,Micro Trader,F,25-34,89,High,30k-60k
+1931,Salaried,M,35-44,86,Medium,60k-120k
+1932,Boda Boda,F,25-34,39,Medium,30k-60k
+1933,Micro Trader,M,55+,1,Medium,60k-120k
+1934,Micro Trader,F,25-34,85,Medium,30k-60k
+1935,Micro Trader,F,25-34,86,Low,30k-60k
+1936,Micro Trader,F,35-44,58,Low,30k-60k
+1937,Salaried,M,25-34,60,Low,30k-60k
+1938,Farmer,F,18-24,51,Medium,60k-120k
+1939,Salaried,F,35-44,2,Low,<30k
+1940,Farmer,F,35-44,16,Low,60k-120k
+1941,Boda Boda,M,25-34,14,Medium,30k-60k
+1942,Micro Trader,M,35-44,87,Low,30k-60k
+1943,Micro Trader,F,35-44,5,Medium,30k-60k
+1944,SME,M,45-54,53,Low,30k-60k
+1945,Chama/Group,F,25-34,35,Low,30k-60k
+1946,Farmer,M,25-34,1,Low,30k-60k
+1947,SME,F,55+,88,Low,<30k
+1948,Salaried,M,35-44,2,High,30k-60k
+1949,Salaried,M,18-24,82,High,30k-60k
+1950,Micro Trader,M,45-54,74,Medium,30k-60k
+1951,Chama/Group,F,25-34,76,Medium,30k-60k
+1952,Farmer,M,45-54,16,Medium,<30k
+1953,Salaried,M,35-44,84,Medium,30k-60k
+1954,Boda Boda,F,55+,57,Low,30k-60k
+1955,SME,M,55+,39,Low,30k-60k
+1956,Boda Boda,M,25-34,65,Medium,30k-60k
+1957,SME,F,45-54,33,High,30k-60k
+1958,Micro Trader,M,25-34,27,Low,30k-60k
+1959,Chama/Group,F,35-44,28,Low,<30k
+1960,SME,M,35-44,55,Low,<30k
+1961,Farmer,F,18-24,58,Low,30k-60k
+1962,Chama/Group,F,18-24,23,Medium,<30k
+1963,Salaried,M,18-24,24,Low,<30k
+1964,Salaried,M,25-34,90,High,<30k
+1965,Farmer,M,25-34,49,Medium,<30k
+1966,SME,M,55+,82,Low,>120k
+1967,Salaried,F,35-44,32,Medium,<30k
+1968,Micro Trader,F,45-54,28,Medium,<30k
+1969,Farmer,F,45-54,27,Low,60k-120k
+1970,SME,F,45-54,51,Low,>120k
+1971,SME,M,25-34,75,Medium,<30k
+1972,Boda Boda,M,45-54,48,Low,60k-120k
+1973,Micro Trader,M,45-54,29,Low,<30k
+1974,Boda Boda,F,45-54,92,Low,60k-120k
+1975,Micro Trader,F,55+,55,Low,<30k
+1976,Chama/Group,M,35-44,38,Medium,30k-60k
+1977,Farmer,F,35-44,1,Low,<30k
+1978,Salaried,F,45-54,54,Medium,30k-60k
+1979,Boda Boda,F,35-44,60,Low,<30k
+1980,Micro Trader,F,45-54,89,Medium,30k-60k
+1981,Salaried,F,18-24,22,Low,30k-60k
+1982,Salaried,M,18-24,16,High,<30k
+1983,Farmer,F,35-44,95,High,60k-120k
+1984,Salaried,M,18-24,53,Low,30k-60k
+1985,SME,M,55+,3,Medium,<30k
+1986,Salaried,M,18-24,11,Low,<30k
+1987,Micro Trader,F,35-44,46,Medium,<30k
+1988,Micro Trader,F,25-34,59,Medium,<30k
+1989,Micro Trader,F,55+,24,Low,30k-60k
+1990,SME,F,25-34,35,Low,30k-60k
+1991,Salaried,F,18-24,70,Low,30k-60k
+1992,Micro Trader,M,18-24,92,Medium,30k-60k
+1993,SME,F,35-44,47,Medium,60k-120k
+1994,Farmer,F,55+,40,Low,<30k
+1995,Salaried,F,55+,35,Low,30k-60k
+1996,Salaried,M,25-34,13,Low,60k-120k
+1997,SME,M,35-44,6,Medium,<30k
+1998,Micro Trader,M,25-34,80,Low,30k-60k
+1999,SME,M,35-44,4,Low,60k-120k
+2000,Boda Boda,M,35-44,78,Medium,30k-60k
+2001,SME,M,25-34,24,Low,>120k
+2002,Micro Trader,F,35-44,67,Medium,<30k
+2003,Micro Trader,M,45-54,91,Low,30k-60k
+2004,Salaried,M,18-24,72,Low,<30k
+2005,Micro Trader,F,25-34,70,Medium,<30k
+2006,SME,M,25-34,26,Low,>120k
+2007,Micro Trader,M,25-34,57,Low,<30k
+2008,Salaried,M,25-34,61,High,>120k
+2009,Boda Boda,F,35-44,41,Medium,30k-60k
+2010,Chama/Group,M,25-34,4,Medium,60k-120k
+2011,Salaried,M,45-54,87,Low,>120k
+2012,Micro Trader,F,45-54,19,Low,30k-60k
+2013,Farmer,F,55+,93,Low,>120k
+2014,SME,F,35-44,89,High,60k-120k
+2015,Boda Boda,F,25-34,2,Medium,30k-60k
+2016,Farmer,M,18-24,71,Low,30k-60k
+2017,Chama/Group,M,25-34,61,High,<30k
+2018,Chama/Group,F,55+,22,Low,<30k
+2019,Salaried,F,55+,78,Medium,<30k
+2020,Micro Trader,M,25-34,11,Low,30k-60k
+2021,Micro Trader,F,25-34,24,Low,<30k
+2022,Salaried,M,35-44,91,High,30k-60k
+2023,SME,F,25-34,71,Medium,30k-60k
+2024,Chama/Group,F,55+,11,Low,30k-60k
+2025,Salaried,M,25-34,14,Low,60k-120k
+2026,Micro Trader,F,25-34,25,Medium,>120k
+2027,Boda Boda,M,25-34,7,Low,60k-120k
+2028,SME,F,25-34,18,Medium,30k-60k
+2029,Micro Trader,M,25-34,55,Medium,<30k
+2030,Chama/Group,M,45-54,1,Low,60k-120k
+2031,Micro Trader,M,25-34,28,Low,<30k
+2032,Salaried,F,35-44,30,Low,<30k
+2033,Salaried,M,25-34,93,High,<30k
+2034,Chama/Group,M,25-34,93,Low,30k-60k
+2035,SME,F,18-24,81,Medium,30k-60k
+2036,Micro Trader,F,25-34,33,Low,<30k
+2037,Salaried,M,18-24,51,Medium,60k-120k
+2038,Micro Trader,F,25-34,48,Low,<30k
+2039,Chama/Group,M,45-54,82,Low,<30k
+2040,Micro Trader,M,35-44,71,Medium,<30k
+2041,Chama/Group,F,55+,87,Medium,<30k
+2042,SME,M,25-34,53,Low,60k-120k
+2043,Micro Trader,M,35-44,88,Low,<30k
+2044,Boda Boda,F,35-44,71,High,<30k
+2045,Micro Trader,M,25-34,71,Low,<30k
+2046,SME,F,25-34,63,Low,60k-120k
+2047,Boda Boda,F,35-44,32,Low,>120k
+2048,SME,M,45-54,58,Low,30k-60k
+2049,Micro Trader,F,35-44,34,Medium,30k-60k
+2050,Chama/Group,M,25-34,62,Medium,60k-120k
+2051,Salaried,F,55+,25,Low,<30k
+2052,SME,M,25-34,76,Medium,<30k
+2053,Salaried,F,55+,55,Low,30k-60k
+2054,SME,M,45-54,68,Medium,<30k
+2055,Salaried,M,45-54,22,Low,30k-60k
+2056,Farmer,M,45-54,76,Low,30k-60k
+2057,Salaried,M,25-34,77,Medium,<30k
+2058,Farmer,M,35-44,14,Low,30k-60k
+2059,SME,M,45-54,34,Low,30k-60k
+2060,SME,M,45-54,65,Low,<30k
+2061,SME,M,25-34,83,Medium,60k-120k
+2062,Farmer,M,25-34,71,Low,30k-60k
+2063,Micro Trader,M,25-34,45,Medium,<30k
+2064,SME,F,35-44,29,Medium,<30k
+2065,Boda Boda,M,35-44,87,Medium,<30k
+2066,Micro Trader,M,45-54,84,Low,<30k
+2067,Salaried,F,45-54,86,Medium,<30k
+2068,Chama/Group,F,35-44,29,Low,<30k
+2069,SME,M,25-34,42,High,60k-120k
+2070,Salaried,F,35-44,24,Medium,60k-120k
+2071,Micro Trader,F,25-34,91,Low,60k-120k
+2072,Salaried,F,25-34,83,Medium,30k-60k
+2073,SME,F,18-24,17,Low,30k-60k
+2074,Farmer,M,25-34,24,Low,30k-60k
+2075,Salaried,M,25-34,53,Low,60k-120k
+2076,Boda Boda,M,35-44,40,Medium,30k-60k
+2077,Chama/Group,M,18-24,44,Medium,30k-60k
+2078,Micro Trader,M,25-34,35,Medium,60k-120k
+2079,Farmer,F,18-24,65,Low,30k-60k
+2080,Farmer,M,35-44,86,Medium,<30k
+2081,Chama/Group,F,35-44,88,Medium,<30k
+2082,SME,F,25-34,44,Medium,30k-60k
+2083,Salaried,M,25-34,79,Low,<30k
+2084,Micro Trader,M,55+,66,Low,<30k
+2085,Micro Trader,F,35-44,19,Medium,<30k
+2086,Salaried,M,35-44,76,Low,<30k
+2087,Micro Trader,F,35-44,34,Low,>120k
+2088,Salaried,F,45-54,60,Low,30k-60k
+2089,Chama/Group,F,45-54,69,Low,<30k
+2090,SME,F,25-34,90,Low,30k-60k
+2091,Salaried,M,35-44,91,Low,<30k
+2092,Salaried,F,25-34,77,Medium,30k-60k
+2093,SME,M,35-44,49,High,30k-60k
+2094,SME,F,25-34,39,Low,<30k
+2095,Salaried,M,18-24,42,Low,30k-60k
+2096,SME,M,55+,91,Medium,<30k
+2097,Salaried,M,45-54,20,Low,30k-60k
+2098,SME,F,25-34,50,High,60k-120k
+2099,SME,M,55+,65,Medium,60k-120k
+2100,SME,M,25-34,3,Low,<30k
+2101,SME,F,35-44,61,Low,30k-60k
+2102,Salaried,F,45-54,25,Low,60k-120k
+2103,Salaried,F,25-34,27,Medium,60k-120k
+2104,Salaried,F,35-44,60,Low,<30k
+2105,Farmer,F,35-44,1,Medium,30k-60k
+2106,Chama/Group,F,25-34,15,Medium,<30k
+2107,Chama/Group,F,25-34,44,Medium,<30k
+2108,Micro Trader,M,25-34,56,Medium,30k-60k
+2109,Micro Trader,F,35-44,11,Low,30k-60k
+2110,SME,F,25-34,35,Low,<30k
+2111,Farmer,M,25-34,30,Medium,60k-120k
+2112,Farmer,F,35-44,51,Low,30k-60k
+2113,Boda Boda,F,25-34,29,Low,>120k
+2114,Boda Boda,F,25-34,1,Low,60k-120k
+2115,Micro Trader,F,35-44,51,Low,60k-120k
+2116,Farmer,F,45-54,81,Medium,60k-120k
+2117,Boda Boda,F,18-24,56,Low,<30k
+2118,SME,F,45-54,35,Medium,<30k
+2119,Chama/Group,M,45-54,46,High,60k-120k
+2120,Salaried,M,25-34,14,Low,<30k
+2121,Chama/Group,F,45-54,23,Medium,30k-60k
+2122,Farmer,F,45-54,42,Low,30k-60k
+2123,Salaried,F,35-44,57,Low,<30k
+2124,Farmer,M,35-44,47,Low,<30k
+2125,Salaried,M,45-54,92,Low,30k-60k
+2126,Farmer,F,55+,61,Low,30k-60k
+2127,Boda Boda,F,35-44,3,Low,30k-60k
+2128,Micro Trader,F,45-54,50,Low,<30k
+2129,Boda Boda,M,45-54,56,Low,30k-60k
+2130,Salaried,M,45-54,5,Medium,<30k
+2131,SME,F,55+,37,Low,30k-60k
+2132,Micro Trader,M,25-34,83,Medium,<30k
+2133,Salaried,F,25-34,34,High,<30k
+2134,Micro Trader,M,35-44,44,Medium,60k-120k
+2135,SME,M,35-44,22,Medium,<30k
+2136,SME,F,35-44,8,Medium,30k-60k
+2137,Micro Trader,F,45-54,31,Medium,<30k
+2138,Boda Boda,M,55+,74,High,<30k
+2139,SME,F,25-34,94,High,<30k
+2140,Boda Boda,M,35-44,63,Low,60k-120k
+2141,Micro Trader,F,25-34,79,Medium,30k-60k
+2142,SME,M,35-44,62,Medium,<30k
+2143,Micro Trader,F,18-24,63,Low,30k-60k
+2144,Micro Trader,F,35-44,41,Low,30k-60k
+2145,SME,F,35-44,6,Medium,60k-120k
+2146,Micro Trader,F,45-54,39,Medium,>120k
+2147,Salaried,F,35-44,83,Low,30k-60k
+2148,SME,M,25-34,51,Low,30k-60k
+2149,Micro Trader,F,18-24,73,Low,<30k
+2150,Micro Trader,F,25-34,5,Medium,>120k
+2151,Boda Boda,F,55+,20,High,30k-60k
+2152,SME,F,55+,29,Medium,<30k
+2153,Chama/Group,M,25-34,35,Low,>120k
+2154,Boda Boda,M,25-34,94,Low,>120k
+2155,Chama/Group,F,25-34,44,Medium,30k-60k
+2156,Boda Boda,M,35-44,63,Medium,<30k
+2157,Salaried,M,25-34,62,Low,30k-60k
+2158,Micro Trader,M,18-24,40,Low,60k-120k
+2159,Salaried,F,25-34,92,Low,30k-60k
+2160,Boda Boda,F,25-34,22,Medium,<30k
+2161,Micro Trader,F,25-34,4,Medium,<30k
+2162,SME,M,25-34,71,Low,<30k
+2163,Chama/Group,M,35-44,63,High,<30k
+2164,Salaried,F,35-44,25,Medium,60k-120k
+2165,Micro Trader,F,25-34,83,High,<30k
+2166,Farmer,M,35-44,16,Low,30k-60k
+2167,Salaried,M,35-44,24,Low,60k-120k
+2168,Micro Trader,F,45-54,15,High,30k-60k
+2169,Boda Boda,M,55+,18,High,<30k
+2170,Salaried,F,25-34,70,High,60k-120k
+2171,Micro Trader,F,45-54,67,Medium,<30k
+2172,SME,M,35-44,62,Low,60k-120k
+2173,Farmer,M,35-44,82,Low,<30k
+2174,Salaried,M,25-34,7,Low,30k-60k
+2175,Chama/Group,F,25-34,59,High,30k-60k
+2176,Boda Boda,F,18-24,11,Low,30k-60k
+2177,Salaried,F,55+,91,Medium,30k-60k
+2178,SME,F,35-44,61,High,<30k
+2179,Micro Trader,F,25-34,73,High,30k-60k
+2180,Farmer,F,35-44,55,High,<30k
+2181,Micro Trader,F,18-24,37,Medium,60k-120k
+2182,Salaried,F,25-34,66,Low,30k-60k
+2183,Salaried,F,35-44,80,High,30k-60k
+2184,Chama/Group,M,35-44,17,Low,<30k
+2185,Micro Trader,F,45-54,83,Low,30k-60k
+2186,Boda Boda,M,35-44,70,High,30k-60k
+2187,Micro Trader,M,35-44,9,Medium,<30k
+2188,Chama/Group,M,45-54,89,Low,30k-60k
+2189,Salaried,F,18-24,18,Low,<30k
+2190,Salaried,F,35-44,58,Low,<30k
+2191,Chama/Group,M,35-44,13,High,30k-60k
+2192,Chama/Group,M,25-34,19,Medium,<30k
+2193,SME,F,25-34,62,Low,<30k
+2194,SME,F,25-34,65,Medium,30k-60k
+2195,Micro Trader,M,25-34,66,Medium,30k-60k
+2196,Micro Trader,F,35-44,33,High,<30k
+2197,Salaried,M,25-34,78,Low,<30k
+2198,Boda Boda,F,35-44,5,Medium,30k-60k
+2199,SME,F,25-34,82,Low,30k-60k
+2200,Farmer,M,18-24,29,Low,30k-60k
+2201,Salaried,F,25-34,59,Low,30k-60k
+2202,Salaried,M,25-34,87,Low,60k-120k
+2203,Farmer,F,55+,25,Medium,60k-120k
+2204,SME,F,25-34,40,Low,<30k
+2205,Farmer,M,25-34,79,Low,<30k
+2206,Salaried,F,25-34,83,Low,<30k
+2207,Chama/Group,F,25-34,23,Low,<30k
+2208,Farmer,M,35-44,49,Medium,30k-60k
+2209,Boda Boda,M,45-54,32,Low,60k-120k
+2210,Salaried,M,25-34,50,Low,<30k
+2211,SME,F,35-44,37,High,<30k
+2212,SME,F,35-44,1,Low,30k-60k
+2213,Micro Trader,M,45-54,88,Medium,>120k
+2214,SME,F,35-44,61,Medium,<30k
+2215,Salaried,F,25-34,44,Medium,60k-120k
+2216,SME,M,35-44,11,Medium,60k-120k
+2217,SME,F,45-54,7,Low,30k-60k
+2218,SME,F,35-44,46,Medium,30k-60k
+2219,Salaried,F,55+,62,Medium,30k-60k
+2220,SME,F,45-54,25,Low,<30k
+2221,Farmer,M,25-34,71,Medium,30k-60k
+2222,SME,M,45-54,38,Low,<30k
+2223,SME,F,35-44,2,High,30k-60k
+2224,Micro Trader,F,35-44,52,Medium,60k-120k
+2225,Farmer,M,35-44,18,Low,<30k
+2226,SME,F,45-54,2,Medium,30k-60k
+2227,Micro Trader,M,35-44,13,High,<30k
+2228,Chama/Group,M,35-44,28,Medium,<30k
+2229,Micro Trader,M,18-24,49,Low,30k-60k
+2230,Chama/Group,F,35-44,95,Medium,<30k
+2231,Boda Boda,M,55+,21,Medium,60k-120k
+2232,Salaried,F,35-44,6,Low,<30k
+2233,Micro Trader,M,18-24,19,Medium,60k-120k
+2234,Farmer,M,45-54,31,Medium,30k-60k
+2235,Chama/Group,M,45-54,20,Medium,30k-60k
+2236,Micro Trader,M,35-44,31,Medium,60k-120k
+2237,Salaried,M,18-24,93,Low,30k-60k
+2238,Micro Trader,F,35-44,37,High,<30k
+2239,Salaried,F,18-24,61,Medium,60k-120k
+2240,Farmer,M,25-34,66,Low,<30k
+2241,Micro Trader,M,35-44,13,Low,<30k
+2242,Farmer,F,55+,24,Low,30k-60k
+2243,Boda Boda,M,25-34,40,Medium,30k-60k
+2244,Farmer,M,45-54,44,Low,30k-60k
+2245,Micro Trader,F,55+,2,High,60k-120k
+2246,Farmer,F,18-24,62,High,30k-60k
+2247,Boda Boda,F,25-34,29,Medium,<30k
+2248,Boda Boda,F,35-44,31,Low,<30k
+2249,Salaried,F,45-54,58,Medium,<30k
+2250,Micro Trader,F,25-34,91,Low,30k-60k
+2251,Salaried,F,35-44,83,Medium,<30k
+2252,Boda Boda,F,35-44,94,Low,30k-60k
+2253,Farmer,M,45-54,40,High,30k-60k
+2254,Micro Trader,F,35-44,12,Low,60k-120k
+2255,Salaried,M,18-24,21,Low,<30k
+2256,SME,M,25-34,33,High,<30k
+2257,Farmer,M,25-34,29,Low,60k-120k
+2258,Salaried,M,55+,20,Medium,30k-60k
+2259,Salaried,M,55+,15,High,30k-60k
+2260,Boda Boda,F,45-54,18,Low,30k-60k
+2261,Farmer,M,25-34,63,Low,60k-120k
+2262,Salaried,F,35-44,47,Medium,<30k
+2263,SME,M,25-34,4,Medium,60k-120k
+2264,Chama/Group,M,25-34,54,High,<30k
+2265,Farmer,F,25-34,81,Low,>120k
+2266,Micro Trader,F,45-54,41,Medium,<30k
+2267,SME,M,25-34,31,Low,<30k
+2268,SME,F,35-44,26,Medium,<30k
+2269,Salaried,F,55+,37,Medium,60k-120k
+2270,Farmer,F,35-44,27,Medium,>120k
+2271,Salaried,F,18-24,88,Low,<30k
+2272,Salaried,M,55+,95,Low,<30k
+2273,Farmer,M,35-44,33,Low,<30k
+2274,Chama/Group,F,35-44,88,Low,<30k
+2275,Farmer,F,35-44,82,Low,60k-120k
+2276,Micro Trader,F,45-54,8,Medium,<30k
+2277,Micro Trader,F,35-44,47,Low,>120k
+2278,Micro Trader,M,35-44,63,Low,60k-120k
+2279,SME,M,35-44,41,Medium,<30k
+2280,Micro Trader,F,18-24,44,Low,30k-60k
+2281,Micro Trader,M,45-54,47,Low,>120k
+2282,Micro Trader,F,25-34,66,High,60k-120k
+2283,Boda Boda,M,25-34,28,Low,30k-60k
+2284,Chama/Group,M,25-34,57,Low,<30k
+2285,Salaried,M,25-34,24,Medium,<30k
+2286,SME,M,25-34,85,Low,60k-120k
+2287,Salaried,M,35-44,9,Low,30k-60k
+2288,SME,F,25-34,7,Low,30k-60k
+2289,SME,F,25-34,4,Low,30k-60k
+2290,Salaried,F,45-54,34,Medium,30k-60k
+2291,Farmer,M,55+,58,Low,<30k
+2292,Micro Trader,M,35-44,94,Low,30k-60k
+2293,Chama/Group,M,25-34,44,Low,60k-120k
+2294,Salaried,M,18-24,18,High,<30k
+2295,Salaried,F,18-24,35,Low,<30k
+2296,Micro Trader,M,25-34,13,Medium,>120k
+2297,Salaried,M,55+,45,Low,30k-60k
+2298,SME,F,45-54,70,High,30k-60k
+2299,Chama/Group,F,25-34,4,Low,60k-120k
+2300,Salaried,F,55+,74,Low,30k-60k
+2301,Salaried,F,25-34,22,Low,>120k
+2302,Micro Trader,M,25-34,64,Low,60k-120k
+2303,Micro Trader,M,25-34,78,Medium,<30k
+2304,Micro Trader,M,25-34,74,Medium,30k-60k
+2305,SME,F,45-54,64,Medium,<30k
+2306,Boda Boda,M,25-34,66,Low,30k-60k
+2307,Salaried,M,35-44,18,Medium,30k-60k
+2308,Micro Trader,F,25-34,13,Low,30k-60k
+2309,Farmer,M,55+,37,High,>120k
+2310,Boda Boda,F,35-44,58,Medium,30k-60k
+2311,SME,F,35-44,59,Medium,60k-120k
+2312,Micro Trader,F,25-34,74,Medium,30k-60k
+2313,Salaried,F,55+,30,Medium,30k-60k
+2314,Salaried,M,35-44,83,Medium,<30k
+2315,Salaried,F,25-34,43,Low,30k-60k
+2316,Farmer,F,45-54,24,Medium,30k-60k
+2317,SME,F,18-24,70,Low,<30k
+2318,Farmer,F,25-34,13,Low,60k-120k
+2319,Salaried,F,35-44,39,Medium,30k-60k
+2320,Boda Boda,F,25-34,75,Low,<30k
+2321,Boda Boda,M,35-44,74,Medium,60k-120k
+2322,Salaried,F,25-34,25,Low,<30k
+2323,Salaried,M,25-34,16,Low,30k-60k
+2324,Salaried,F,18-24,4,Medium,30k-60k
+2325,Boda Boda,M,25-34,9,Low,<30k
+2326,SME,M,55+,79,Medium,30k-60k
+2327,Micro Trader,F,35-44,75,Medium,<30k
+2328,Micro Trader,F,35-44,49,Medium,<30k
+2329,Boda Boda,M,25-34,55,Low,30k-60k
+2330,Micro Trader,F,35-44,32,Medium,<30k
+2331,Micro Trader,M,25-34,19,Low,>120k
+2332,Chama/Group,F,25-34,2,Low,30k-60k
+2333,Salaried,F,35-44,64,Low,<30k
+2334,Boda Boda,M,35-44,4,Low,60k-120k
+2335,Salaried,M,45-54,10,Low,30k-60k
+2336,Micro Trader,F,45-54,76,Low,30k-60k
+2337,Boda Boda,M,45-54,56,Low,30k-60k
+2338,Farmer,M,25-34,47,Medium,60k-120k
+2339,Farmer,F,18-24,21,Low,<30k
+2340,SME,F,25-34,15,Low,<30k
+2341,Micro Trader,F,45-54,45,Low,>120k
+2342,SME,F,55+,35,Low,<30k
+2343,Micro Trader,M,55+,51,Medium,30k-60k
+2344,Micro Trader,F,25-34,16,High,30k-60k
+2345,SME,F,45-54,22,Medium,30k-60k
+2346,SME,M,35-44,11,Medium,60k-120k
+2347,SME,M,45-54,41,Low,>120k
+2348,SME,M,35-44,27,High,<30k
+2349,Salaried,M,25-34,22,Low,30k-60k
+2350,Boda Boda,F,18-24,53,Low,30k-60k
+2351,Micro Trader,M,55+,48,Low,<30k
+2352,Salaried,F,25-34,20,Low,60k-120k
+2353,Farmer,F,25-34,67,Medium,30k-60k
+2354,Boda Boda,F,25-34,33,Low,<30k
+2355,SME,M,25-34,33,Low,60k-120k
+2356,Salaried,M,55+,46,Low,60k-120k
+2357,Salaried,F,18-24,14,High,<30k
+2358,Salaried,M,25-34,40,Medium,60k-120k
+2359,Farmer,M,45-54,56,High,<30k
+2360,Chama/Group,F,35-44,13,Medium,<30k
+2361,Salaried,M,25-34,54,High,<30k
+2362,Farmer,F,18-24,4,Low,60k-120k
+2363,Salaried,M,25-34,58,Low,<30k
+2364,Micro Trader,F,25-34,4,Low,<30k
+2365,Farmer,F,18-24,17,Low,30k-60k
+2366,SME,F,25-34,34,Medium,30k-60k
+2367,Salaried,F,45-54,59,Low,<30k
+2368,Micro Trader,M,45-54,69,Low,<30k
+2369,Chama/Group,M,45-54,45,Medium,60k-120k
+2370,SME,F,25-34,13,Low,30k-60k
+2371,Salaried,M,25-34,37,Low,60k-120k
+2372,Salaried,M,55+,75,Low,<30k
+2373,Micro Trader,M,45-54,9,Medium,30k-60k
+2374,Micro Trader,M,35-44,68,Low,60k-120k
+2375,Boda Boda,F,25-34,37,Low,<30k
+2376,Farmer,F,25-34,1,Low,<30k
+2377,Boda Boda,M,35-44,66,Medium,30k-60k
+2378,Boda Boda,M,35-44,3,Low,<30k
+2379,SME,M,18-24,36,Low,<30k
+2380,Micro Trader,M,55+,19,High,>120k
+2381,SME,F,35-44,56,Medium,30k-60k
+2382,SME,M,35-44,6,Low,30k-60k
+2383,Chama/Group,F,25-34,9,Low,<30k
+2384,Farmer,F,45-54,51,Low,30k-60k
+2385,Chama/Group,F,45-54,95,Medium,30k-60k
+2386,Micro Trader,F,18-24,4,Low,60k-120k
+2387,Micro Trader,M,35-44,44,High,30k-60k
+2388,Micro Trader,F,35-44,77,Medium,60k-120k
+2389,Salaried,M,45-54,28,Medium,<30k
+2390,SME,M,25-34,47,Low,30k-60k
+2391,Micro Trader,M,45-54,80,Medium,60k-120k
+2392,Salaried,M,35-44,70,Medium,30k-60k
+2393,Chama/Group,F,18-24,28,Medium,30k-60k
+2394,Salaried,F,25-34,72,Low,60k-120k
+2395,Salaried,F,25-34,65,Medium,60k-120k
+2396,Farmer,F,25-34,49,Medium,<30k
+2397,Salaried,M,35-44,42,High,<30k
+2398,Chama/Group,F,45-54,88,Medium,30k-60k
+2399,Farmer,F,25-34,84,Low,>120k
+2400,Salaried,F,55+,95,Low,30k-60k
+2401,Farmer,M,25-34,65,Medium,<30k
+2402,Farmer,M,35-44,35,High,30k-60k
+2403,Farmer,F,55+,11,Medium,<30k
+2404,Boda Boda,M,45-54,12,Low,<30k
+2405,Farmer,M,35-44,91,Low,<30k
+2406,Micro Trader,M,35-44,35,Medium,<30k
+2407,SME,F,25-34,11,Medium,30k-60k
+2408,Farmer,M,18-24,22,Low,<30k
+2409,Chama/Group,F,25-34,2,Low,<30k
+2410,Micro Trader,F,18-24,51,High,30k-60k
+2411,Farmer,M,25-34,57,Low,<30k
+2412,Micro Trader,M,25-34,36,Low,30k-60k
+2413,Farmer,F,55+,71,Low,<30k
+2414,Chama/Group,M,45-54,46,Low,<30k
+2415,Salaried,F,45-54,92,Low,30k-60k
+2416,Salaried,M,35-44,73,Medium,<30k
+2417,Micro Trader,M,25-34,8,Medium,<30k
+2418,Micro Trader,M,18-24,27,Medium,<30k
+2419,Micro Trader,M,35-44,72,Medium,<30k
+2420,Salaried,M,35-44,52,Low,<30k
+2421,Micro Trader,M,25-34,72,Low,<30k
+2422,Micro Trader,M,35-44,32,Low,<30k
+2423,Micro Trader,M,35-44,4,Low,<30k
+2424,Farmer,F,25-34,75,Medium,60k-120k
+2425,Farmer,M,25-34,75,Low,<30k
+2426,Farmer,F,25-34,61,Medium,<30k
+2427,Boda Boda,M,35-44,39,Low,30k-60k
+2428,Farmer,F,55+,1,Low,<30k
+2429,Micro Trader,F,35-44,70,Low,60k-120k
+2430,Micro Trader,M,45-54,63,Low,<30k
+2431,Salaried,F,45-54,64,Medium,30k-60k
+2432,SME,F,25-34,17,Medium,60k-120k
+2433,Micro Trader,M,35-44,70,Low,<30k
+2434,Boda Boda,F,35-44,69,Medium,<30k
+2435,Farmer,F,35-44,82,Medium,30k-60k
+2436,Salaried,M,18-24,54,Low,>120k
+2437,Micro Trader,F,55+,70,Low,30k-60k
+2438,SME,F,55+,39,Low,30k-60k
+2439,Farmer,F,18-24,67,Low,<30k
+2440,Boda Boda,F,25-34,66,Medium,30k-60k
+2441,Micro Trader,F,25-34,75,Low,<30k
+2442,Micro Trader,F,45-54,82,Low,30k-60k
+2443,SME,M,35-44,1,Medium,<30k
+2444,Micro Trader,M,25-34,74,Low,30k-60k
+2445,Boda Boda,F,45-54,76,Medium,<30k
+2446,Farmer,F,25-34,52,Low,30k-60k
+2447,Micro Trader,M,35-44,50,Low,30k-60k
+2448,SME,M,25-34,69,Low,60k-120k
+2449,Salaried,F,35-44,44,Low,>120k
+2450,Salaried,F,35-44,40,Low,30k-60k
+2451,Salaried,F,25-34,77,Medium,30k-60k
+2452,SME,M,25-34,75,Medium,<30k
+2453,Chama/Group,M,55+,20,Medium,60k-120k
+2454,Micro Trader,M,35-44,79,Low,30k-60k
+2455,SME,F,55+,32,High,30k-60k
+2456,Salaried,F,35-44,14,Low,30k-60k
+2457,SME,F,45-54,84,Medium,60k-120k
+2458,Boda Boda,F,25-34,23,Medium,60k-120k
+2459,SME,F,45-54,20,Medium,60k-120k
+2460,Farmer,M,25-34,26,Low,30k-60k
+2461,Boda Boda,F,18-24,47,Medium,30k-60k
+2462,Salaried,M,25-34,16,Medium,60k-120k
+2463,Micro Trader,F,18-24,16,Low,30k-60k
+2464,Chama/Group,F,55+,38,Medium,30k-60k
+2465,Micro Trader,M,55+,21,Low,30k-60k
+2466,Salaried,M,45-54,19,Low,30k-60k
+2467,Chama/Group,F,25-34,87,Medium,30k-60k
+2468,Boda Boda,M,45-54,57,Medium,30k-60k
+2469,Micro Trader,F,45-54,2,Low,60k-120k
+2470,Micro Trader,F,25-34,10,Low,60k-120k
+2471,Salaried,F,35-44,78,Low,30k-60k
+2472,Boda Boda,F,35-44,26,Low,<30k
+2473,Micro Trader,M,18-24,15,Low,30k-60k
+2474,Salaried,F,35-44,64,Low,30k-60k
+2475,Farmer,M,45-54,80,Medium,30k-60k
+2476,Chama/Group,M,25-34,38,Low,60k-120k
+2477,Boda Boda,F,35-44,71,Low,<30k
+2478,SME,F,35-44,41,Low,<30k
+2479,Salaried,F,45-54,11,Low,60k-120k
+2480,Chama/Group,M,55+,76,Low,60k-120k
+2481,Chama/Group,M,45-54,88,Low,30k-60k
+2482,Micro Trader,M,35-44,94,Low,<30k
+2483,Farmer,F,35-44,10,Low,30k-60k
+2484,Micro Trader,F,35-44,54,Medium,30k-60k
+2485,Micro Trader,M,35-44,60,Medium,30k-60k
+2486,Salaried,F,18-24,8,Low,<30k
+2487,Salaried,M,35-44,91,Low,<30k
+2488,SME,F,35-44,10,Low,30k-60k
+2489,Boda Boda,F,35-44,26,Low,30k-60k
+2490,Salaried,M,45-54,93,Medium,30k-60k
+2491,SME,M,35-44,53,Medium,30k-60k
+2492,Micro Trader,M,25-34,65,Low,<30k
+2493,Salaried,F,18-24,47,Low,30k-60k
+2494,Salaried,M,18-24,72,Low,>120k
+2495,Micro Trader,M,25-34,8,Low,30k-60k
+2496,SME,M,35-44,65,High,30k-60k
+2497,Farmer,M,25-34,7,Low,30k-60k
+2498,Chama/Group,M,25-34,18,Low,60k-120k
+2499,Salaried,M,25-34,49,Low,30k-60k
+2500,Chama/Group,F,45-54,43,Low,30k-60k

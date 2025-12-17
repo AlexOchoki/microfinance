@@ -1,0 +1,9 @@
+product_id,product_name,product_category,base_annual_interest_rate,min_term_months,max_term_months
+1,Micro Enterprise Loan,Business,0.3,6,24
+2,SME Working Capital,Business,0.25,6,18
+3,Agriculture Seasonal,Agriculture,0.32,4,12
+4,Salaried Personal,Retail,0.22,6,36
+5,Group Loan,Group,0.34,3,12
+6,Asset Finance (Motorbike),Asset Finance,0.28,12,36
+7,Education Loan,Retail,0.2,6,24
+8,Emergency Loan,Retail,0.4,1,6

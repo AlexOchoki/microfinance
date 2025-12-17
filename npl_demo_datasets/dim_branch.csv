@@ -1,0 +1,19 @@
+branch_id,branch_name,region,urban_rural
+1,Nairobi CBD,Nairobi,Peri-Urban
+2,Westlands,Nyanza,Urban
+3,Eastlands,Western,Rural
+4,Thika,Coast,Peri-Urban
+5,Kiambu,Coast,Rural
+6,Ruiru,Nyanza,Urban
+7,Nakuru,Nairobi,Urban
+8,Eldoret,Western,Peri-Urban
+9,Naivasha,Central,Urban
+10,Mombasa,Nairobi,Rural
+11,Malindi,Eastern,Peri-Urban
+12,Kisumu,North Eastern,Peri-Urban
+13,Kakamega,Western,Urban
+14,Kitale,Nyanza,Rural
+15,Embu,Western,Rural
+16,Meru,Nyanza,Peri-Urban
+17,Garissa,Eastern,Urban
+18,Isiolo,Central,Peri-Urban

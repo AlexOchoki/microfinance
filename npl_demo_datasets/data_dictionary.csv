@@ -1,0 +1,11 @@
+table,description,join_notes
+dim_date,Date dimension for time intelligence (daily).,date_key (YYYYMMDD) primary key.
+dim_branch,Branch and region attributes.,branch_id primary key.
+dim_product,Loan product attributes incl. base rate and category.,product_id primary key.
+dim_customer,Customer segmentation and onboarding risk attributes.,customer_id primary key.
+fact_loan,"One row per loan account (origination, product, branch, customer, schedule).",Join to dims via *_id; dates via *_date_key.
+fact_payment,Transaction-level repayments.,Join to fact_loan via loan_id; payment_date_key to dim_date.
+fact_dpd_snapshot,"Monthly month-end snapshot incl. dpd, bucket, NPL flag, outstanding, provision.",Join to fact_loan via loan_id; snapshot_month_end_date_key to dim_date.
+fact_collections_action,Collections actions + outcomes + recovered amounts.,Join to fact_loan; action_date_key and reference_month_end_date_key to dim_date.
+fact_restructure,Restructure events.,Join to fact_loan; restructure_date_key to dim_date.
+fact_writeoff,Write-off events.,Join to fact_loan; writeoff_date_key to dim_date.

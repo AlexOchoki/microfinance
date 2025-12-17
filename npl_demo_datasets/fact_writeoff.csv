@@ -1,0 +1,89 @@
+writeoff_id,loan_id,writeoff_date_key,writeoff_amount,approval_level,reason
+1,19,20251231,180600.0,Branch Credit,Other
+2,23,20251231,155183.01,Board,Skip tracing failed
+3,37,20251231,137960.85,Board,Skip tracing failed
+4,108,20251231,139083.59,Head Office Credit,Business closure
+5,303,20251231,30228.77,Board,Death/Disability
+6,304,20250829,11812.58,Board,Business closure
+7,376,20251231,174486.31,Branch Credit,Fraud suspected
+8,467,20251231,246600.0,Head Office Credit,Skip tracing failed
+9,558,20250626,33117.17,Branch Credit,Death/Disability
+10,589,20251231,80600.0,Head Office Credit,Fraud suspected
+11,698,20251109,150653.48,Head Office Credit,Other
+12,736,20251231,117811.27,Head Office Credit,Fraud suspected
+13,776,20250126,470041.42,Head Office Credit,Skip tracing failed
+14,836,20251016,134182.77,Head Office Credit,Skip tracing failed
+15,872,20251002,230000.0,Board,Skip tracing failed
+16,893,20251231,195100.0,Head Office Credit,Other
+17,906,20251231,126100.0,Board,Death/Disability
+18,932,20251231,312900.0,Head Office Credit,Business closure
+19,961,20251231,143553.03,Head Office Credit,Business closure
+20,963,20251231,81362.99,Board,Fraud suspected
+21,969,20251231,81671.07,Head Office Credit,Fraud suspected
+22,992,20251231,57180.01,Branch Credit,Skip tracing failed
+23,1005,20251231,57932.11,Head Office Credit,Skip tracing failed
+24,1056,20251123,158918.53,Branch Credit,Skip tracing failed
+25,1198,20251231,12168.29,Head Office Credit,Business closure
+26,1296,20250801,27209.58,Head Office Credit,Death/Disability
+27,1306,20251231,24388.94,Head Office Credit,Business closure
+28,1425,20251210,80710.07,Branch Credit,Death/Disability
+29,1441,20251231,321200.95,Branch Credit,Business closure
+30,1463,20250404,27881.35,Board,Skip tracing failed
+31,1471,20250629,265681.99,Head Office Credit,Skip tracing failed
+32,1487,20251231,136386.92,Branch Credit,Death/Disability
+33,1618,20251231,218667.89,Head Office Credit,Skip tracing failed
+34,1633,20251231,284600.0,Head Office Credit,Other
+35,1673,20251231,230300.0,Branch Credit,Skip tracing failed
+36,1676,20251231,65111.43,Board,Business closure
+37,1733,20251231,337312.35,Branch Credit,Fraud suspected
+38,1750,20251231,59700.0,Head Office Credit,Fraud suspected
+39,1780,20251231,397580.74,Board,Skip tracing failed
+40,1897,20241205,41629.28,Head Office Credit,Death/Disability
+41,1945,20251231,15000.0,Head Office Credit,Other
+42,2060,20251231,217000.0,Head Office Credit,Skip tracing failed
+43,2105,20250619,54120.11,Head Office Credit,Death/Disability
+44,2160,20250216,75015.11,Head Office Credit,Fraud suspected
+45,2175,20251231,257400.0,Head Office Credit,Business closure
+46,2201,20250722,86519.55,Board,Skip tracing failed
+47,2219,20251231,120694.13,Head Office Credit,Other
+48,2259,20251113,9619.43,Head Office Credit,Skip tracing failed
+49,2291,20251231,60500.0,Head Office Credit,Fraud suspected
+50,2319,20251231,229261.04,Board,Skip tracing failed
+51,2321,20251231,25861.88,Head Office Credit,Skip tracing failed
+52,2427,20251231,14360.56,Head Office Credit,Business closure
+53,2439,20251231,146642.64,Head Office Credit,Other
+54,2443,20251231,231164.12,Board,Fraud suspected
+55,2543,20251231,162086.95,Board,Other
+56,2559,20251231,166718.04,Board,Fraud suspected
+57,2583,20250706,86471.55,Head Office Credit,Death/Disability
+58,2585,20250828,106938.92,Head Office Credit,Death/Disability
+59,2607,20251231,413300.0,Head Office Credit,Other
+60,2622,20251231,228500.0,Branch Credit,Business closure
+61,2646,20251223,72535.22,Board,Fraud suspected
+62,2660,20250921,76495.68,Head Office Credit,Death/Disability
+63,2695,20251231,306107.23,Head Office Credit,Other
+64,2712,20250215,309473.69,Branch Credit,Skip tracing failed
+65,2736,20251231,178844.7,Head Office Credit,Other
+66,2771,20251030,153588.61,Head Office Credit,Skip tracing failed
+67,2797,20250216,50823.81,Head Office Credit,Other
+68,2808,20251231,101891.06,Head Office Credit,Skip tracing failed
+69,3178,20250412,89312.85,Head Office Credit,Fraud suspected
+70,3197,20251107,35270.53,Board,Fraud suspected
+71,3238,20251231,132425.15,Branch Credit,Business closure
+72,3320,20241207,89761.15,Branch Credit,Death/Disability
+73,3360,20251231,372900.0,Head Office Credit,Skip tracing failed
+74,3388,20251231,357900.0,Board,Business closure
+75,3397,20251231,85000.0,Head Office Credit,Business closure
+76,3490,20250816,97200.66,Head Office Credit,Fraud suspected
+77,3537,20251231,169670.81,Head Office Credit,Other
+78,3576,20251231,100648.1,Branch Credit,Skip tracing failed
+79,3592,20251231,119875.01,Board,Skip tracing failed
+80,3595,20251231,447868.51,Board,Business closure
+81,3602,20250610,118244.8,Head Office Credit,Skip tracing failed
+82,3653,20251215,100600.0,Head Office Credit,Other
+83,3848,20251231,145121.74,Board,Skip tracing failed
+84,3897,20251231,187500.0,Head Office Credit,Death/Disability
+85,3941,20251231,121242.86,Head Office Credit,Death/Disability
+86,4014,20250314,62792.89,Head Office Credit,Other
+87,4030,20251231,235900.0,Head Office Credit,Business closure
+88,4096,20251231,12221.48,Branch Credit,Business closure

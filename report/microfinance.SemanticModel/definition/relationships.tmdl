@@ -1,0 +1,58 @@
+relationship 25f9de6f-4200-44cb-81ba-59a401e38c50
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.date
+	toColumn: LocalDateTable_3fd3acff-66de-4e95-b7f2-3e01cf0110c2.Date
+
+relationship 21be90b7-cc89-4140-9c7e-e13ec541245a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_date.month_start
+	toColumn: LocalDateTable_797f0920-c63c-4e25-a85f-429614f63289.Date
+
+relationship AutoDetected_50cfd504-5c19-4c52-ad62-442b70c58532
+	fromColumn: fact_loan.branch_id
+	toColumn: dim_branch.branch_id
+
+relationship AutoDetected_2bf6bcce-08bd-498d-9e93-0fc07b368e00
+	fromColumn: fact_loan.customer_id
+	toColumn: dim_customer.customer_id
+
+relationship AutoDetected_c985c37c-1a47-4325-a9ce-d090b170c7d4
+	fromColumn: fact_loan.product_id
+	toColumn: dim_product.product_id
+
+relationship AutoDetected_5ebef923-1aae-422c-8d23-fe7f086f87de
+	fromColumn: fact_collections_action.loan_id
+	toColumn: fact_loan.loan_id
+
+relationship AutoDetected_50d0e789-01dd-49f5-8fc1-169c3fe58bd0
+	fromColumn: fact_dpd_snapshot.loan_id
+	toColumn: fact_loan.loan_id
+
+relationship AutoDetected_1aa268ca-ee82-4dad-82d1-a2f0f1ccc0d8
+	fromColumn: fact_payment.loan_id
+	toColumn: fact_loan.loan_id
+
+relationship AutoDetected_67f46f61-2d9d-4cea-b57f-8d97d8c2464a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: fact_restructure.loan_id
+	toColumn: fact_loan.loan_id
+
+relationship AutoDetected_c9d430f5-686a-4766-8b33-cffa62a8b8ce
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: fact_writeoff.loan_id
+	toColumn: fact_loan.loan_id
+
+relationship 64de75d6-8c0c-9b4c-95af-bece4cef7ddb
+	fromColumn: fact_payment.payment_date_key
+	toColumn: dim_date.date_key
+
+relationship 39717c7d-b42b-749d-4784-700f9586ffcb
+	fromColumn: fact_dpd_snapshot.snapshot_month_end_date_key
+	toColumn: dim_date.date_key
+
+relationship a8417785-2427-ea13-84e1-ca9d022aa6e9
+	fromColumn: fact_collections_action.action_date_key
+	toColumn: dim_date.date_key
+

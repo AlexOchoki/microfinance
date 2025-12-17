@@ -1,0 +1,70 @@
+table dim_product
+	lineageTag: 4e3570e5-2de9-4eb5-a465-f7c7eb9b7255
+
+	column product_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ac8e9069-eea1-4eb5-af46-83a169f2a1fa
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_name
+		dataType: string
+		lineageTag: 853e5b13-97e3-42d7-bab3-cf3953e92684
+		summarizeBy: none
+		sourceColumn: product_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_category
+		dataType: string
+		lineageTag: 089d4ce3-4645-48cf-9777-8ba833b8baba
+		summarizeBy: none
+		sourceColumn: product_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column base_annual_interest_rate
+		dataType: double
+		lineageTag: f6b8cb99-5a23-4ed4-9851-00740a96f3bc
+		summarizeBy: none
+		sourceColumn: base_annual_interest_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column min_term_months
+		dataType: int64
+		formatString: 0
+		lineageTag: 51ba7c80-730c-4d38-b59d-da672ab023b8
+		summarizeBy: none
+		sourceColumn: min_term_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_term_months
+		dataType: int64
+		formatString: 0
+		lineageTag: de99a30e-ee05-4f44-b708-f7579a4ef539
+		summarizeBy: none
+		sourceColumn: max_term_months
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_product = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\dim_product.csv"),[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"product_id", Int64.Type}, {"product_name", type text}, {"product_category", type text}, {"base_annual_interest_rate", type number}, {"min_term_months", Int64.Type}, {"max_term_months", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

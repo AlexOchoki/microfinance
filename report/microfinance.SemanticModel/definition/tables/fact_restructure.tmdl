@@ -1,0 +1,100 @@
+table fact_restructure
+	lineageTag: 7a1bfcb1-fa91-4a54-bd4c-9333febc321f
+
+	column restructure_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 40534703-8808-46e7-bc74-ceb65c350d62
+		summarizeBy: sum
+		sourceColumn: restructure_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a044db68-b7a8-4cf4-afdd-5f9a83e86ade
+		summarizeBy: none
+		sourceColumn: loan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column restructure_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: b34fb777-a7de-4443-9e4e-912cd78bc700
+		summarizeBy: sum
+		sourceColumn: restructure_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column reason
+		dataType: string
+		lineageTag: e367ba7d-17e3-40a5-8d7e-6d8891d42346
+		summarizeBy: none
+		sourceColumn: reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column old_term_months
+		dataType: int64
+		formatString: 0
+		lineageTag: ab81a211-774c-4369-b77d-ea53d6b72503
+		summarizeBy: sum
+		sourceColumn: old_term_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_term_months
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b52e516-68e3-4fd6-bfa3-1ce0cc57e8ce
+		summarizeBy: sum
+		sourceColumn: new_term_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column old_rate
+		dataType: double
+		lineageTag: 54ad9c24-b9db-47e3-9822-fda673f3b4b0
+		summarizeBy: sum
+		sourceColumn: old_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column new_rate
+		dataType: double
+		lineageTag: bac60fa2-3a8e-4060-a713-dc4404ba6e01
+		summarizeBy: sum
+		sourceColumn: new_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column new_installment
+		dataType: double
+		lineageTag: 8c5d3ecb-40b2-4f43-b8fb-bd9b2274520a
+		summarizeBy: sum
+		sourceColumn: new_installment
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_restructure = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\fact_restructure.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"restructure_id", Int64.Type}, {"loan_id", Int64.Type}, {"restructure_date_key", Int64.Type}, {"reason", type text}, {"old_term_months", Int64.Type}, {"new_term_months", Int64.Type}, {"old_rate", type number}, {"new_rate", type number}, {"new_installment", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

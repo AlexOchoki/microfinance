@@ -1,0 +1,125 @@
+table fact_loan
+	lineageTag: 897ed7ce-dc6b-4d6f-a791-91dc75d29bbf
+
+	column loan_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5041c208-932f-4c28-91c3-b3819f3524f4
+		summarizeBy: none
+		sourceColumn: loan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: int64
+		formatString: 0
+		lineageTag: b541723c-8031-4633-87da-8672a92d1937
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column branch_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e1b109f-5c66-484d-adac-d7b5eb814819
+		summarizeBy: none
+		sourceColumn: branch_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1940d17e-4af2-407e-b114-238ee8007f35
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column origination_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 496c7d53-d97d-4424-9331-4c5169d3984c
+		summarizeBy: sum
+		sourceColumn: origination_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column maturity_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 1972da22-bd1f-4d09-bdb5-46f14e004291
+		summarizeBy: sum
+		sourceColumn: maturity_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column original_principal
+		dataType: int64
+		formatString: 0
+		lineageTag: e986e62d-8765-4296-9378-627f623362a5
+		summarizeBy: sum
+		sourceColumn: original_principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column annual_interest_rate
+		dataType: double
+		lineageTag: dee92982-3faf-425f-a8a3-935d9568ac5b
+		summarizeBy: sum
+		sourceColumn: annual_interest_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column term_months
+		dataType: int64
+		formatString: 0
+		lineageTag: a374f198-2d15-4a11-b016-d70cc7b4e37b
+		summarizeBy: sum
+		sourceColumn: term_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column repayment_frequency
+		dataType: string
+		lineageTag: 22e1e8d8-32f9-4153-9ad8-19afb70bbe2a
+		summarizeBy: none
+		sourceColumn: repayment_frequency
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 278d95a2-baa8-4729-9f13-2abf352bacbe
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column scheduled_installment
+		dataType: double
+		lineageTag: 201e4392-b9c2-49ca-acca-a12a704c052d
+		summarizeBy: sum
+		sourceColumn: scheduled_installment
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_loan = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\fact_loan.csv"),[Delimiter=",", Columns=12, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"loan_id", Int64.Type}, {"customer_id", Int64.Type}, {"branch_id", Int64.Type}, {"product_id", Int64.Type}, {"origination_date_key", Int64.Type}, {"maturity_date_key", Int64.Type}, {"original_principal", Int64.Type}, {"annual_interest_rate", type number}, {"term_months", Int64.Type}, {"repayment_frequency", type text}, {"status", type text}, {"scheduled_installment", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

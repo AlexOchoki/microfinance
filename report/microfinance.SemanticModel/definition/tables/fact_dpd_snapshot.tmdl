@@ -1,0 +1,109 @@
+table fact_dpd_snapshot
+	lineageTag: 294e524f-98e4-4ee8-931d-d3ea7b316cd0
+
+	column snapshot_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 293dcfad-81a4-4303-8dba-32fdf20bc9a6
+		summarizeBy: sum
+		sourceColumn: snapshot_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column snapshot_month_end_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: e7e5f38a-20eb-4f6a-a7e8-6ec15047870a
+		summarizeBy: none
+		sourceColumn: snapshot_month_end_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_id
+		dataType: int64
+		formatString: 0
+		lineageTag: fdeb0940-8af5-49aa-82e5-f25b955ed404
+		summarizeBy: none
+		sourceColumn: loan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column dpd
+		dataType: int64
+		formatString: 0
+		lineageTag: df053c61-4c64-4d02-aef8-21754466f8fb
+		summarizeBy: sum
+		sourceColumn: dpd
+
+		annotation SummarizationSetBy = Automatic
+
+	column aging_bucket
+		dataType: string
+		lineageTag: 335bcf3b-09bb-494b-bd0b-0c710392e87f
+		summarizeBy: none
+		sourceColumn: aging_bucket
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_npl
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 84d9f751-24b1-4311-9dd1-941e49e288d2
+		summarizeBy: none
+		sourceColumn: is_npl
+
+		annotation SummarizationSetBy = Automatic
+
+	column ecl_stage
+		dataType: int64
+		formatString: 0
+		lineageTag: ea8d62e5-cb96-431e-8bea-4f0beda086bb
+		summarizeBy: sum
+		sourceColumn: ecl_stage
+
+		annotation SummarizationSetBy = Automatic
+
+	column outstanding_balance
+		dataType: double
+		lineageTag: 17cf2689-77eb-4b08-842e-d404f34925d5
+		summarizeBy: sum
+		sourceColumn: outstanding_balance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column provision_amount
+		dataType: double
+		lineageTag: bcf1eb8b-c3d0-42a8-9833-bbd62b8502c6
+		summarizeBy: sum
+		sourceColumn: provision_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column provision_rate
+		dataType: double
+		lineageTag: fabea5ee-94d1-4435-a70c-e4c292e46faf
+		summarizeBy: sum
+		sourceColumn: provision_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_dpd_snapshot = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\fact_dpd_snapshot.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"snapshot_id", Int64.Type}, {"snapshot_month_end_date_key", Int64.Type}, {"loan_id", Int64.Type}, {"dpd", Int64.Type}, {"aging_bucket", type text}, {"is_npl", type logical}, {"ecl_stage", Int64.Type}, {"outstanding_balance", type number}, {"provision_amount", type number}, {"provision_rate", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

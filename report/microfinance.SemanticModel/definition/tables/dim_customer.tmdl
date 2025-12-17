@@ -1,0 +1,75 @@
+table dim_customer
+	lineageTag: d923de59-fe7c-4dc5-a85c-2fea384f7805
+
+	column customer_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ce875957-84b9-4a3b-abc4-6a952ace97c3
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_segment
+		dataType: string
+		lineageTag: b35bedd2-ca03-47bf-93a6-85ecb34bf11f
+		summarizeBy: none
+		sourceColumn: customer_segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column gender
+		dataType: string
+		lineageTag: 59ca6ed0-92bb-488f-9d04-58eaf1920f37
+		summarizeBy: none
+		sourceColumn: gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column age_band
+		dataType: string
+		lineageTag: e2350d6e-bf46-4a68-b386-9233b68b9ef3
+		summarizeBy: none
+		sourceColumn: age_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column tenure_months
+		dataType: int64
+		formatString: 0
+		lineageTag: 34f1a9f4-bd00-4958-bb5f-9d7963de930b
+		summarizeBy: none
+		sourceColumn: tenure_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_band_at_onboarding
+		dataType: string
+		lineageTag: 8a09ae55-5e56-4218-a916-d5617949db3c
+		summarizeBy: none
+		sourceColumn: risk_band_at_onboarding
+
+		annotation SummarizationSetBy = Automatic
+
+	column income_band
+		dataType: string
+		lineageTag: cf161cec-1abe-497a-86c1-497c7b51e251
+		summarizeBy: none
+		sourceColumn: income_band
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_customer = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\dim_customer.csv"),[Delimiter=",", Columns=7, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"customer_id", Int64.Type}, {"customer_segment", type text}, {"gender", type text}, {"age_band", type text}, {"tenure_months", Int64.Type}, {"risk_band_at_onboarding", type text}, {"income_band", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

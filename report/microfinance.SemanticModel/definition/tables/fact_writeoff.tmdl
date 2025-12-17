@@ -1,0 +1,70 @@
+table fact_writeoff
+	lineageTag: 33846be5-1bb4-4500-9c17-e6c7e0815eae
+
+	column writeoff_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 77982130-2c26-4452-8525-3b09c3fefe13
+		summarizeBy: sum
+		sourceColumn: writeoff_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f0468a0-eb60-4977-9e09-59f175b3ed78
+		summarizeBy: none
+		sourceColumn: loan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column writeoff_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 5757a2aa-f495-460f-8297-a6a7ac7f397b
+		summarizeBy: sum
+		sourceColumn: writeoff_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column writeoff_amount
+		dataType: double
+		lineageTag: 8b38c14d-2325-4112-aa57-ce283ac61e5a
+		summarizeBy: sum
+		sourceColumn: writeoff_amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column approval_level
+		dataType: string
+		lineageTag: 8e8629cf-b6e4-45a9-a336-763bc48f05de
+		summarizeBy: none
+		sourceColumn: approval_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column reason
+		dataType: string
+		lineageTag: c6d6eef0-6201-4ca1-8833-346a5c0886a2
+		summarizeBy: none
+		sourceColumn: reason
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_writeoff = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\fact_writeoff.csv"),[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"writeoff_id", Int64.Type}, {"loan_id", Int64.Type}, {"writeoff_date_key", Int64.Type}, {"writeoff_amount", type number}, {"approval_level", type text}, {"reason", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

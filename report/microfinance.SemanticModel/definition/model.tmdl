@@ -10,5 +10,22 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation PBI_QueryOrder = ["dim_branch","dim_customer","dim_date","dim_product","fact_collections_action","fact_dpd_snapshot","fact_loan","fact_payment","fact_restructure","fact_writeoff"]
+
+ref table dim_branch
+ref table dim_customer
+ref table dim_date
+ref table DateTableTemplate_341cd5a8-e645-47de-bea2-68636693c4f2
+ref table LocalDateTable_3fd3acff-66de-4e95-b7f2-3e01cf0110c2
+ref table LocalDateTable_797f0920-c63c-4e25-a85f-429614f63289
+ref table dim_product
+ref table fact_collections_action
+ref table fact_dpd_snapshot
+ref table fact_loan
+ref table fact_payment
+ref table fact_restructure
+ref table fact_writeoff
+ref table 'Base Measures'
+
 ref cultureInfo en-US
 

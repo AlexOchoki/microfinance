@@ -1,0 +1,62 @@
+table fact_payment
+	lineageTag: 057fad35-5caa-4f76-95de-7b50bc174814
+
+	column payment_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 61003ab5-cddd-4cb7-9780-1296d87cc5ff
+		summarizeBy: sum
+		sourceColumn: payment_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ec1f674-8a37-4c58-804d-2928f0ef9b63
+		summarizeBy: none
+		sourceColumn: loan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 7c038c58-c8e9-485c-bbf5-ec9f73d4f6c6
+		summarizeBy: none
+		sourceColumn: payment_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column amount_paid
+		dataType: double
+		lineageTag: 747c189e-3fac-4976-865e-e4c2280080bb
+		summarizeBy: sum
+		sourceColumn: amount_paid
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column payment_channel
+		dataType: string
+		lineageTag: 72e2152d-7f3c-4976-b6f8-eb47157b21d7
+		summarizeBy: none
+		sourceColumn: payment_channel
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_payment = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\fact_payment.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"payment_id", Int64.Type}, {"loan_id", Int64.Type}, {"payment_date_key", Int64.Type}, {"amount_paid", type number}, {"payment_channel", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

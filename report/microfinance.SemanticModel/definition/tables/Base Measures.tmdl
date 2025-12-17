@@ -1,0 +1,128 @@
+table 'Base Measures'
+	lineageTag: 93383abd-c883-4530-9e01-121363dd8b21
+
+	measure 'Latest Snapshot Date Key' = ```
+			
+			CALCULATE (
+			    MAX ( fact_dpd_snapshot[snapshot_month_end_date_key] ), 
+			    ALL ( fact_dpd_snapshot ) 
+			    )
+			```
+		formatString: 0
+		lineageTag: 55e74c51-d81e-4eeb-a149-af986f63927b
+
+	measure 'Snapshot Date Key (Selected or Latest)' = ```
+			
+			VAR HasDateFilter = ISFILTERED ( dim_date[date_key] )
+			VAR LatestKey     = [Latest Snapshot Date Key]
+			RETURN
+			IF ( 
+			    HasDateFilter, MAX ( dim_date[date_key] ), LatestKey )
+			```
+		formatString: 0
+		lineageTag: 9eb05854-0086-47ef-aee7-aa2e0babde5b
+
+	measure 'Exposure (Month-End)' =
+			
+			VAR SnapKey = [Snapshot Date Key (Selected or Latest)]
+			RETURN
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			    TREATAS ( { SnapKey }, fact_dpd_snapshot[snapshot_month_end_date_key] )
+			)
+		lineageTag: 50028381-2b1b-4d3e-9b8a-464bd7a16a16
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'NPL Exposure (Month-End)' =
+			
+			VAR SnapKey = [Snapshot Date Key (Selected or Latest)]
+			RETURN
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			    TREATAS ( { SnapKey }, fact_dpd_snapshot[snapshot_month_end_date_key] ),
+			    fact_dpd_snapshot[is_npl] = TRUE ()
+			)
+		lineageTag: 4f6ee904-388e-45ff-8061-cd47f1c572d9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Provision (Month-End)' =
+			
+			VAR SnapKey = [Snapshot Date Key (Selected or Latest)]
+			RETURN
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[provision_amount] ),
+			    TREATAS ( { SnapKey }, fact_dpd_snapshot[snapshot_month_end_date_key] )
+			)
+		lineageTag: c5c58502-f6f2-48d9-b369-7280c36dbd9f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Gross Loan Portfolio' = [Exposure (Month-End)]
+		lineageTag: a5620d34-aaf0-4846-8554-7d025ab27d85
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'NPL Ratio %' =
+			
+			DIVIDE ( [NPL Exposure (Month-End)], [Exposure (Month-End)] )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: d7a2b11d-71ce-4189-b8bb-95b2cf7a91c6
+
+	measure 'PAR 30 %' =
+			
+			VAR SnapKey = [Snapshot Date Key (Selected or Latest)]
+			VAR PAR30 =
+			    CALCULATE (
+			        SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			        TREATAS ( { SnapKey }, fact_dpd_snapshot[snapshot_month_end_date_key] ),
+			        fact_dpd_snapshot[dpd] >= 30
+			    )
+			RETURN
+			DIVIDE ( PAR30, [Exposure (Month-End)] )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 62fbbfda-6596-46a4-9b21-5838d8088b4c
+
+	measure 'PAR 90 %' =
+			
+			VAR SnapKey = [Snapshot Date Key (Selected or Latest)]
+			VAR PAR90 =
+			    CALCULATE (
+			        SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			        TREATAS ( { SnapKey }, fact_dpd_snapshot[snapshot_month_end_date_key] ),
+			        fact_dpd_snapshot[dpd] >= 90
+			    )
+			RETURN
+			DIVIDE ( PAR90, [Exposure (Month-End)] )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: bc36bfba-40b2-43be-a12f-4272f33653ee
+
+	measure 'Total NPL Amount' = [NPL Exposure (Month-End)]
+		lineageTag: 5a706b9b-adc4-4835-bafd-9833ab39a0c4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Provision Coverage %' =
+			
+			DIVIDE ( [Provision (Month-End)], [NPL Exposure (Month-End)] )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 653dbec6-a8e2-48e0-a002-43ae68059302
+
+	column Column
+		formatString: 0
+		lineageTag: 12821594-70ed-4fe8-a2e5-b392d8188e4d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Base Measures' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = b0383adb3a3944b8b16609bcd816aaeb
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

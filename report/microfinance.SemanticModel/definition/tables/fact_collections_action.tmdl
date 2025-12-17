@@ -1,0 +1,105 @@
+table fact_collections_action
+	lineageTag: 43840a27-67fa-45a6-8846-4f2af324a511
+
+	column action_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 36cc0d8c-2555-49a3-bd4f-427625b12c1b
+		summarizeBy: sum
+		sourceColumn: action_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column loan_id
+		dataType: int64
+		formatString: 0
+		lineageTag: cfe6a147-8e9c-4a6e-a635-e74a47f8ee56
+		summarizeBy: none
+		sourceColumn: loan_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: e5e03b33-33e4-404f-9df6-a5e5c23e06ac
+		summarizeBy: none
+		sourceColumn: action_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column reference_month_end_date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 4990edc9-e8a0-449b-a8d4-a777d0ae0f69
+		summarizeBy: sum
+		sourceColumn: reference_month_end_date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column dpd_at_action
+		dataType: int64
+		formatString: 0
+		lineageTag: bac17b3f-7802-48c8-ae8f-c548cd5b6c1c
+		summarizeBy: sum
+		sourceColumn: dpd_at_action
+
+		annotation SummarizationSetBy = Automatic
+
+	column action_type
+		dataType: string
+		lineageTag: 9b69b7f9-796d-4810-adec-6531d4701667
+		summarizeBy: none
+		sourceColumn: action_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column outcome
+		dataType: string
+		lineageTag: d9eaeaa6-fd37-48c4-99f8-78976b4cd15e
+		summarizeBy: none
+		sourceColumn: outcome
+
+		annotation SummarizationSetBy = Automatic
+
+	column collector_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7c5d2dc4-9af5-43fd-9cbe-e290b5947e3d
+		summarizeBy: sum
+		sourceColumn: collector_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column collection_team
+		dataType: string
+		lineageTag: 5c71a02b-e94b-49b1-92ad-d2d3b9d49391
+		summarizeBy: none
+		sourceColumn: collection_team
+
+		annotation SummarizationSetBy = Automatic
+
+	column amount_recovered
+		dataType: double
+		lineageTag: 1614cd23-5d67-4e6e-bd9e-f444f1f16e34
+		summarizeBy: sum
+		sourceColumn: amount_recovered
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fact_collections_action = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\AlexOchokiMogengo\Projects\microfinance\npl_demo_datasets\fact_collections_action.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"action_id", Int64.Type}, {"loan_id", Int64.Type}, {"action_date_key", Int64.Type}, {"reference_month_end_date_key", Int64.Type}, {"dpd_at_action", Int64.Type}, {"action_type", type text}, {"outcome", type text}, {"collector_id", Int64.Type}, {"collection_team", type text}, {"amount_recovered", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

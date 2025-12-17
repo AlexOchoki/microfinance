@@ -109,6 +109,56 @@ table 'Base Measures'
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 653dbec6-a8e2-48e0-a002-43ae68059302
 
+	measure 'NPL Ratio % (Trend)' =
+			
+			DIVIDE (
+			    SUMX ( fact_dpd_snapshot, fact_dpd_snapshot[outstanding_balance] * INT ( fact_dpd_snapshot[is_npl] ) ),
+			    SUM ( fact_dpd_snapshot[outstanding_balance] )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 1d283fd8-d54f-439e-9f35-73936ebf11b4
+
+	measure 'NPL Ratio % Prev Month' = ```
+			
+			CALCULATE ( 
+			    [NPL Ratio %], 
+			    DATEADD ( dim_date[date], -1, MONTH ) )
+			```
+		lineageTag: 6990a7bc-7e28-4dd8-bc30-0c871ad2cfc7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Exposure Value' =
+			
+			SUM ( fact_dpd_snapshot[outstanding_balance] )
+		lineageTag: 79aae6db-fc25-4037-b808-6394e0dec180
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'NPL Ratio MoM %' =
+			
+			VAR Curr = [NPL Ratio %]
+			VAR Prev = [NPL Ratio % Prev Month]
+			RETURN
+			DIVIDE ( Curr - Prev, Prev )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 88edaccb-b548-4ec6-8f30-977e5f7d44c1
+
+	measure 'NPL Ratio MoM Indicator' =
+			
+			VAR Diff = [NPL Ratio MoM %]
+			VAR Icon =
+			    SWITCH (
+			        TRUE (),
+			        Diff > 0, UNICHAR ( 128200 ),   -- 🔺
+			        Diff < 0, UNICHAR ( 128201 ),   -- 🔻
+			        UNICHAR ( 10145 )               -- ➖
+			    )
+			VAR Sign = IF ( Diff > 0, "+", "" )
+			RETURN
+			Icon & " " & Sign & FORMAT ( Diff, "0.00%" )
+		lineageTag: f11d1369-1bfb-42d2-b7d3-050c9def2209
+
 	column Column
 		formatString: 0
 		lineageTag: 12821594-70ed-4fe8-a2e5-b392d8188e4d

@@ -93,6 +93,18 @@ table fact_dpd_snapshot
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column 'Perf Flag' =
+			
+			IF (
+			    fact_dpd_snapshot[is_npl] = TRUE (),
+			    "Non-Performing",
+			    "Performing"
+			)
+		lineageTag: 576cd523-093c-467d-aaab-0524f64939f2
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fact_dpd_snapshot = m
 		mode: import
 		source =

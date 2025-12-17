@@ -40,7 +40,7 @@ Microfinance teams need fast answers to questions like:
 - Write-off rate
 - Restructure success rate
 
-## 🛠️ Tech stack
+## Tech stack
 - Power BI (data model + visuals)
 - Power Query
 

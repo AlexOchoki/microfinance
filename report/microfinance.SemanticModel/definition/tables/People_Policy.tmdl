@@ -1,0 +1,127 @@
+table People_Policy
+	lineageTag: 0e23b865-8426-4820-bac7-d34b7bae84aa
+
+	measure 'Selected Snapshot MonthEnd Key' = ```
+			
+			VAR Sel =
+			    SELECTEDVALUE ( fact_dpd_snapshot[snapshot_month_end_date_key] )
+			RETURN
+			    COALESCE ( Sel, MAX ( fact_dpd_snapshot[snapshot_month_end_date_key] ) )
+			
+			```
+		formatString: 0
+		lineageTag: 59fe6515-4a9c-432d-84af-807c35661165
+
+	measure 'Portfolio Exposure (Selected Snapshot)' =
+			
+			VAR SnapKey = [Selected Snapshot MonthEnd Key]
+			RETURN
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			    fact_dpd_snapshot[snapshot_month_end_date_key] = SnapKey
+			)
+		lineageTag: 5266711c-7465-4346-9520-c9e2da102935
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Loan Count (Selected Snapshot)' =
+			
+			VAR SnapKey = [Selected Snapshot MonthEnd Key]
+			RETURN
+			CALCULATE (
+			    DISTINCTCOUNT ( fact_dpd_snapshot[loan_id] ),
+			    fact_dpd_snapshot[snapshot_month_end_date_key] = SnapKey
+			)
+		formatString: 0
+		lineageTag: 959e4ebd-707a-41d5-b573-c4b7c662277d
+
+	measure 'Avg Loan Size' =
+			
+			AVERAGEX (
+			    VALUES ( fact_loan[loan_id] ),
+			    CALCULATE ( SUM ( fact_loan[original_principal] ) )
+			)
+		lineageTag: 3676bf35-3e1d-4e8b-93ae-8cfa833f479a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Approved Loans' =
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( fact_loan[loan_id] ),
+			    KEEPFILTERS ( fact_loan[status] = "Approved" )
+			)
+		formatString: 0
+		lineageTag: 011c8495-e4f2-4b99-9412-f4e6cee4a308
+
+	measure 'Rejected Loans' =
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( fact_loan[loan_id] ),
+			    KEEPFILTERS ( fact_loan[status] = "Rejected" )
+			)
+		formatString: 0
+		lineageTag: d486ec66-781d-46e2-a109-aa44ab0ecbd7
+
+	measure 'Approval Rate %' =
+			
+			DIVIDE ( [Approved Loans], [Approved Loans] + [Rejected Loans] )
+		lineageTag: aab22c48-d46a-4042-b1d1-5f30e6dffdee
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Loans Originated' = ```
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( fact_loan[loan_id] ),
+			    TREATAS (
+			        VALUES ( dim_date[date_key] ),
+			        fact_loan[origination_date_key]
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 9877cb0c-06df-40fe-8f82-607336f48310
+
+	measure 'Loans Defaulted (Ever NPL)' = ```
+			
+			CALCULATE (
+			    DISTINCTCOUNT ( fact_loan[loan_id] ),
+			    TREATAS (
+			        VALUES ( dim_date[date_key] ),
+			        fact_loan[origination_date_key]
+			    ),
+			    FILTER (
+			        VALUES ( fact_loan[loan_id] ),
+			        CALCULATE ( MAX ( fact_dpd_snapshot[is_npl] ) ) = TRUE ()
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 4624b765-7cc2-474f-8afa-cc028ec02a5d
+
+	measure 'Default Rate % (Vintage)' =
+			
+			DIVIDE ( [Loans Defaulted (Ever NPL)], [Loans Originated] )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 25de0f84-fb83-4a41-a596-0afef9582972
+
+	column Column
+		formatString: 0
+		lineageTag: 554108c6-446c-4696-a425-42e3ffe634d1
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition People_Policy = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 519e50cf52b245ff97c50bcb5e5377e4
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

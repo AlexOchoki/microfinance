@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "9992a5290dbe84c1f103",
+  "position": {
+    "x": 960.69615663524291,
+    "y": 108.60043509789702,
+    "z": 1,
+    "height": 419.08629441624362,
+    "width": 377.31689630166784,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_branch"
+                    }
+                  },
+                  "Property": "branch_name"
+                }
+              },
+              "queryRef": "dim_branch.branch_name",
+              "nativeQueryRef": "branch_name",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "PAR 90 %"
+                }
+              },
+              "queryRef": "Base Measures.PAR 90 %",
+              "nativeQueryRef": "PAR 90 %"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Base Measures"
+                    }
+                  },
+                  "Property": "Total NPL Amount"
+                }
+              },
+              "queryRef": "Base Measures.Total NPL Amount",
+              "nativeQueryRef": "Total NPL Amount"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

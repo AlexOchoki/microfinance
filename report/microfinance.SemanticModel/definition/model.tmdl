@@ -28,6 +28,8 @@ ref table fact_writeoff
 ref table 'Base Measures'
 ref table 'Risk Concentration'
 ref table 'Ageing Measures'
+ref table 'Colletions Measures'
+ref table People_Policy
 
 ref cultureInfo en-US
 

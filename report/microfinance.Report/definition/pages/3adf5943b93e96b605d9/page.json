@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "3adf5943b93e96b605d9",
-  "displayName": "Page 1",
+  "displayName": "Executive Risk Snapshot",
   "displayOption": "FitToPage",
   "height": 1080,
   "width": 1920,

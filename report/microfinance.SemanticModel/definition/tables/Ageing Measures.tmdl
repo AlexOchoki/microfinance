@@ -1,0 +1,124 @@
+table 'Ageing Measures'
+	lineageTag: 96dcb8b4-40ce-4a27-854f-1e8ce7df00c2
+
+	measure 'Outstanding Amt (ME)' =
+			
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			    KEEPFILTERS ( dim_date[Is Month End] = TRUE() )
+			)
+		formatString: 0
+		lineageTag: 8d3499f1-5941-49df-8787-028a9376579e
+
+	measure 'Outstanding Amt (Sel)' =
+			
+			VAR SnapKey = [Snapshot Date Key (Selected or Latest)]
+			RETURN
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			    fact_dpd_snapshot[snapshot_month_end_date_key] = SnapKey
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 73fc57b5-67ac-4a28-9e70-cf162a4171a2
+
+	measure 'Portfolio Amt (Sel)' =
+			
+			CALCULATE (
+			    [Outstanding Amt (Sel)],
+			    REMOVEFILTERS ( fact_dpd_snapshot[aging_bucket] )
+			)
+		formatString: #,0.00
+		lineageTag: 74494258-e78b-44ec-8921-433a1294af49
+
+	measure 'Portfolio % (Sel)' =
+			
+			DIVIDE ( [Outstanding Amt (Sel)], [Portfolio Amt (Sel)] )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: a026c3c1-3c9c-40b9-b03c-9d78a50f701e
+
+	measure 'Prev Snap Key' =
+			
+			VAR CurrKey  = [Snapshot Date Key (Selected or Latest)]
+			VAR CurrDate = LOOKUPVALUE ( dim_date[date], dim_date[date_key], CurrKey )
+			VAR PrevDate = EOMONTH ( CurrDate, -1 )
+			RETURN
+			LOOKUPVALUE ( dim_date[date_key], dim_date[date], PrevDate )
+		formatString: 0
+		lineageTag: 3e62c5e1-760e-4fb8-afc3-01a6bbbdad16
+
+	measure 'PAR30 Growth %' =
+			
+			VAR CurrKey = [Snapshot Date Key (Selected or Latest)]
+			VAR PrevKey = [Prev Snap Key]
+			VAR CurrVal =
+			    CALCULATE ( [PAR 30 %], fact_dpd_snapshot[snapshot_month_end_date_key] = CurrKey )
+			VAR PrevVal =
+			    CALCULATE ( [PAR 30 %], fact_dpd_snapshot[snapshot_month_end_date_key] = PrevKey )
+			RETURN
+			IF ( ISBLANK ( PrevKey ), BLANK(), DIVIDE ( CurrVal - PrevVal, PrevVal ) )
+		lineageTag: 93b0fd8a-b7f8-4272-b621-bac53d0c16e9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'PAR90 Growth %' = ```
+			
+			VAR CurrKey = [Snapshot Date Key (Selected or Latest)]
+			VAR PrevKey = [Prev Snap Key]
+			VAR CurrVal =
+			    CALCULATE ( [PAR 90 %], fact_dpd_snapshot[snapshot_month_end_date_key] = CurrKey )
+			VAR PrevVal =
+			    CALCULATE ( [PAR 90 %], fact_dpd_snapshot[snapshot_month_end_date_key] = PrevKey )
+			RETURN
+			IF ( ISBLANK ( PrevKey ), BLANK(), DIVIDE ( CurrVal - PrevVal, PrevVal ) )
+			
+			```
+		lineageTag: 5b754f17-406e-4a82-b7be-9bed7aa6f9c0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cure Rate %' = ```
+			
+			//Loans that were PAR30+ last month and are <30 DPD this month, divided by PAR30+ last month.
+			VAR CurrKey = [Snapshot Date Key (Selected or Latest)]
+			VAR PrevKey = [Prev Snap Key]
+			
+			VAR PrevBad =
+			    CALCULATETABLE (
+			        VALUES ( fact_dpd_snapshot[loan_id] ),
+			        fact_dpd_snapshot[snapshot_month_end_date_key] = PrevKey,
+			        fact_dpd_snapshot[dpd] >= 30
+			    )
+			
+			VAR CurrGood =
+			    CALCULATETABLE (
+			        VALUES ( fact_dpd_snapshot[loan_id] ),
+			        fact_dpd_snapshot[snapshot_month_end_date_key] = CurrKey,
+			        fact_dpd_snapshot[dpd] < 30
+			    )
+			
+			VAR Cured = INTERSECT ( PrevBad, CurrGood )
+			RETURN
+			IF ( ISBLANK ( PrevKey ), BLANK(), DIVIDE ( COUNTROWS ( Cured ), COUNTROWS ( PrevBad ) ) )
+			
+			```
+		lineageTag: 9ce2ab32-b3b8-4357-b4b1-e0beee773ef4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: a30bdf3d-d87e-4d64-8e81-0cc7e9cb2ea3
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Ageing Measures' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 6d90334a74da49268900a7839f88ac9a
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

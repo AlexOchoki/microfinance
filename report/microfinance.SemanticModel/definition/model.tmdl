@@ -26,6 +26,8 @@ ref table fact_payment
 ref table fact_restructure
 ref table fact_writeoff
 ref table 'Base Measures'
+ref table 'Risk Concentration'
+ref table 'Ageing Measures'
 
 ref cultureInfo en-US
 

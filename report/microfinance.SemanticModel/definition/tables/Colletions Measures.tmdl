@@ -1,0 +1,132 @@
+table 'Colletions Measures'
+	lineageTag: e741d6c4-587f-4f4e-be18-d83443d518dd
+
+	measure 'Amount Recovered' =
+			
+			//if the recovered amount is more than 0 bob add it up
+			CALCULATE (
+			    SUM ( fact_collections_action[amount_recovered] ),
+			    KEEPFILTERS ( fact_collections_action[amount_recovered] > 0 )
+			)
+		formatString: #,0
+		lineageTag: 04b07af2-990c-46f1-a874-ddc1e26a498d
+
+	measure 'Outstanding NPL Amount' =
+			
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			    fact_dpd_snapshot[is_npl] = TRUE ()
+			)
+		formatString: #,0
+		lineageTag: d9ee4406-cf00-4b31-b03d-b6f7cb4967ab
+
+	measure 'Recovery Rate %' =
+			
+			DIVIDE ( [Amount Recovered], [Outstanding NPL Amount] )
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 444f7871-bb2a-416a-aa55-a22b042a38ba
+
+	measure 'First Paid Date' = ```
+			
+			VAR FirstPaidKey =
+			    CALCULATE (
+			        MIN ( fact_collections_action[action_date_key] ),
+			        fact_collections_action[outcome] IN { "Paid Full", "Paid Partial" }
+			    )
+			RETURN
+			    FirstPaidKey
+			
+			```
+		formatString: 0
+		lineageTag: f7fb3d20-6bc5-4c86-bd72-c380730ff64e
+
+	measure 'First NPL Date' =
+			
+			CALCULATE (
+			    MIN ( fact_dpd_snapshot[snapshot_month_end_date_key] ),
+			    fact_dpd_snapshot[is_npl] = TRUE ()
+			)
+		formatString: 0
+		lineageTag: 86b644be-45c3-4759-9d32-825ed26107c2
+
+	measure 'Avg Days to Recovery' =
+			
+			AVERAGEX (
+			    VALUES ( fact_dpd_snapshot[loan_id] ),
+			    VAR NPLKey  = [First NPL Date]
+			    VAR PaidKey = [First Paid Date]
+			    RETURN
+			        IF (
+			            ISBLANK ( NPLKey ) || ISBLANK ( PaidKey ),
+			            BLANK (),
+			            DATEDIFF (
+			                DATE ( INT ( NPLKey / 10000 ), INT ( MOD ( INT ( NPLKey / 100 ), 100 ) ), MOD ( NPLKey, 100 ) ),
+			                DATE ( INT ( PaidKey / 10000 ), INT ( MOD ( INT ( PaidKey / 100 ), 100 ) ), MOD ( PaidKey, 100 ) ),
+			                DAY
+			            )
+			        )
+			)
+		lineageTag: 55bda8b0-a1c0-4658-8695-e757c617774f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Write-offs =
+			
+			BLANK()
+		formatString: 0
+		lineageTag: dfaca48b-954b-4488-bebf-a3f5c4213ed0
+
+	measure 'Write-offs (Proxy - PAR90+)' =
+			
+			CALCULATE (
+			    SUM ( fact_dpd_snapshot[outstanding_balance] ),
+			    fact_dpd_snapshot[is_npl] = TRUE (),
+			    fact_dpd_snapshot[aging_bucket] = "90+"
+			)
+		lineageTag: cfe34778-0c3d-47b4-82a8-9080f00c32ee
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Recovered Amount (By Bucket)' =
+			
+			CALCULATE (
+			    [Amount Recovered],
+			    fact_dpd_snapshot[is_npl] = TRUE ()
+			)
+		formatString: #,0
+		lineageTag: 652d3a33-e2b2-42f5-b6e4-6fc6e99dfb85
+
+	measure 'Recovered Amount (Loan)' =
+			
+			CALCULATE (
+			    SUM ( fact_collections_action[amount_recovered] ),
+			    fact_collections_action[outcome] IN { "Paid Full", "Paid Partial" }
+			)
+		formatString: #,0
+		lineageTag: f7303e2c-1569-4191-953d-f001293b686f
+
+	measure 'Unrecovered Amount' =
+			
+			VAR Outstanding = SUM ( fact_dpd_snapshot[outstanding_balance] )
+			VAR Recovered   = [Recovered Amount (Loan)]
+			RETURN MAX ( 0, Outstanding - Recovered )
+		formatString: #,0
+		lineageTag: c24dae98-8b9a-4589-b291-94acbef24c76
+
+	column Column
+		formatString: 0
+		lineageTag: bc7017b9-c467-4628-9256-e9c60f96baed
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Colletions Measures' = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 1dbdac05b85a44a8b89e8ac3eb7429f7
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+
